@@ -42,13 +42,13 @@ export const generateMetadata = async (props: DiscoverPageProps) => {
   const { data, t, locale, identifier } = await getSharedProps(props);
   if (!data) return;
 
-  const { meta, createdAt, homepage, author } = data;
+  const { meta, createdAt, author } = data;
 
   return {
     authors: [
-      { name: author, url: homepage },
-      { name: 'LobeHub', url: 'https://github.com/lobehub' },
-      { name: 'LobeChat', url: 'https://github.com/lobehub/lobe-chat' },
+      // { name: author, url: homepage },
+      // { name: 'LobeHub', url: 'https://github.com/lobehub' },
+      // { name: 'LobeChat', url: 'https://github.com/lobehub/lobe-chat' },
     ],
     keywords: meta.tags,
     ...metadataModule.generate({
