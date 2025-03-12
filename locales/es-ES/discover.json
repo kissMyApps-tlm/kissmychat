@@ -552,7 +552,7 @@
       "latencyTooltip": "Tiempo promedio de respuesta del proveedor para enviar el primer Token",
       "maxOutput": "Longitud máxima de salida",
       "maxOutputTooltip": "Número máximo de Tokens que este punto final puede generar",
-      "officialTooltip": "Servicio oficial de LobeHub",
+      "officialTooltip": "Servicio oficial de KissMyChat",
       "output": "Precio de salida",
       "outputTooltip": "Costo por millón de Tokens",
       "streamCancellationTooltip": "Este proveedor admite la función de cancelación de flujo.",
