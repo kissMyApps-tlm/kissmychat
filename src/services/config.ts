@@ -82,7 +82,9 @@ class ConfigService {
    * export a session
    */
   exportSingleSession = async (id: string) => {
+    console.log('exportSingleSession', id);
     const session = this.getSession(id);
+    console.log('session', session);
     if (!session) return;
 
     const messages = await messageService.getAllMessagesInSession(id);

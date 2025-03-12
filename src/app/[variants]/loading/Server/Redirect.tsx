@@ -27,6 +27,7 @@ const Redirect = memo<RedirectProps>(({ setLoadingStage }) => {
   };
 
   useEffect(() => {
+    console.log('redirect');
     // if user auth state is not ready, wait for loading
     if (!isLoaded) {
       setLoadingStage(AppLoadingStage.InitAuth);
