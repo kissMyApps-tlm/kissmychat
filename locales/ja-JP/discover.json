@@ -552,7 +552,7 @@
       "latencyTooltip": "プロバイダーが最初のトークンを送信する平均応答時間",
       "maxOutput": "最大出力長",
       "maxOutputTooltip": "このエンドポイントが生成できる最大トークン数",
-      "officialTooltip": "LobeHub公式サービス",
+      "officialTooltip": "KissMyChat公式サービス",
       "output": "出力価格",
       "outputTooltip": "百万トークンあたりのコスト",
       "streamCancellationTooltip": "このプロバイダーはストリームキャンセル機能をサポートしています。",
