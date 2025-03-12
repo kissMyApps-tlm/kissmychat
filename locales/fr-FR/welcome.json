@@ -7,7 +7,7 @@
     "defaultMessage": "Je suis votre assistant intelligent personnel {{appName}}. Que puis-je faire pour vous maintenant ?<br />Si vous avez besoin d'un assistant plus professionnel ou personnalisé, vous pouvez cliquer sur <plus /> pour créer un assistant sur mesure.",
     "defaultMessageWithoutCreate": "Je suis votre assistant intelligent personnel {{appName}}. Que puis-je faire pour vous maintenant ?",
     "qa": {
-      "q01": "Qu'est-ce que LobeHub ?",
+      "q01": "Qu'est-ce que KissMyChat ?",
       "q02": "Qu'est-ce que {{appName}} ?",
       "q03": "{{appName}} a-t-il un support communautaire ?",
       "q04": "Quelles fonctionnalités {{appName}} prend-il en charge ?",
