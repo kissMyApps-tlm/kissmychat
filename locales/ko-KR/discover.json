@@ -149,7 +149,7 @@
       "latencyTooltip": "제공자가 첫 번째 Token을 보내는 평균 응답 시간",
       "maxOutput": "최대 출력 길이",
       "maxOutputTooltip": "이 엔드포인트가 생성할 수 있는 최대 Token 수",
-      "officialTooltip": "LobeHub 공식 서비스",
+      "officialTooltip": "KissMyChat 공식 서비스",
       "output": "출력 가격",
       "outputTooltip": "백만 개의 Token당 비용",
       "streamCancellationTooltip": "이 제공자는 스트림 취소 기능을 지원합니다.",
