@@ -7,7 +7,7 @@
     "defaultMessage": "Ben sizin özel akıllı asistanınız {{appName}}. Şu anda size nasıl yardımcı olabilirim?<br />Daha profesyonel veya özel bir asistan istiyorsanız, özel asistan oluşturmak için <plus /> butonuna tıklayabilirsiniz.",
     "defaultMessageWithoutCreate": "Ben sizin özel akıllı asistanınız {{appName}}. Şu anda size nasıl yardımcı olabilirim?",
     "qa": {
-      "q01": "LobeHub nedir?",
+      "q01": "KissMyChat nedir?",
       "q02": "{{appName}} nedir?",
       "q03": "{{appName}}'in topluluk desteği var mı?",
       "q04": "{{appName}} hangi özellikleri destekliyor?",
