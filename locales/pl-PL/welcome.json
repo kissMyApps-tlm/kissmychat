@@ -7,7 +7,7 @@
     "defaultMessage": "Jestem Twoim osobistym inteligentnym asystentem {{appName}}. W czym mogę Ci teraz pomóc?<br />Jeśli potrzebujesz bardziej profesjonalnego lub dostosowanego asystenta, kliknij <plus />, aby utworzyć niestandardowego asystenta.",
     "defaultMessageWithoutCreate": "Jestem Twoim osobistym inteligentnym asystentem {{appName}}. W czym mogę Ci teraz pomóc?",
     "qa": {
-      "q01": "Czym jest LobeHub?",
+      "q01": "Czym jest KissMyChat?",
       "q02": "Czym jest {{appName}}?",
       "q03": "Czy {{appName}} ma wsparcie społeczności?",
       "q04": "Jakie funkcje wspiera {{appName}}?",
