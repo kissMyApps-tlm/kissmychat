@@ -149,7 +149,7 @@
       "latencyTooltip": "Sağlayıcının ilk Token'ı gönderme ortalama süresi",
       "maxOutput": "Maksimum Çıktı Uzunluğu",
       "maxOutputTooltip": "Bu uç noktanın üretebileceği maksimum Token sayısı",
-      "officialTooltip": "LobeHub Resmi Hizmeti",
+      "officialTooltip": "KissMyChat Resmi Hizmeti",
       "output": "Çıktı Fiyatı",
       "outputTooltip": "Her milyon Token için maliyet",
       "streamCancellationTooltip": "Bu sağlayıcı akış iptal işlevini destekler.",
