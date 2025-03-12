@@ -149,7 +149,7 @@
       "latencyTooltip": "میانگین زمان پاسخ برای ارسال اولین توکن توسط ارائه‌دهنده",
       "maxOutput": "حداکثر طول خروجی",
       "maxOutputTooltip": "حداکثر تعداد توکن‌هایی که این نقطه انتهایی می‌تواند تولید کند",
-      "officialTooltip": "خدمات رسمی LobeHub",
+      "officialTooltip": "خدمات رسمی KissMyChat",
       "output": "قیمت خروجی",
       "outputTooltip": "هزینه به ازای هر یک میلیون توکن",
       "streamCancellationTooltip": "این ارائه‌دهنده از قابلیت لغو جریان پشتیبانی می‌کند.",
