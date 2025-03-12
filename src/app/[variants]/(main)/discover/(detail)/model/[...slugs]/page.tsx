@@ -52,8 +52,8 @@ export const generateMetadata = async (props: DiscoverPageProps) => {
   return {
     authors: [
       { name: meta.title },
-      { name: 'LobeHub', url: 'https://github.com/lobehub' },
-      { name: 'LobeChat', url: 'https://github.com/lobehub/lobe-chat' },
+      // { name: 'LobeHub', url: 'https://github.com/lobehub' },
+      // { name: 'LobeChat', url: 'https://github.com/lobehub/lobe-chat' },
     ],
     webpage: {
       enable: true,
