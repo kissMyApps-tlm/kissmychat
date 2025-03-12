@@ -1,0 +1,341 @@
+{
+  "azure": {
+    "azureApiVersion": {
+      "desc": "Версія Azure API, дотримуйтесь формату YYYY-MM-DD, перевірте [останню версію](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions)",
+      "fetch": "Отримати список",
+      "title": "Версія Azure API"
+    },
+    "empty": "Будь ласка, введіть ID моделі, щоб додати першу модель",
+    "endpoint": {
+      "desc": "При перевірці ресурсів на порталі Azure, ви можете знайти це значення в розділі 'Keys and Endpoints'",
+      "placeholder": "https://docs-test-001.openai.azure.com",
+      "title": "Адреса Azure API"
+    },
+    "modelListPlaceholder": "Виберіть або додайте розгорнуту вами модель OpenAI",
+    "title": "Azure OpenAI",
+    "token": {
+      "desc": "При перевірці ресурсів на порталі Azure, ви можете знайти це значення в розділі 'Keys and Endpoints'. Ви можете використовувати KEY1 або KEY2",
+      "placeholder": "Azure API Key",
+      "title": "API Key"
+    }
+  },
+  "azureai": {
+    "azureApiVersion": {
+      "desc": "Версія API для Azure у форматі YYYY-MM-DD. Дивіться [останню версію](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions)",
+      "fetch": "Отримати список",
+      "title": "Версія Azure API"
+    },
+    "endpoint": {
+      "desc": "Знайдіть кінцеву точку виведення моделі Azure AI в огляді проекту Azure AI",
+      "placeholder": "https://ai-userxxxxxxxxxx.services.ai.azure.com/models",
+      "title": "Кінцева точка Azure AI"
+    },
+    "title": "Azure OpenAI",
+    "token": {
+      "desc": "Знайдіть API ключ в огляді проекту Azure AI",
+      "placeholder": "Azure Key",
+      "title": "Ключ"
+    }
+  },
+  "bedrock": {
+    "accessKeyId": {
+      "desc": "Введіть AWS Access Key Id",
+      "placeholder": "AWS Access Key Id",
+      "title": "AWS Access Key Id"
+    },
+    "checker": {
+      "desc": "Перевірте, чи правильно заповнені AccessKeyId / SecretAccessKey"
+    },
+    "region": {
+      "desc": "Введіть регіон AWS",
+      "placeholder": "Регіон AWS",
+      "title": "Регіон AWS"
+    },
+    "secretAccessKey": {
+      "desc": "Введіть AWS Secret Access Key",
+      "placeholder": "AWS Secret Access Key",
+      "title": "AWS Secret Access Key"
+    },
+    "sessionToken": {
+      "desc": "Якщо ви використовуєте AWS SSO/STS, будь ласка, введіть ваш AWS Session Token",
+      "placeholder": "AWS Session Token",
+      "title": "AWS Session Token (необов'язково)"
+    },
+    "title": "Bedrock",
+    "unlock": {
+      "customRegion": "Користувацький регіон сервісу",
+      "customSessionToken": "Користувацький токен сесії",
+      "description": "Введіть ваш AWS AccessKeyId / SecretAccessKey, щоб почати сесію. Додаток не буде зберігати вашу конфігурацію автентифікації",
+      "title": "Використовувати користувацьку інформацію автентифікації Bedrock"
+    }
+  },
+  "cloudflare": {
+    "apiKey": {
+      "desc": "Будь ласка, введіть Cloudflare API Key",
+      "placeholder": "Cloudflare API Key",
+      "title": "Cloudflare API Key"
+    },
+    "baseURLOrAccountID": {
+      "desc": "Введіть ваш ID облікового запису Cloudflare або користувацьку адресу API",
+      "placeholder": "ID облікового запису Cloudflare / користувацька URL API",
+      "title": "ID облікового запису Cloudflare / Адреса API"
+    }
+  },
+  "createNewAiProvider": {
+    "apiKey": {
+      "placeholder": "Будь ласка, введіть ваш API Key",
+      "title": "API Key"
+    },
+    "basicTitle": "Основна інформація",
+    "configTitle": "Інформація про конфігурацію",
+    "confirm": "Створити",
+    "createSuccess": "Створення успішне",
+    "description": {
+      "placeholder": "Опис провайдера (необов'язково)",
+      "title": "Опис провайдера"
+    },
+    "id": {
+      "desc": "Унікальний ідентифікатор для провайдера послуг, який не можна змінити після створення",
+      "format": "Може містити лише цифри, малі літери, дефіси (-) та підкреслення (_)",
+      "placeholder": "Рекомендується все малими літерами, наприклад, openai, не можна змінити після створення",
+      "required": "Будь ласка, введіть ID провайдера",
+      "title": "ID провайдера"
+    },
+    "logo": {
+      "required": "Будь ласка, завантажте дійсний логотип провайдера",
+      "title": "Логотип провайдера"
+    },
+    "name": {
+      "placeholder": "Будь ласка, введіть відображуване ім'я провайдера",
+      "required": "Будь ласка, введіть ім'я провайдера",
+      "title": "Ім'я провайдера"
+    },
+    "proxyUrl": {
+      "required": "Будь ласка, введіть адресу проксі",
+      "title": "URL проксі"
+    },
+    "sdkType": {
+      "placeholder": "openai/anthropic/azureai/ollama/...",
+      "required": "Будь ласка, виберіть тип SDK",
+      "title": "Формат запиту"
+    },
+    "title": "Створити користувацького AI провайдера"
+  },
+  "github": {
+    "personalAccessToken": {
+      "desc": "Введіть ваш GitHub PAT. Натисніть [тут](https://github.com/settings/tokens), щоб створити його.",
+      "placeholder": "ghp_xxxxxx",
+      "title": "GitHub PAT"
+    }
+  },
+  "huggingface": {
+    "accessToken": {
+      "desc": "Введіть ваш токен HuggingFace, натисніть [тут](https://huggingface.co/settings/tokens), щоб створити його",
+      "placeholder": "hf_xxxxxxxxx",
+      "title": "Токен HuggingFace"
+    }
+  },
+  "list": {
+    "title": {
+      "disabled": "Вимкнено",
+      "enabled": "Увімкнено"
+    }
+  },
+  "menu": {
+    "addCustomProvider": "Додати користувацького провайдера",
+    "all": "Всі",
+    "list": {
+      "disabled": "Вимкнено",
+      "enabled": "Увімкнено"
+    },
+    "notFound": "Результатів пошуку не знайдено",
+    "searchProviders": "Пошук провайдерів...",
+    "sort": "Користувацьке сортування"
+  },
+  "ollama": {
+    "checker": {
+      "desc": "Перевірте, чи правильно заповнена адреса проксі",
+      "title": "Перевірка з'єднання"
+    },
+    "customModelName": {
+      "desc": "Додайте користувацькі моделі, розділіть кілька моделей комами",
+      "placeholder": "vicuna, llava, codellama, llama2:13b-text",
+      "title": "Назва користувацької моделі"
+    },
+    "download": {
+      "desc": "Ollama завантажує модель. Будь ласка, намагайтеся не закривати цю сторінку. Завантаження продовжиться з місця зупинки, якщо буде перервано.",
+      "remainingTime": "Залишилося часу",
+      "speed": "Швидкість",
+      "title": "Завантаження моделі {{model}}"
+    },
+    "endpoint": {
+      "desc": "Повинен включати http(s)://; можна залишити порожнім, якщо не вказано локально.",
+      "title": "Адреса проксі інтерфейсу"
+    },
+    "title": "Ollama",
+    "unlock": {
+      "cancel": "Скасувати завантаження",
+      "confirm": "Завантажити",
+      "description": "Введіть тег вашої моделі Ollama, щоб продовжити сесію",
+      "downloaded": "{{completed}} / {{total}}",
+      "starting": "Початок завантаження...",
+      "title": "Завантажити вказану модель Ollama"
+    }
+  },
+  "providerModels": {
+    "config": {
+      "aesGcm": "Ваш ключ та URL проксі будуть зашифровані за допомогою алгоритму шифрування <1>AES-GCM</1>",
+      "apiKey": {
+        "desc": "Будь ласка, введіть ваш {{name}} API Key",
+        "placeholder": "{{name}} API Key",
+        "title": "API Key"
+      },
+      "baseURL": {
+        "desc": "Повинен включати http(s)://",
+        "invalid": "Будь ласка, введіть дійсну URL-адресу",
+        "placeholder": "https://your-proxy-url.com/v1",
+        "title": "URL проксі API"
+      },
+      "checker": {
+        "button": "Перевірити",
+        "desc": "Перевірте, чи правильно заповнені API Key та URL проксі",
+        "pass": "Перевірка пройшла успішно",
+        "title": "Перевірка з'єднання"
+      },
+      "fetchOnClient": {
+        "desc": "Режим клієнтського запиту буде ініціювати запити сесії безпосередньо з браузера, що може покращити швидкість відповіді",
+        "title": "Використовувати режим клієнтського запиту"
+      },
+      "helpDoc": "Посібник з налаштування",
+      "waitingForMore": "Більше моделей наразі <1>заплановано для інтеграції</1>, будь ласка, слідкуйте за оновленнями"
+    },
+    "createNew": {
+      "title": "Створити користувацьку AI модель"
+    },
+    "item": {
+      "config": "Налаштувати модель",
+      "customModelCards": {
+        "addNew": "Створити та додати модель {{id}}",
+        "confirmDelete": "Ви збираєтесь видалити цю користувацьку модель. Після видалення її неможливо буде відновити. Будь ласка, дійте обережно."
+      },
+      "delete": {
+        "confirm": "Ви впевнені, що хочете видалити модель {{displayName}}?",
+        "success": "Видалення успішне",
+        "title": "Видалити модель"
+      },
+      "modelConfig": {
+        "azureDeployName": {
+          "extra": "Поле, що використовується для фактичних запитів в Azure OpenAI",
+          "placeholder": "Будь ласка, введіть ім'я розгортання моделі в Azure",
+          "title": "Ім'я розгортання моделі"
+        },
+        "deployName": {
+          "extra": "Це поле буде використовуватися як ID моделі при надсиланні запитів",
+          "placeholder": "Будь ласка, введіть фактичне ім'я розгортання або ID моделі",
+          "title": "Ім'я розгортання моделі"
+        },
+        "displayName": {
+          "placeholder": "Будь ласка, введіть відображуване ім'я моделі, наприклад, ChatGPT, GPT-4, тощо.",
+          "title": "Відображуване ім'я моделі"
+        },
+        "files": {
+          "extra": "Поточна реалізація завантаження файлів є лише тимчасовим рішенням, обмеженим самоекспериментуванням. Будь ласка, чекайте на повні можливості завантаження файлів у майбутніх реалізаціях.",
+          "title": "Підтримка завантаження файлів"
+        },
+        "functionCall": {
+          "extra": "Ця конфігурація лише увімкне здатність моделі використовувати інструменти, дозволяючи додавати плагіни типу інструментів. Однак, чи може модель дійсно використовувати інструменти, повністю залежить від самої моделі; будь ласка, перевірте можливість використання самостійно.",
+          "title": "Підтримка використання інструментів"
+        },
+        "id": {
+          "extra": "Це не можна змінити після створення і буде використовуватися як ID моделі при виклику AI",
+          "placeholder": "Будь ласка, введіть ID моделі, наприклад, gpt-4o або claude-3.5-sonnet",
+          "title": "ID моделі"
+        },
+        "modalTitle": "Налаштування користувацької моделі",
+        "reasoning": {
+          "extra": "Ця конфігурація увімкне можливості глибокого мислення моделі, і конкретні ефекти повністю залежать від самої моделі. Будь ласка, перевірте, чи має ця модель використовувані здібності глибокого мислення.",
+          "title": "Підтримка глибокого мислення"
+        },
+        "tokens": {
+          "extra": "Встановіть максимальну кількість токенів, яку підтримує модель",
+          "title": "Максимальне вікно контексту",
+          "unlimited": "Необмежено"
+        },
+        "vision": {
+          "extra": "Ця конфігурація лише увімкне можливості завантаження зображень у додатку. Чи підтримується розпізнавання, повністю залежить від самої моделі. Будь ласка, перевірте можливості візуального розпізнавання моделі самостійно.",
+          "title": "Підтримка зору"
+        }
+      },
+      "pricing": {
+        "image": "${{amount}}/Зображення",
+        "inputCharts": "${{amount}}/M Символів",
+        "inputMinutes": "${{amount}}/Хвилини",
+        "inputTokens": "Ввід ${{amount}}/M",
+        "outputTokens": "Вивід ${{amount}}/M"
+      },
+      "releasedAt": "Випущено {{releasedAt}}"
+    },
+    "list": {
+      "addNew": "Додати модель",
+      "disabled": "Вимкнено",
+      "disabledActions": {
+        "showMore": "Показати все"
+      },
+      "empty": {
+        "desc": "Будь ласка, створіть користувацьку модель або витягніть модель, щоб почати.",
+        "title": "Немає доступних моделей"
+      },
+      "enabled": "Увімкнено",
+      "enabledActions": {
+        "disableAll": "Вимкнути все",
+        "enableAll": "Увімкнути все",
+        "sort": "Користувацьке сортування моделей"
+      },
+      "enabledEmpty": "Немає увімкнених моделей. Будь ласка, увімкніть ваші бажані моделі зі списку нижче~",
+      "fetcher": {
+        "clear": "Очистити отримані моделі",
+        "fetch": "Отримати моделі",
+        "fetching": "Отримання списку моделей...",
+        "latestTime": "Останнє оновлення: {{time}}",
+        "noLatestTime": "Список моделей ще не отримано"
+      },
+      "resetAll": {
+        "conform": "Ви впевнені, що хочете скинути всі модифікації поточної моделі? Після скидання поточний список моделей повернеться до свого стану за замовчуванням.",
+        "success": "Скидання успішне",
+        "title": "Скинути всі модифікації"
+      },
+      "search": "Пошук моделей...",
+      "searchResult": "Знайдено {{count}} моделей",
+      "title": "Список моделей",
+      "total": "Доступно {{count}} моделей"
+    },
+    "searchNotFound": "Результатів пошуку не знайдено"
+  },
+  "sortModal": {
+    "success": "Оновлення сортування успішне",
+    "title": "Користувацький порядок",
+    "update": "Оновити"
+  },
+  "updateAiProvider": {
+    "confirmDelete": "Ви збираєтесь видалити цього AI провайдера. Після видалення його неможливо буде відновити. Ви впевнені, що хочете видалити?",
+    "deleteSuccess": "Видалення успішне",
+    "tooltip": "Оновити базову конфігурацію провайдера",
+    "updateSuccess": "Оновлення успішне"
+  },
+  "updateCustomAiProvider": {
+    "title": "Оновити конфігурацію користувацького AI провайдера"
+  },
+  "vertexai": {
+    "apiKey": {
+      "desc": "Введіть ваші ключі Vertex AI",
+      "placeholder": "{ \"type\": \"service_account\", \"project_id\": \"xxx\", \"private_key_id\": ... }",
+      "title": "Ключі Vertex AI"
+    }
+  },
+  "zeroone": {
+    "title": "01.AI Zero One Everything"
+  },
+  "zhipu": {
+    "title": "Zhipu"
+  }
+}
