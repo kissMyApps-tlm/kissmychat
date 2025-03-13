@@ -6,7 +6,7 @@ import { Flexbox } from 'react-layout-kit';
 
 import Statistic from '../../../../../components/Statistic';
 
-const DEFAULT_DOC_URL = '';
+// const DEFAULT_DOC_URL = '';
 
 export interface ParameterItemProps {
   defaultValue: string | number;
@@ -21,7 +21,13 @@ const formatNum = (num: string | number) => {
 };
 
 const ParameterItem = memo<ParameterItemProps>(
-  ({ docUrl = DEFAULT_DOC_URL, desc, type, defaultValue, range }) => {
+  ({
+    //  docUrl = DEFAULT_DOC_URL,
+    desc,
+    type,
+    defaultValue,
+    range,
+  }) => {
     const { t } = useTranslation('discover');
     const theme = useTheme();
 
