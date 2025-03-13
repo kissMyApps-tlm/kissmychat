@@ -1,11 +1,15 @@
 import urlJoin from 'url-join';
 
 import { appEnv } from '@/config/app';
-import { DEFAULT_LANG, isLocaleNotSupport } from '@/const/locale';
+import { DEFAULT_LANG } from '@/const/locale';
 import { Locales, normalizeLocale } from '@/locales/resources';
 import { EdgeConfig } from '@/server/modules/EdgeConfig';
 import { AgentStoreIndex } from '@/types/discover';
 import { RevalidateTag } from '@/types/requestCache';
+
+const isLocaleNotSupport = (locale: Locales) => {
+  return !['en-US'].includes(locale);
+};
 
 export class AssistantStore {
   private readonly baseUrl: string;
