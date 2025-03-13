@@ -32,6 +32,8 @@ const PlanTag = memo<PlanTagProps>(({ type = PlanType.Preview }) => {
     }
   }, []);
 
+  if (type === PlanType.Preview) return null;
+
   return (
     <Tooltip title={tag.desc}>
       <Tag bordered={false} style={{ ...tag.style, borderRadius: 12, cursor: 'pointer' }}>
