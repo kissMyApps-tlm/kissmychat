@@ -7,6 +7,7 @@ import { Locales, normalizeLocale } from '@/locales/resources';
 import { EdgeConfig } from '@/server/modules/EdgeConfig';
 import { CacheRevalidate, CacheTag } from '@/types/discover';
 
+
 export class AssistantStore {
   private readonly baseUrl: string;
 
