@@ -8,7 +8,6 @@ import { EdgeConfig } from '@/server/modules/EdgeConfig';
 import { AgentStoreIndex } from '@/types/discover';
 import { RevalidateTag } from '@/types/requestCache';
 
-
 export class AssistantStore {
   private readonly baseUrl: string;
 
