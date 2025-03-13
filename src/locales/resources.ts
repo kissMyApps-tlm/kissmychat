@@ -3,7 +3,6 @@ import { DEFAULT_LANG } from '@/const/locale';
 import resources from './default';
 
 export const locales = [
-  'uk-UA',
   'ar',
   'bg-BG',
   'de-DE',
@@ -49,10 +48,6 @@ type LocaleOptions = {
 
 export const localeOptions: LocaleOptions = [
   {
-    label: 'Українська',
-    value: 'uk-UA',
-  },
-  {
     label: 'English',
     value: 'en-US',
   },
@@ -93,7 +88,7 @@ export const localeOptions: LocaleOptions = [
     value: 'pt-BR',
   },
   {
-    label: 'Русский',
+    label: 'Українська',
     value: 'ru-RU',
   },
   {
