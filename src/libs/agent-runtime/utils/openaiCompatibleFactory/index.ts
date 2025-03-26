@@ -185,7 +185,7 @@ export const LobeOpenAICompatibleFactory = <T extends Record<string, any> = any>
 
       if (!apiKey) throw AgentRuntimeError.createError(ErrorType?.invalidAPIKey);
 
-      const initOptions = { apiKey, baseURL, ...constructorOptions, ...res };
+      const initOptions = { apiKey, baseURL, timeout: 10_000_000, ...constructorOptions, ...res };
 
       // if the custom client is provided, use it as client
       if (customClient?.createClient) {
