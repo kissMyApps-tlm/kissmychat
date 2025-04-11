@@ -12,7 +12,7 @@ export class Meta {
   public generate({
     description = 'KissMyChat offers you the best ChatGPT, OLLaMA, Gemini, Claude WebUI user experience',
     title,
-    image = OG_URL,
+    image,
     url,
     type = 'website',
     tags,
