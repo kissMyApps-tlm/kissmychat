@@ -34,7 +34,6 @@ export const generateMetadata = async (props: DynamicLayoutProps) => {
         {
           alt: t('chat.title', { appName: BRANDING_NAME }),
           height: 640,
-          url: OG_URL,
           width: 1200,
         },
       ],
@@ -51,7 +50,6 @@ export const generateMetadata = async (props: DynamicLayoutProps) => {
     twitter: {
       card: 'summary_large_image',
       description: t('chat.description', { appName: BRANDING_NAME }),
-      images: [OG_URL],
       site: isCustomORG ? `@${ORG_NAME}` : '@lobehub',
       title: t('chat.title', { appName: BRANDING_NAME }),
     },
