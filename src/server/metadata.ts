@@ -12,7 +12,7 @@ export class Meta {
   public generate({
     description = 'KissMyChat offers you the best ChatGPT, OLLaMA, Gemini, Claude WebUI user experience',
     title,
-    image,
+    image = OG_URL,
     url,
     type = 'website',
     tags,
@@ -59,7 +59,6 @@ export class Meta {
       twitter: this.genTwitter({ description, image, title: siteTitle, url }),
     };
   }
-
   private genAlternateLocales = (locale: Locales, path: string = '/') => {
     let links: any = {};
     const defaultLink = getCanonicalUrl(path);
