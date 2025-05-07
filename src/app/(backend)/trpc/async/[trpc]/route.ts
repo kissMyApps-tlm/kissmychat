@@ -5,7 +5,7 @@ import { pino } from '@/libs/logger';
 import { createAsyncRouteContext } from '@/libs/trpc/async/context';
 import { asyncRouter } from '@/server/routers/async';
 
-export const maxDuration = 60;
+export const maxDuration = 800;
 
 const handler = (req: NextRequest) =>
   fetchRequestHandler({
