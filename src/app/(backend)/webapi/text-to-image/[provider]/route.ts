@@ -7,7 +7,7 @@ import { initModelRuntimeWithUserPayload } from '@/server/modules/ModelRuntime';
 import { ChatErrorType } from '@/types/fetch';
 import { createErrorResponse } from '@/utils/errorResponse';
 
-export const runtime = 'edge';
+
 
 export const preferredRegion = [
   'arn1',
