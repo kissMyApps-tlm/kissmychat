@@ -5,7 +5,7 @@ import { ChatCompletionErrorPayload, PullModelParams } from '@/libs/model-runtim
 import { initModelRuntimeWithUserPayload } from '@/server/modules/ModelRuntime';
 import { createErrorResponse } from '@/utils/errorResponse';
 
-export const runtime = 'edge';
+
 
 export const POST = checkAuth(async (req, { params, jwtPayload }) => {
   const { provider } = await params;

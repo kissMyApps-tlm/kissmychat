@@ -6,7 +6,7 @@ import { ChatCompletionErrorPayload, ModelProvider } from '@/libs/model-runtime'
 import { initModelRuntimeWithUserPayload } from '@/server/modules/ModelRuntime';
 import { createErrorResponse } from '@/utils/errorResponse';
 
-export const runtime = 'edge';
+
 
 const noNeedAPIKey = (provider: string) => [ModelProvider.OpenRouter].includes(provider as any);
 
