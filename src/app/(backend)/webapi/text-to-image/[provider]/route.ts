@@ -7,7 +7,7 @@ import { TextToImagePayload } from '@/libs/model-runtime/types';
 import { initModelRuntimeWithUserPayload } from '@/server/modules/ModelRuntime';
 import { createErrorResponse } from '@/utils/errorResponse';
 
-export const runtime = 'edge';
+
 
 export const preferredRegion = [
   'arn1',
