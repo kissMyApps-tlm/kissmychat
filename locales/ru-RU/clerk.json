@@ -1,769 +1,769 @@
 {
   "backButton": "Назад",
-  "badge__default": "За замовчуванням",
-  "badge__otherImpersonatorDevice": "Інший пристрій імітатора",
-  "badge__primary": "Основний",
-  "badge__requiresAction": "Потребує дії",
-  "badge__thisDevice": "Цей пристрій",
-  "badge__unverified": "Неперевірений",
-  "badge__userDevice": "Пристрій користувача",
-  "badge__you": "Ви",
+  "badge__default": "По умолчанию",
+  "badge__otherImpersonatorDevice": "Другое устройство имперсонации",
+  "badge__primary": "Основной",
+  "badge__requiresAction": "Требуется действие",
+  "badge__thisDevice": "Это устройство",
+  "badge__unverified": "Непроверенный",
+  "badge__userDevice": "Устройство пользователя",
+  "badge__you": "Вы",
   "createOrganization": {
-    "formButtonSubmit": "Створити організацію",
+    "formButtonSubmit": "Создать организацию",
     "invitePage": {
-      "formButtonReset": "Пропустити"
+      "formButtonReset": "Пропустить"
     },
-    "title": "Створити організацію"
+    "title": "Создать организацию"
   },
   "dates": {
-    "lastDay": "Вчора о {{ date | timeString('uk-UA') }}",
-    "next6Days": "{{ date | weekday('uk-UA','long') }} о {{ date | timeString('uk-UA') }}",
-    "nextDay": "Завтра о {{ date | timeString('uk-UA') }}",
-    "numeric": "{{ date | numeric('uk-UA') }}",
-    "previous6Days": "Минулого {{ date | weekday('uk-UA','long') }} о {{ date | timeString('uk-UA') }}",
-    "sameDay": "Сьогодні о {{ date | timeString('uk-UA') }}"
+    "lastDay": "Вчера в {{ date | timeString('ru-RU') }}",
+    "next6Days": "{{ date | weekday('ru-RU','long') }} в {{ date | timeString('ru-RU') }}",
+    "nextDay": "Завтра в {{ date | timeString('ru-RU') }}",
+    "numeric": "{{ date | numeric('ru-RU') }}",
+    "previous6Days": "Прошлая {{ date | weekday('ru-RU','long') }} в {{ date | timeString('ru-RU') }}",
+    "sameDay": "Сегодня в {{ date | timeString('ru-RU') }}"
   },
-  "dividerText": "або",
-  "footerActionLink__useAnotherMethod": "Використати інший метод",
-  "footerPageLink__help": "Допомога",
-  "footerPageLink__privacy": "Конфіденційність",
-  "footerPageLink__terms": "Умови",
-  "formButtonPrimary": "Продовжити",
-  "formButtonPrimary__verify": "Перевірити",
-  "formFieldAction__forgotPassword": "Забули пароль?",
-  "formFieldError__matchingPasswords": "Паролі співпадають.",
-  "formFieldError__notMatchingPasswords": "Паролі не співпадають.",
-  "formFieldError__verificationLinkExpired": "Посилання для перевірки закінчилося. Будь ласка, запитайте нове посилання.",
-  "formFieldHintText__optional": "Необов'язково",
-  "formFieldHintText__slug": "Slug - це зрозумілий для людини ID, який повинен бути унікальним. Він часто використовується в URL.",
-  "formFieldInputPlaceholder__backupCode": "Введіть ваш резервний код",
-  "formFieldInputPlaceholder__confirmDeletionUserAccount": "Видалити обліковий запис",
-  "formFieldInputPlaceholder__emailAddress": "name@example.com",
-  "formFieldInputPlaceholder__emailAddress_username": "name@example.com або ім'я користувача",
+  "dividerText": "или",
+  "footerActionLink__useAnotherMethod": "Использовать другой метод",
+  "footerPageLink__help": "Помощь",
+  "footerPageLink__privacy": "Конфиденциальность",
+  "footerPageLink__terms": "Условия",
+  "formButtonPrimary": "Продолжить",
+  "formButtonPrimary__verify": "Подтвердить",
+  "formFieldAction__forgotPassword": "Забыли пароль?",
+  "formFieldError__matchingPasswords": "Пароли совпадают.",
+  "formFieldError__notMatchingPasswords": "Пароли не совпадают.",
+  "formFieldError__verificationLinkExpired": "Срок действия ссылки для подтверждения истек. Пожалуйста, запросите новую ссылку.",
+  "formFieldHintText__optional": "Необязательно",
+  "formFieldHintText__slug": "Slug - это уникальный идентификатор, который удобно использовать в URL.",
+  "formFieldInputPlaceholder__backupCode": "",
+  "formFieldInputPlaceholder__confirmDeletionUserAccount": "Удалить аккаунт",
+  "formFieldInputPlaceholder__emailAddress": "",
+  "formFieldInputPlaceholder__emailAddress_username": "",
   "formFieldInputPlaceholder__emailAddresses": "example@email.com, example2@email.com",
-  "formFieldInputPlaceholder__firstName": "Ім'я",
-  "formFieldInputPlaceholder__lastName": "Прізвище",
-  "formFieldInputPlaceholder__organizationDomain": "example.com",
-  "formFieldInputPlaceholder__organizationDomainEmailAddress": "name@example.com",
-  "formFieldInputPlaceholder__organizationName": "Назва організації",
-  "formFieldInputPlaceholder__organizationSlug": "my-org",
-  "formFieldInputPlaceholder__password": "Введіть ваш пароль",
-  "formFieldInputPlaceholder__phoneNumber": "+380501234567",
-  "formFieldInputPlaceholder__username": "Введіть ім'я користувача",
-  "formFieldLabel__automaticInvitations": "Увімкнути автоматичні запрошення для цього домену",
-  "formFieldLabel__backupCode": "Резервний код",
-  "formFieldLabel__confirmDeletion": "Підтвердження",
-  "formFieldLabel__confirmPassword": "Підтвердити пароль",
-  "formFieldLabel__currentPassword": "Поточний пароль",
-  "formFieldLabel__emailAddress": "Електронна адреса",
-  "formFieldLabel__emailAddress_username": "Електронна адреса або ім'я користувача",
-  "formFieldLabel__emailAddresses": "Електронні адреси",
-  "formFieldLabel__firstName": "Ім'я",
-  "formFieldLabel__lastName": "Прізвище",
-  "formFieldLabel__newPassword": "Новий пароль",
+  "formFieldInputPlaceholder__firstName": "",
+  "formFieldInputPlaceholder__lastName": "",
+  "formFieldInputPlaceholder__organizationDomain": "",
+  "formFieldInputPlaceholder__organizationDomainEmailAddress": "",
+  "formFieldInputPlaceholder__organizationName": "",
+  "formFieldInputPlaceholder__organizationSlug": "моя-орг",
+  "formFieldInputPlaceholder__password": "",
+  "formFieldInputPlaceholder__phoneNumber": "",
+  "formFieldInputPlaceholder__username": "",
+  "formFieldLabel__automaticInvitations": "Включить автоматические приглашения для этого домена",
+  "formFieldLabel__backupCode": "Резервный код",
+  "formFieldLabel__confirmDeletion": "Подтверждение",
+  "formFieldLabel__confirmPassword": "Подтвердите пароль",
+  "formFieldLabel__currentPassword": "Текущий пароль",
+  "formFieldLabel__emailAddress": "Адрес электронной почты",
+  "formFieldLabel__emailAddress_username": "Адрес электронной почты или имя пользователя",
+  "formFieldLabel__emailAddresses": "Адреса электронной почты",
+  "formFieldLabel__firstName": "Имя",
+  "formFieldLabel__lastName": "Фамилия",
+  "formFieldLabel__newPassword": "Новый пароль",
   "formFieldLabel__organizationDomain": "Домен",
-  "formFieldLabel__organizationDomainDeletePending": "Видалити очікуючі запрошення та пропозиції",
-  "formFieldLabel__organizationDomainEmailAddress": "Електронна адреса для перевірки",
-  "formFieldLabel__organizationDomainEmailAddressDescription": "Введіть електронну адресу в цьому домені, щоб отримати код та перевірити цей домен.",
-  "formFieldLabel__organizationName": "Назва",
+  "formFieldLabel__organizationDomainDeletePending": "Удалить ожидающие приглашения и предложения",
+  "formFieldLabel__organizationDomainEmailAddress": "Адрес электронной почты для подтверждения",
+  "formFieldLabel__organizationDomainEmailAddressDescription": "Введите адрес электронной почты под этим доменом, чтобы получить код и подтвердить домен.",
+  "formFieldLabel__organizationName": "Название",
   "formFieldLabel__organizationSlug": "Slug",
-  "formFieldLabel__passkeyName": "Назва ключа доступу",
+  "formFieldLabel__passkeyName": "Имя ключа доступа",
   "formFieldLabel__password": "Пароль",
-  "formFieldLabel__phoneNumber": "Номер телефону",
+  "formFieldLabel__phoneNumber": "Номер телефона",
   "formFieldLabel__role": "Роль",
-  "formFieldLabel__signOutOfOtherSessions": "Вийти з усіх інших пристроїв",
-  "formFieldLabel__username": "Ім'я користувача",
+  "formFieldLabel__signOutOfOtherSessions": "Выйти из всех других устройств",
+  "formFieldLabel__username": "Имя пользователя",
   "impersonationFab": {
-    "action__signOut": "Вийти",
-    "title": "Увійшли як {{identifier}}"
+    "action__signOut": "Выйти",
+    "title": "Вошли как {{identifier}}"
   },
-  "locale": "uk-UA",
-  "maintenanceMode": "Зараз проводяться технічні роботи, але не хвилюйтеся, це не повинно зайняти більше кількох хвилин.",
-  "membershipRole__admin": "Адміністратор",
-  "membershipRole__basicMember": "Учасник",
-  "membershipRole__guestMember": "Гість",
+  "locale": "ru-RU",
+  "maintenanceMode": "В настоящее время мы находимся на техническом обслуживании, но не волнуйтесь, это не займет больше нескольких минут.",
+  "membershipRole__admin": "Администратор",
+  "membershipRole__basicMember": "Участник",
+  "membershipRole__guestMember": "Гость",
   "organizationList": {
-    "action__createOrganization": "Створити організацію",
-    "action__invitationAccept": "Приєднатися",
-    "action__suggestionsAccept": "Запит на приєднання",
-    "createOrganization": "Створити організацію",
-    "invitationAcceptedLabel": "Приєднано",
-    "subtitle": "щоб продовжити до {{applicationName}}",
-    "suggestionsAcceptedLabel": "Очікує підтвердження",
-    "title": "Виберіть обліковий запис",
-    "titleWithoutPersonal": "Виберіть організацію"
+    "action__createOrganization": "Создать организацию",
+    "action__invitationAccept": "Присоединиться",
+    "action__suggestionsAccept": "Запросить присоединение",
+    "createOrganization": "Создать организацию",
+    "invitationAcceptedLabel": "Присоединен",
+    "subtitle": "для продолжения в {{applicationName}}",
+    "suggestionsAcceptedLabel": "Ожидает подтверждения",
+    "title": "Выберите учетную запись",
+    "titleWithoutPersonal": "Выберите организацию"
   },
   "organizationProfile": {
-    "badge__automaticInvitation": "Автоматичні запрошення",
-    "badge__automaticSuggestion": "Автоматичні пропозиції",
-    "badge__manualInvitation": "Без автоматичного зарахування",
-    "badge__unverified": "Неперевірений",
+    "badge__automaticInvitation": "Автоматические приглашения",
+    "badge__automaticSuggestion": "Автоматические предложения",
+    "badge__manualInvitation": "Нет автоматического вступления",
+    "badge__unverified": "Неподтвержденный",
     "createDomainPage": {
-      "subtitle": "Додайте домен для перевірки. Користувачі з електронними адресами в цьому домені можуть приєднатися до організації автоматично або запитати приєднання.",
-      "title": "Додати домен"
+      "subtitle": "Добавьте домен для проверки. Пользователи с адресами электронной почты на этом домене могут присоединиться к организации автоматически или запросить присоединение.",
+      "title": "Добавить домен"
     },
     "invitePage": {
-      "detailsTitle__inviteFailed": "Не вдалося надіслати запрошення. Вже є очікуючі запрошення для наступних електронних адрес: {{email_addresses}}.",
-      "formButtonPrimary__continue": "Надіслати запрошення",
-      "selectDropdown__role": "Вибрати роль",
-      "subtitle": "Введіть або вставте одну чи більше електронних адрес, розділених пробілами або комами.",
-      "successMessage": "Запрошення успішно надіслані",
-      "title": "Запросити нових учасників"
+      "detailsTitle__inviteFailed": "Приглашения не могут быть отправлены. Уже есть ожидающие приглашения для следующих адресов электронной почты: {{email_addresses}}.",
+      "formButtonPrimary__continue": "Отправить приглашения",
+      "selectDropdown__role": "Выберите роль",
+      "subtitle": "Введите или вставьте один или несколько адресов электронной почты, разделенные пробелами или запятыми.",
+      "successMessage": "Приглашения успешно отправлены",
+      "title": "Пригласить новых участников"
     },
     "membersPage": {
-      "action__invite": "Запросити",
+      "action__invite": "Пригласить",
       "activeMembersTab": {
-        "menuAction__remove": "Видалити учасника",
+        "menuAction__remove": "Удалить участника",
         "tableHeader__actions": "",
-        "tableHeader__joined": "Приєднався",
+        "tableHeader__joined": "Присоединился",
         "tableHeader__role": "Роль",
-        "tableHeader__user": "Користувач"
+        "tableHeader__user": "Пользователь"
       },
-      "detailsTitle__emptyRow": "Немає учасників для відображення",
+      "detailsTitle__emptyRow": "Нет участников для отображения",
       "invitationsTab": {
         "autoInvitations": {
-          "headerSubtitle": "Запрошуйте користувачів, підключивши домен електронної пошти до вашої організації. Будь-хто, хто зареєструється з відповідним доменом електронної пошти, зможе приєднатися до організації в будь-який час.",
-          "headerTitle": "Автоматичні запрошення",
-          "primaryButton": "Керувати перевіреними доменами"
+          "headerSubtitle": "Пригласите пользователей, подключив домен электронной почты к вашей организации. Любой, кто зарегистрируется с соответствующим доменом электронной почты, сможет присоединиться к организации в любое время.",
+          "headerTitle": "Автоматические приглашения",
+          "primaryButton": "Управление подтвержденными доменами"
         },
-        "table__emptyRow": "Немає запрошень для відображення"
+        "table__emptyRow": "Нет приглашений для отображения"
       },
       "invitedMembersTab": {
-        "menuAction__revoke": "Відкликати запрошення",
-        "tableHeader__invited": "Запрошено"
+        "menuAction__revoke": "Отозвать приглашение",
+        "tableHeader__invited": "Приглашен"
       },
       "requestsTab": {
         "autoSuggestions": {
-          "headerSubtitle": "Користувачі, які реєструються з відповідним доменом електронної пошти, зможуть побачити пропозицію запитати приєднання до вашої організації.",
-          "headerTitle": "Автоматичні пропозиції",
-          "primaryButton": "Керувати перевіреними доменами"
+          "headerSubtitle": "Пользователи, зарегистрировавшиеся с соответствующим доменом электронной почты, смогут видеть предложение запросить присоединение к вашей организации.",
+          "headerTitle": "Автоматические предложения",
+          "primaryButton": "Управление подтвержденными доменами"
         },
-        "menuAction__approve": "Схвалити",
-        "menuAction__reject": "Відхилити",
-        "tableHeader__requested": "Запитав доступ",
-        "table__emptyRow": "Немає запитів для відображення"
+        "menuAction__approve": "Утвердить",
+        "menuAction__reject": "Отклонить",
+        "tableHeader__requested": "Запрошен доступ",
+        "table__emptyRow": "Нет запросов для отображения"
       },
       "start": {
-        "headerTitle__invitations": "Запрошення",
-        "headerTitle__members": "Учасники",
-        "headerTitle__requests": "Запити"
+        "headerTitle__invitations": "Приглашения",
+        "headerTitle__members": "Участники",
+        "headerTitle__requests": "Запросы"
       }
     },
     "navbar": {
-      "description": "Керуйте своєю організацією.",
-      "general": "Загальне",
-      "members": "Учасники",
-      "title": "Організація"
+      "description": "Управляйте своей организацией.",
+      "general": "Общее",
+      "members": "Участники",
+      "title": "Организация"
     },
     "profilePage": {
       "dangerSection": {
         "deleteOrganization": {
-          "actionDescription": "Введіть \"{{organizationName}}\" нижче, щоб продовжити.",
-          "messageLine1": "Ви впевнені, що хочете видалити цю організацію?",
-          "messageLine2": "Ця дія є постійною та незворотною.",
-          "successMessage": "Ви видалили організацію.",
-          "title": "Видалити організацію"
+          "actionDescription": "Введите \"{{organizationName}}\" ниже, чтобы продолжить.",
+          "messageLine1": "Вы уверены, что хотите удалить эту организацию?",
+          "messageLine2": "Это действие является постоянным и необратимым.",
+          "successMessage": "Вы удалили организацию.",
+          "title": "Удалить организацию"
         },
         "leaveOrganization": {
-          "actionDescription": "Введіть \"{{organizationName}}\" нижче, щоб продовжити.",
-          "messageLine1": "Ви впевнені, що хочете залишити цю організацію? Ви втратите доступ до цієї організації та її додатків.",
-          "messageLine2": "Ця дія є постійною та незворотною.",
-          "successMessage": "Ви залишили організацію.",
-          "title": "Залишити організацію"
+          "actionDescription": "Введите \"{{organizationName}}\" ниже, чтобы продолжить.",
+          "messageLine1": "Вы уверены, что хотите покинуть эту организацию? Вы потеряете доступ к этой организации и ее приложениям.",
+          "messageLine2": "Это действие является постоянным и необратимым.",
+          "successMessage": "Вы покинули организацию.",
+          "title": "Покинуть организацию"
         },
-        "title": "Небезпечна зона"
+        "title": "Опасность"
       },
       "domainSection": {
-        "menuAction__manage": "Керувати",
-        "menuAction__remove": "Видалити",
-        "menuAction__verify": "Перевірити",
-        "primaryButton": "Додати домен",
-        "subtitle": "Дозвольте користувачам приєднуватися до організації автоматично або запитувати приєднання на основі перевіреного домену електронної пошти.",
-        "title": "Перевірені домени"
+        "menuAction__manage": "Управление",
+        "menuAction__remove": "Удалить",
+        "menuAction__verify": "Подтвердить",
+        "primaryButton": "Добавить домен",
+        "subtitle": "Разрешите пользователям присоединяться к организации автоматически или запрашивать присоединение на основе подтвержденного электронного домена.",
+        "title": "Подтвержденные домены"
       },
-      "successMessage": "Організацію оновлено.",
-      "title": "Оновити профіль"
+      "successMessage": "Организация была обновлена.",
+      "title": "Обновить профиль"
     },
     "removeDomainPage": {
-      "messageLine1": "Домен електронної пошти {{domain}} буде видалено.",
-      "messageLine2": "Користувачі не зможуть приєднуватися до організації автоматично після цього.",
-      "successMessage": "{{domain}} було видалено.",
-      "title": "Видалити домен"
+      "messageLine1": "Домен электронной почты {{domain}} будет удален.",
+      "messageLine2": "Пользователи больше не смогут присоединяться к организации автоматически после этого.",
+      "successMessage": "{{domain}} был удален.",
+      "title": "Удалить домен"
     },
     "start": {
-      "headerTitle__general": "Загальне",
-      "headerTitle__members": "Учасники",
+      "headerTitle__general": "Общее",
+      "headerTitle__members": "Участники",
       "profileSection": {
-        "primaryButton": "Оновити профіль",
-        "title": "Профіль організації",
+        "primaryButton": "Обновить профиль",
+        "title": "Профиль организации",
         "uploadAction__title": "Логотип"
       }
     },
     "verifiedDomainPage": {
       "dangerTab": {
-        "calloutInfoLabel": "Видалення цього домену вплине на запрошених користувачів.",
-        "removeDomainActionLabel__remove": "Видалити домен",
-        "removeDomainSubtitle": "Видалити цей домен з ваших перевірених доменів",
-        "removeDomainTitle": "Видалити домен"
+        "calloutInfoLabel": "Удаление этого домена повлияет на приглашенных пользователей.",
+        "removeDomainActionLabel__remove": "Удалить домен",
+        "removeDomainSubtitle": "Удалить этот домен из ваших подтвержденных доменов",
+        "removeDomainTitle": "Удалить домен"
       },
       "enrollmentTab": {
-        "automaticInvitationOption__description": "Користувачі автоматично запрошуються приєднатися до організації при реєстрації і можуть приєднатися в будь-який час.",
-        "automaticInvitationOption__label": "Автоматичні запрошення",
-        "automaticSuggestionOption__description": "Користувачі отримують пропозицію запитати приєднання, але повинні бути схвалені адміністратором перед тим, як зможуть приєднатися до організації.",
-        "automaticSuggestionOption__label": "Автоматичні пропозиції",
-        "calloutInfoLabel": "Зміна режиму зарахування вплине тільки на нових користувачів.",
-        "calloutInvitationCountLabel": "Очікуючі запрошення надіслані користувачам: {{count}}",
-        "calloutSuggestionCountLabel": "Очікуючі пропозиції надіслані користувачам: {{count}}",
-        "manualInvitationOption__description": "Користувачі можуть бути запрошені до організації тільки вручну.",
-        "manualInvitationOption__label": "Без автоматичного зарахування",
-        "subtitle": "Виберіть, як користувачі з цього домену можуть приєднатися до організації."
+        "automaticInvitationOption__description": "Пользователи автоматически приглашаются присоединиться к организации при регистрации и могут присоединиться в любое время.",
+        "automaticInvitationOption__label": "Автоматические приглашения",
+        "automaticSuggestionOption__description": "Пользователи получают предложение запросить присоединение, но должны быть утверждены администратором, прежде чем они смогут присоединиться к организации.",
+        "automaticSuggestionOption__label": "Автоматические предложения",
+        "calloutInfoLabel": "Изменение режима вступления повлияет только на новых пользователей.",
+        "calloutInvitationCountLabel": "Ожидающие приглашения, отправленные пользователям: {{count}}",
+        "calloutSuggestionCountLabel": "Ожидающие предложения, отправленные пользователям: {{count}}",
+        "manualInvitationOption__description": "Пользователи могут быть приглашены в организацию только вручную.",
+        "manualInvitationOption__label": "Нет автоматического вступления",
+        "subtitle": "Выберите, как пользователи с этого домена могут присоединиться к организации."
       },
       "start": {
-        "headerTitle__danger": "Небезпечна зона",
-        "headerTitle__enrollment": "Параметри зарахування"
+        "headerTitle__danger": "Опасность",
+        "headerTitle__enrollment": "Варианты вступления"
       },
-      "subtitle": "Домен {{domain}} тепер перевірено. Продовжіть, вибравши режим зарахування.",
-      "title": "Оновити {{domain}}"
+      "subtitle": "Домен {{domain}} теперь подтвержден. Продолжайте, выбрав режим вступления.",
+      "title": "Обновить {{domain}}"
     },
     "verifyDomainPage": {
-      "formSubtitle": "Введіть код перевірки, надісланий на вашу електронну адресу",
-      "formTitle": "Код перевірки",
-      "resendButton": "Не отримали код? Надіслати повторно",
-      "subtitle": "Домен {{domainName}} потрібно перевірити через електронну пошту.",
-      "subtitleVerificationCodeScreen": "Код перевірки було надіслано на {{emailAddress}}. Введіть код, щоб продовжити.",
-      "title": "Перевірити домен"
+      "formSubtitle": "Введите код подтверждения, отправленный на ваш адрес электронной почты",
+      "formTitle": "Код подтверждения",
+      "resendButton": "Не получили код? Отправить еще раз",
+      "subtitle": "Домен {{domainName}} необходимо подтвердить по электронной почте.",
+      "subtitleVerificationCodeScreen": "На {{emailAddress}} был отправлен код подтверждения. Введите код для продолжения.",
+      "title": "Подтвердить домен"
     }
   },
   "organizationSwitcher": {
-    "action__createOrganization": "Створити організацію",
-    "action__invitationAccept": "Приєднатися",
-    "action__manageOrganization": "Керувати",
-    "action__suggestionsAccept": "Запит на приєднання",
-    "notSelected": "Організацію не вибрано",
-    "personalWorkspace": "Особистий обліковий запис",
-    "suggestionsAcceptedLabel": "Очікує підтвердження"
+    "action__createOrganization": "Создать организацию",
+    "action__invitationAccept": "Присоединиться",
+    "action__manageOrganization": "Управление",
+    "action__suggestionsAccept": "Запросить присоединение",
+    "notSelected": "Организация не выбрана",
+    "personalWorkspace": "Личный аккаунт",
+    "suggestionsAcceptedLabel": "Ожидает подтверждения"
   },
-  "paginationButton__next": "Наступна",
-  "paginationButton__previous": "Попередня",
-  "paginationRowText__displaying": "Відображення",
-  "paginationRowText__of": "з",
+  "paginationButton__next": "Далее",
+  "paginationButton__previous": "Назад",
+  "paginationRowText__displaying": "Отображение",
+  "paginationRowText__of": "из",
   "signIn": {
     "accountSwitcher": {
-      "action__addAccount": "Додати обліковий запис",
-      "action__signOutAll": "Вийти з усіх облікових записів",
-      "subtitle": "Виберіть обліковий запис, з яким бажаєте продовжити.",
-      "title": "Виберіть обліковий запис"
+      "action__addAccount": "Добавить аккаунт",
+      "action__signOutAll": "Выйти из всех аккаунтов",
+      "subtitle": "Выберите аккаунт, с которым вы хотите продолжить.",
+      "title": "Выберите аккаунт"
     },
     "alternativeMethods": {
-      "actionLink": "Отримати допомогу",
-      "actionText": "Немає жодного з цих?",
-      "blockButton__backupCode": "Використати резервний код",
-      "blockButton__emailCode": "Надіслати код на {{identifier}}",
-      "blockButton__emailLink": "Надіслати посилання на {{identifier}}",
-      "blockButton__passkey": "Увійти за допомогою ключа доступу",
-      "blockButton__password": "Увійти за допомогою пароля",
-      "blockButton__phoneCode": "Надіслати SMS-код на {{identifier}}",
-      "blockButton__totp": "Використати додаток аутентифікатора",
+      "actionLink": "Получить помощь",
+      "actionText": "Нет ни одного из них?",
+      "blockButton__backupCode": "Использовать резервный код",
+      "blockButton__emailCode": "Отправить код на почту {{identifier}}",
+      "blockButton__emailLink": "Отправить ссылку на почту {{identifier}}",
+      "blockButton__passkey": "Войти с помощью вашего парольного ключа",
+      "blockButton__password": "Войти с помощью вашего пароля",
+      "blockButton__phoneCode": "Отправить SMS-код на {{identifier}}",
+      "blockButton__totp": "Использовать приложение аутентификации",
       "getHelp": {
-        "blockButton__emailSupport": "Написати в підтримку",
-        "content": "Якщо у вас виникли труднощі з входом до облікового запису, напишіть нам, і ми допоможемо вам відновити доступ якомога швидше.",
-        "title": "Отримати допомогу"
+        "blockButton__emailSupport": "Поддержка по почте",
+        "content": "Если у вас возникли проблемы с входом в ваш аккаунт, напишите нам, и мы постараемся восстановить доступ как можно скорее.",
+        "title": "Получить помощь"
       },
-      "subtitle": "Виникли проблеми? Ви можете використати будь-який з цих методів для входу.",
-      "title": "Використати інший метод"
+      "subtitle": "Столкнулись с проблемами? Вы можете использовать любой из этих методов для входа.",
+      "title": "Используйте другой метод"
     },
     "backupCodeMfa": {
-      "subtitle": "Ваш резервний код - це той, який ви отримали при налаштуванні двоетапної аутентифікації.",
-      "title": "Введіть резервний код"
+      "subtitle": "Ваш резервный код - тот, который вы получили при настройке двухэтапной аутентификации.",
+      "title": "Введите резервный код"
     },
     "emailCode": {
-      "formTitle": "Код перевірки",
-      "resendButton": "Не отримали код? Надіслати повторно",
-      "subtitle": "щоб продовжити до {{applicationName}}",
-      "title": "Перевірте вашу пошту"
+      "formTitle": "Код подтверждения",
+      "resendButton": "Не получили код? Отправить еще раз",
+      "subtitle": "для продолжения в {{applicationName}}",
+      "title": "Проверьте свою почту"
     },
     "emailLink": {
       "expired": {
-        "subtitle": "Поверніться до початкової вкладки, щоб продовжити.",
-        "title": "Це посилання для перевірки закінчилося"
+        "subtitle": "Вернитесь на исходную вкладку, чтобы продолжить.",
+        "title": "Срок действия этой ссылки подтверждения истек"
       },
       "failed": {
-        "subtitle": "Поверніться до початкової вкладки, щоб продовжити.",
-        "title": "Це посилання для перевірки недійсне"
+        "subtitle": "Вернитесь на исходную вкладку, чтобы продолжить.",
+        "title": "Эта ссылка подтверждения недействительна"
       },
-      "formSubtitle": "Використайте посилання для перевірки, надіслане на вашу електронну пошту",
-      "formTitle": "Посилання для перевірки",
+      "formSubtitle": "Используйте ссылку подтверждения, отправленную на вашу почту",
+      "formTitle": "Ссылка подтверждения",
       "loading": {
-        "subtitle": "Вас буде перенаправлено незабаром",
-        "title": "Виконується вхід..."
+        "subtitle": "Вы будете перенаправлены в ближайшее время",
+        "title": "Вход в систему..."
       },
-      "resendButton": "Не отримали посилання? Надіслати повторно",
-      "subtitle": "щоб продовжити до {{applicationName}}",
-      "title": "Перевірте вашу пошту",
+      "resendButton": "Не получили ссылку? Отправить еще раз",
+      "subtitle": "для продолжения в {{applicationName}}",
+      "title": "Проверьте свою почту",
       "unusedTab": {
-        "title": "Ви можете закрити цю вкладку"
+        "title": "Вы можете закрыть эту вкладку"
       },
       "verified": {
-        "subtitle": "Вас буде перенаправлено незабаром",
-        "title": "Успішний вхід"
+        "subtitle": "Вы будете перенаправлены в ближайшее время",
+        "title": "Успешный вход в систему"
       },
       "verifiedSwitchTab": {
-        "subtitle": "Поверніться до початкової вкладки, щоб продовжити",
-        "subtitleNewTab": "Поверніться до нової вкладки, щоб продовжити",
-        "titleNewTab": "Вхід виконано в іншій вкладці"
+        "subtitle": "Вернитесь на исходную вкладку, чтобы продолжить",
+        "subtitleNewTab": "Вернитесь на вновь открытую вкладку, чтобы продолжить",
+        "titleNewTab": "Вход выполнен на другой вкладке"
       }
     },
     "forgotPassword": {
-      "formTitle": "Код скидання пароля",
-      "resendButton": "Не отримали код? Надіслати повторно",
-      "subtitle": "щоб скинути ваш пароль",
-      "subtitle_email": "Спочатку введіть код, надісланий на вашу електронну адресу",
-      "subtitle_phone": "Спочатку введіть код, надісланий на ваш телефон",
-      "title": "Скинути пароль"
+      "formTitle": "Код сброса пароля",
+      "resendButton": "Не получили код? Отправить еще раз",
+      "subtitle": "для сброса вашего пароля",
+      "subtitle_email": "Сначала введите код, отправленный на ваш адрес электронной почты",
+      "subtitle_phone": "Сначала введите код, отправленный на ваш телефон",
+      "title": "Сброс пароля"
     },
     "forgotPasswordAlternativeMethods": {
-      "blockButton__resetPassword": "Скинути ваш пароль",
-      "label__alternativeMethods": "Або увійдіть іншим способом",
-      "title": "Забули пароль?"
+      "blockButton__resetPassword": "Сбросить пароль",
+      "label__alternativeMethods": "Или войдите другим способом",
+      "title": "Забыли пароль?"
     },
     "noAvailableMethods": {
-      "message": "Неможливо продовжити вхід. Немає доступних факторів аутентифікації.",
-      "subtitle": "Сталася помилка",
-      "title": "Неможливо увійти"
+      "message": "Невозможно продолжить вход. Нет доступных факторов аутентификации.",
+      "subtitle": "Произошла ошибка",
+      "title": "Невозможно войти"
     },
     "passkey": {
-      "subtitle": "Використання вашого ключа доступу підтверджує, що це ви. Ваш пристрій може запитати відбиток пальця, обличчя або блокування екрану.",
-      "title": "Використати ваш ключ доступу"
+      "subtitle": "Использование вашего парольного ключа подтверждает, что это вы. Ваше устройство может запросить ваш отпечаток пальца, лицо или блокировку экрана.",
+      "title": "Используйте ваш парольный ключ"
     },
     "password": {
-      "actionLink": "Використати інший метод",
-      "subtitle": "Введіть пароль, пов'язаний з вашим обліковим записом",
-      "title": "Введіть ваш пароль"
+      "actionLink": "Использовать другой метод",
+      "subtitle": "Введите пароль, связанный с вашим аккаунтом",
+      "title": "Введите ваш пароль"
     },
     "passwordPwned": {
-      "title": "Пароль скомпрометовано"
+      "title": "Пароль скомпрометирован"
     },
     "phoneCode": {
-      "formTitle": "Код перевірки",
-      "resendButton": "Не отримали код? Надіслати повторно",
-      "subtitle": "щоб продовжити до {{applicationName}}",
-      "title": "Перевірте ваш телефон"
+      "formTitle": "Код подтверждения",
+      "resendButton": "Не получили код? Отправить еще раз",
+      "subtitle": "для продолжения в {{applicationName}}",
+      "title": "Проверьте свой телефон"
     },
     "phoneCodeMfa": {
-      "formTitle": "Код перевірки",
-      "resendButton": "Не отримали код? Надіслати повторно",
-      "subtitle": "Щоб продовжити, введіть код перевірки, надісланий на ваш телефон",
-      "title": "Перевірте ваш телефон"
+      "formTitle": "Код подтверждения",
+      "resendButton": "Не получили код? Отправить еще раз",
+      "subtitle": "Для продолжения введите код подтверждения, отправленный на ваш телефон",
+      "title": "Проверьте свой телефон"
     },
     "resetPassword": {
-      "formButtonPrimary": "Скинути пароль",
-      "requiredMessage": "З міркувань безпеки необхідно скинути ваш пароль.",
-      "successMessage": "Ваш пароль успішно змінено. Виконується вхід, зачекайте хвилинку.",
-      "title": "Встановити новий пароль"
+      "formButtonPrimary": "Сбросить пароль",
+      "requiredMessage": "По соображениям безопасности требуется сбросить ваш пароль.",
+      "successMessage": "Ваш пароль успешно изменен. Выполняется вход, подождите немного.",
+      "title": "Установите новый пароль"
     },
     "resetPasswordMfa": {
-      "detailsLabel": "Нам потрібно перевірити вашу особу перед скиданням пароля."
+      "detailsLabel": "Мы должны проверить вашу личность перед сбросом пароля."
     },
     "start": {
-      "actionLink": "Зареєструватися",
-      "actionLink__use_email": "Використати email",
-      "actionLink__use_email_username": "Використати email або ім'я користувача",
-      "actionLink__use_passkey": "Використати ключ доступу",
-      "actionLink__use_phone": "Використати телефон",
-      "actionLink__use_username": "Використати ім'я користувача",
-      "actionText": "Немає облікового запису?",
-      "subtitle": "Ласкаво просимо назад! Будь ласка, увійдіть, щоб продовжити",
-      "title": "Увійти до {{applicationName}}"
+      "actionLink": "Зарегистрироваться",
+      "actionLink__use_email": "Использовать почту",
+      "actionLink__use_email_username": "Использовать почту или имя пользователя",
+      "actionLink__use_passkey": "Использовать парольный ключ",
+      "actionLink__use_phone": "Использовать телефон",
+      "actionLink__use_username": "Использовать имя пользователя",
+      "actionText": "Нет учетной записи?",
+      "subtitle": "Добро пожаловать! Пожалуйста, заполните данные, чтобы начать.",
+      "title": "Создайте свою учетную запись"
     },
     "totpMfa": {
-      "formTitle": "Код перевірки",
-      "subtitle": "Щоб продовжити, введіть код перевірки, згенерований вашим додатком аутентифікатора",
-      "title": "Двоетапна перевірка"
+      "formTitle": "Код подтверждения",
+      "subtitle": "Для продолжения введите код подтверждения, сгенерированный вашим приложением аутентификации",
+      "title": "Двухэтапная проверка"
     }
   },
-  "signInEnterPasswordTitle": "Введіть ваш пароль",
+  "signInEnterPasswordTitle": "Введите ваш пароль",
   "signUp": {
     "continue": {
-      "actionLink": "Увійти",
-      "actionText": "Вже маєте обліковий запис?",
-      "subtitle": "Будь ласка, заповніть решту даних, щоб продовжити.",
-      "title": "Заповніть відсутні поля"
+      "actionLink": "Войти",
+      "actionText": "Уже есть аккаунт?",
+      "subtitle": "Пожалуйста, заполните оставшиеся данные, чтобы продолжить.",
+      "title": "Заполните недостающие поля"
     },
     "emailCode": {
-      "formSubtitle": "Введіть код перевірки, надісланий на вашу електронну адресу",
-      "formTitle": "Код перевірки",
-      "resendButton": "Не отримали код? Надіслати повторно",
-      "subtitle": "Введіть код перевірки, надісланий на вашу пошту",
-      "title": "Перевірте вашу пошту"
+      "formSubtitle": "Введите код подтверждения, отправленный на ваш адрес электронной почты",
+      "formTitle": "Код подтверждения",
+      "resendButton": "Не получили код? Отправить еще раз",
+      "subtitle": "Введите код подтверждения, отправленный на ваш адрес электронной почты",
+      "title": "Подтвердите вашу почту"
     },
     "emailLink": {
-      "formSubtitle": "Використайте посилання для перевірки, надіслане на вашу електронну адресу",
-      "formTitle": "Посилання для перевірки",
+      "formSubtitle": "Используйте ссылку подтверждения, отправленную на ваш адрес электронной почты",
+      "formTitle": "Ссылка подтверждения",
       "loading": {
-        "title": "Реєстрація..."
+        "title": "Регистрация..."
       },
-      "resendButton": "Не отримали посилання? Надіслати повторно",
-      "subtitle": "щоб продовжити до {{applicationName}}",
-      "title": "Перевірте вашу пошту",
+      "resendButton": "Не получили ссылку? Отправить еще раз",
+      "subtitle": "для продолжения в {{applicationName}}",
+      "title": "Подтвердите вашу почту",
       "verified": {
-        "title": "Успішна реєстрація"
+        "title": "Успешная регистрация"
       },
       "verifiedSwitchTab": {
-        "subtitle": "Поверніться до нової вкладки, щоб продовжити",
-        "subtitleNewTab": "Поверніться до попередньої вкладки, щоб продовжити",
-        "title": "Пошту успішно перевірено"
+        "subtitle": "Вернитесь на вновь открытую вкладку, чтобы продолжить",
+        "subtitleNewTab": "Вернитесь на предыдущую вкладку, чтобы продолжить",
+        "title": "Электронная почта успешно подтверждена"
       }
     },
     "phoneCode": {
-      "formSubtitle": "Введіть код перевірки, надісланий на ваш номер телефону",
-      "formTitle": "Код перевірки",
-      "resendButton": "Не отримали код? Надіслати повторно",
-      "subtitle": "Введіть код перевірки, надісланий на ваш телефон",
-      "title": "Перевірте ваш телефон"
+      "formSubtitle": "Введите код подтверждения, отправленный на ваш номер телефона",
+      "formTitle": "Код подтверждения",
+      "resendButton": "Не получили код? Отправить еще раз",
+      "subtitle": "Введите код подтверждения, отправленный на ваш номер телефона",
+      "title": "Подтвердите ваш телефон"
     },
     "start": {
-      "actionLink": "Увійти",
-      "actionText": "Вже маєте обліковий запис?",
-      "subtitle": "Ласкаво просимо! Будь ласка, заповніть дані, щоб почати.",
-      "title": "Створіть ваш обліковий запис"
+      "actionLink": "Войти",
+      "actionText": "Уже есть аккаунт?",
+      "subtitle": "Добро пожаловать! Пожалуйста, заполните данные, чтобы начать.",
+      "title": "Создайте свою учетную запись"
     }
   },
-  "socialButtonsBlockButton": "Продовжити з {{provider|titleize}}",
+  "socialButtonsBlockButton": "Продолжить с {{provider|titleize}}",
   "unstable__errors": {
-    "captcha_invalid": "Реєстрація не вдалася через помилку перевірки безпеки. Будь ласка, оновіть сторінку, щоб спробувати знову, або зверніться до служби підтримки за додатковою допомогою.",
-    "captcha_unavailable": "Реєстрація не вдалася через помилку перевірки бота. Будь ласка, оновіть сторінку, щоб спробувати знову, або зверніться до служби підтримки за додатковою допомогою.",
-    "form_code_incorrect": "Введений код невірний. Будь ласка, спробуйте ще раз.",
-    "form_identifier_exists": "Цей ідентифікатор вже використовується. Будь ласка, спробуйте інший.",
-    "form_identifier_exists__email_address": "Ця електронна адреса вже зайнята. Будь ласка, спробуйте іншу.",
-    "form_identifier_exists__phone_number": "Цей номер телефону вже зайнятий. Будь ласка, спробуйте інший.",
-    "form_identifier_exists__username": "Це ім'я користувача вже зайняте. Будь ласка, спробуйте інше.",
-    "form_identifier_not_found": "Не вдалося знайти обліковий запис з цим ідентифікатором.",
-    "form_param_format_invalid": "Формат введених даних недійсний.",
-    "form_param_format_invalid__email_address": "Електронна адреса повинна бути дійсною адресою електронної пошти.",
-    "form_param_format_invalid__phone_number": "Номер телефону повинен бути в дійсному міжнародному форматі",
-    "form_param_max_length_exceeded__first_name": "Ім'я не повинно перевищувати 256 символів.",
-    "form_param_max_length_exceeded__last_name": "Прізвище не повинно перевищувати 256 символів.",
-    "form_param_max_length_exceeded__name": "Ім'я не повинно перевищувати 256 символів.",
-    "form_param_nil": "Це поле є обов'язковим.",
-    "form_password_incorrect": "Невірний пароль. Будь ласка, спробуйте ще раз.",
-    "form_password_length_too_short": "Пароль занадто короткий. Він повинен містити принаймні 8 символів.",
-    "form_password_not_strong_enough": "Ваш пароль недостатньо надійний.",
-    "form_password_pwned": "Цей пароль був знайдений у базі даних витоків і не може бути використаний, будь ласка, спробуйте інший пароль.",
-    "form_password_pwned__sign_in": "Цей пароль був знайдений у базі даних витоків і не може бути використаний, будь ласка, скиньте ваш пароль.",
-    "form_password_size_in_bytes_exceeded": "Ваш пароль перевищив максимально допустиму кількість байтів, будь ласка, скоротіть його або видаліть деякі спеціальні символи.",
-    "form_password_validation_failed": "Невірний пароль",
-    "form_username_invalid_character": "Ім'я користувача містить недопустимі символи",
-    "form_username_invalid_length": "Довжина імені користувача недопустима",
-    "identification_deletion_failed": "Ви не можете видалити вашу останню ідентифікацію.",
-    "not_allowed_access": "Доступ заборонено",
-    "passkey_already_exists": "Ключ доступу вже зареєстрований на цьому пристрої.",
-    "passkey_not_supported": "Ключі доступу не підтримуються на цьому пристрої.",
-    "passkey_pa_not_supported": "Реєстрація вимагає платформний автентифікатор, але пристрій його не підтримує.",
-    "passkey_registration_cancelled": "Реєстрацію ключа доступу було скасовано або час очікування минув.",
-    "passkey_retrieval_cancelled": "Перевірку ключа доступу було скасовано або час очікування минув.",
+    "captcha_invalid": "Регистрация не удалась из-за неудачной проверки безопасности. Пожалуйста, обновите страницу и попробуйте снова или обратитесь в службу поддержки для получения дополнительной помощи.",
+    "captcha_unavailable": "Регистрация не удалась из-за неудачной проверки на ботов. Пожалуйста, обновите страницу и попробуйте снова или обратитесь в службу поддержки для получения дополнительной помощи.",
+    "form_code_incorrect": "",
+    "form_identifier_exists": "",
+    "form_identifier_exists__email_address": "Этот адрес электронной почты занят. Пожалуйста, попробуйте другой.",
+    "form_identifier_exists__phone_number": "Этот номер телефона занят. Пожалуйста, попробуйте другой.",
+    "form_identifier_exists__username": "Это имя пользователя занято. Пожалуйста, попробуйте другое.",
+    "form_identifier_not_found": "",
+    "form_param_format_invalid": "",
+    "form_param_format_invalid__email_address": "Адрес электронной почты должен быть действительным адресом электронной почты.",
+    "form_param_format_invalid__phone_number": "Номер телефона должен быть в действительном международном формате.",
+    "form_param_max_length_exceeded__first_name": "Имя не должно превышать 256 символов.",
+    "form_param_max_length_exceeded__last_name": "Фамилия не должна превышать 256 символов.",
+    "form_param_max_length_exceeded__name": "Имя не должно превышать 256 символов.",
+    "form_param_nil": "",
+    "form_password_incorrect": "",
+    "form_password_length_too_short": "",
+    "form_password_not_strong_enough": "Ваш пароль недостаточно надежен.",
+    "form_password_pwned": "Этот пароль был обнаружен в результате утечки данных и не может быть использован. Пожалуйста, попробуйте другой пароль.",
+    "form_password_pwned__sign_in": "Этот пароль был обнаружен в результате утечки данных и не может быть использован. Пожалуйста, сбросьте свой пароль.",
+    "form_password_size_in_bytes_exceeded": "Ваш пароль превысил максимально допустимое количество байт. Пожалуйста, сократите его или удалите некоторые специальные символы.",
+    "form_password_validation_failed": "Неверный пароль.",
+    "form_username_invalid_character": "",
+    "form_username_invalid_length": "",
+    "identification_deletion_failed": "Вы не можете удалить свою последнюю идентификацию.",
+    "not_allowed_access": "",
+    "passkey_already_exists": "Ключ доступа уже зарегистрирован на этом устройстве.",
+    "passkey_not_supported": "Ключи доступа не поддерживаются на этом устройстве.",
+    "passkey_pa_not_supported": "Для регистрации требуется аутентификатор платформы, но устройство его не поддерживает.",
+    "passkey_registration_cancelled": "Регистрация ключа доступа была отменена или истекло время ожидания.",
+    "passkey_retrieval_cancelled": "Проверка ключа доступа была отменена или истекло время ожидания.",
     "passwordComplexity": {
-      "maximumLength": "менше {{length}} символів",
-      "minimumLength": "{{length}} або більше символів",
-      "requireLowercase": "малу літеру",
+      "maximumLength": "менее {{length}} символов",
+      "minimumLength": "{{length}} или более символов",
+      "requireLowercase": "строчную букву",
       "requireNumbers": "цифру",
-      "requireSpecialCharacter": "спеціальний символ",
-      "requireUppercase": "велику літеру",
-      "sentencePrefix": "Ваш пароль повинен містити"
+      "requireSpecialCharacter": "специальный символ",
+      "requireUppercase": "заглавную букву",
+      "sentencePrefix": "Ваш пароль должен содержать"
     },
-    "phone_number_exists": "Цей номер телефону вже зайнятий. Будь ласка, спробуйте інший.",
+    "phone_number_exists": "Этот номер телефона занят. Пожалуйста, попробуйте другой.",
     "zxcvbn": {
-      "couldBeStronger": "Ваш пароль працює, але міг би бути надійнішим. Спробуйте додати більше символів.",
-      "goodPassword": "Ваш пароль відповідає всім необхідним вимогам.",
-      "notEnough": "Ваш пароль недостатньо надійний.",
+      "couldBeStronger": "Ваш пароль работает, но может быть надежнее. Попробуйте добавить больше символов.",
+      "goodPassword": "Ваш пароль соответствует всем необходимым требованиям.",
+      "notEnough": "Ваш пароль недостаточно надежен.",
       "suggestions": {
-        "allUppercase": "Зробіть великими деякі, але не всі літери.",
-        "anotherWord": "Додайте більше слів, які рідше використовуються.",
-        "associatedYears": "Уникайте років, які пов'язані з вами.",
-        "capitalization": "Використовуйте великі літери не тільки на початку.",
-        "dates": "Уникайте дат і років, які пов'язані з вами.",
-        "l33t": "Уникайте передбачуваних замін літер, наприклад '@' замість 'a'.",
-        "longerKeyboardPattern": "Використовуйте довші комбінації клавіш і змінюйте напрямок набору кілька разів.",
-        "noNeed": "Ви можете створювати надійні паролі без використання символів, цифр або великих літер.",
-        "pwned": "Якщо ви використовуєте цей пароль деінде, вам слід його змінити.",
-        "recentYears": "Уникайте останніх років.",
-        "repeated": "Уникайте повторюваних слів і символів.",
-        "reverseWords": "Уникайте зворотного написання поширених слів.",
-        "sequences": "Уникайте поширених послідовностей символів.",
-        "useWords": "Використовуйте кілька слів, але уникайте поширених фраз."
+        "allUppercase": "Сделайте заглавными некоторые, но не все буквы.",
+        "anotherWord": "Добавьте больше слов, которые редко используются.",
+        "associatedYears": "Избегайте годов, которые связаны с вами.",
+        "capitalization": "Используйте заглавные буквы не только в начале слова.",
+        "dates": "Избегайте дат и годов, связанных с вами.",
+        "l33t": "Избегайте предсказуемых замен букв, например, '@' вместо 'a'.",
+        "longerKeyboardPattern": "Используйте более длинные шаблоны клавиатуры и меняйте направление набора несколько раз.",
+        "noNeed": "Вы можете создавать надежные пароли без использования символов, цифр или заглавных букв.",
+        "pwned": "Если вы используете этот пароль в другом месте, вам следует его изменить.",
+        "recentYears": "Избегайте недавних лет.",
+        "repeated": "Избегайте повторяющихся слов и символов.",
+        "reverseWords": "Избегайте перевернутых написаний обычных слов.",
+        "sequences": "Избегайте обычных последовательностей символов.",
+        "useWords": "Используйте несколько слов, но избегайте общих фраз."
       },
       "warnings": {
-        "common": "Це поширений пароль.",
-        "commonNames": "Поширені імена та прізвища легко вгадати.",
-        "dates": "Дати легко вгадати.",
-        "extendedRepeat": "Повторювані послідовності символів як \"abcabcabc\" легко вгадати.",
-        "keyPattern": "Короткі комбінації клавіш легко вгадати.",
-        "namesByThemselves": "Окремі імена або прізвища легко вгадати.",
-        "pwned": "Ваш пароль був виявлений у витоку даних в Інтернеті.",
-        "recentYears": "Останні роки легко вгадати.",
-        "sequences": "Поширені послідовності символів як \"abc\" легко вгадати.",
-        "similarToCommon": "Це схоже на поширений пароль.",
-        "simpleRepeat": "Повторювані символи як \"aaa\" легко вгадати.",
-        "straightRow": "Прямі ряди клавіш на клавіатурі легко вгадати.",
-        "topHundred": "Це часто використовуваний пароль.",
-        "topTen": "Це дуже часто використовуваний пароль.",
-        "userInputs": "Не повинно бути особистих даних або даних, пов'язаних зі сторінкою.",
-        "wordByItself": "Окремі слова легко вгадати."
+        "common": "Это часто используемый пароль.",
+        "commonNames": "Общие имена и фамилии легко угадать.",
+        "dates": "Даты легко угадать.",
+        "extendedRepeat": "Повторяющиеся шаблоны символов, например, \"abcabcabc\", легко угадать.",
+        "keyPattern": "Короткие шаблоны клавиатуры легко угадать.",
+        "namesByThemselves": "Одиночные имена или фамилии легко угадать.",
+        "pwned": "Ваш пароль был обнаружен в результате утечки данных в Интернете.",
+        "recentYears": "Недавние годы легко угадать.",
+        "sequences": "Общие последовательности символов, например, \"abc\", легко угадать.",
+        "similarToCommon": "Этот пароль похож на часто используемый.",
+        "simpleRepeat": "Повторяющиеся символы, например, \"aaa\", легко угадать.",
+        "straightRow": "Прямые ряды клавиш на вашей клавиатуре легко угадать.",
+        "topHundred": "Это часто используемый пароль.",
+        "topTen": "Это очень часто используемый пароль.",
+        "userInputs": "Не должно быть никаких персональных или связанных с страницей данных.",
+        "wordByItself": "Одиночные слова легко угадать."
       }
     }
   },
   "userButton": {
-    "action__addAccount": "Додати обліковий запис",
-    "action__manageAccount": "Керувати обліковим записом",
-    "action__signOut": "Вийти",
-    "action__signOutAll": "Вийти з усіх облікових записів"
+    "action__addAccount": "Добавить аккаунт",
+    "action__manageAccount": "Управление аккаунтом",
+    "action__signOut": "Выйти",
+    "action__signOutAll": "Выйти из всех аккаунтов"
   },
   "userProfile": {
     "backupCodePage": {
-      "actionLabel__copied": "Скопійовано!",
-      "actionLabel__copy": "Копіювати все",
-      "actionLabel__download": "Завантажити .txt",
-      "actionLabel__print": "Друкувати",
-      "infoText1": "Резервні коди будуть увімкнені для цього облікового запису.",
-      "infoText2": "Тримайте резервні коди в таємниці та зберігайте їх надійно. Ви можете згенерувати нові резервні коди, якщо підозрюєте, що вони були скомпрометовані.",
-      "subtitle__codelist": "Зберігайте їх надійно та тримайте в таємниці.",
-      "successMessage": "Резервні коди тепер увімкнені. Ви можете використати один з них для входу в свій обліковий запис, якщо втратите доступ до пристрою аутентифікації. Кожен код можна використати лише один раз.",
-      "successSubtitle": "Ви можете використати один з них для входу в свій обліковий запис, якщо втратите доступ до пристрою аутентифікації.",
-      "title": "Додати перевірку резервним кодом",
-      "title__codelist": "Резервні коди"
+      "actionLabel__copied": "Скопировано!",
+      "actionLabel__copy": "Скопировать все",
+      "actionLabel__download": "Скачать .txt",
+      "actionLabel__print": "Распечатать",
+      "infoText1": "Резервные коды будут включены для этой учетной записи.",
+      "infoText2": "Храните резервные коды в тайне и надежно. Вы можете восстановить резервные коды, если подозреваете их компрометацию.",
+      "subtitle__codelist": "Храните их надежно и держите в секрете.",
+      "successMessage": "Резервные коды теперь включены. Вы можете использовать один из них для входа в свою учетную запись, если потеряете доступ к своему аутентификационному устройству. Каждый код можно использовать только один раз.",
+      "successSubtitle": "Вы можете использовать один из них для входа в свою учетную запись, если потеряете доступ к своему аутентификационному устройству.",
+      "title": "Добавить проверку резервного кода",
+      "title__codelist": "Резервные коды"
     },
     "connectedAccountPage": {
-      "formHint": "Виберіть провайдера для підключення вашого облікового запису.",
-      "formHint__noAccounts": "Немає доступних зовнішніх провайдерів облікових записів.",
+      "formHint": "Выберите провайдера для подключения вашей учетной записи.",
+      "formHint__noAccounts": "Нет доступных внешних провайдеров учетных записей.",
       "removeResource": {
-        "messageLine1": "{{identifier}} буде видалено з цього облікового запису.",
-        "messageLine2": "Ви більше не зможете використовувати цей підключений обліковий запис, і всі залежні функції перестануть працювати.",
-        "successMessage": "{{connectedAccount}} було видалено з вашого облікового запису.",
-        "title": "Видалити підключений обліковий запис"
+        "messageLine1": "{{identifier}} будет удален из этой учетной записи.",
+        "messageLine2": "Вы больше не сможете использовать эту подключенную учетную запись, и любые зависимые функции перестанут работать.",
+        "successMessage": "{{connectedAccount}} был удален из вашей учетной записи.",
+        "title": "Удалить подключенную учетную запись"
       },
       "socialButtonsBlockButton": "{{provider|titleize}}",
-      "successMessage": "Провайдера було додано до вашого облікового запису",
-      "title": "Додати підключений обліковий запис"
+      "successMessage": "Провайдер был добавлен в вашу учетную запись",
+      "title": "Добавить подключенную учетную запись"
     },
     "deletePage": {
-      "actionDescription": "Введіть \"Видалити обліковий запис\" нижче, щоб продовжити.",
-      "confirm": "Видалити обліковий запис",
-      "messageLine1": "Ви впевнені, що хочете видалити свій обліковий запис?",
-      "messageLine2": "Ця дія є постійною та незворотною.",
-      "title": "Видалити обліковий запис"
+      "actionDescription": "Введите \"Удалить учетную запись\" ниже, чтобы продолжить.",
+      "confirm": "Удалить учетную запись",
+      "messageLine1": "Вы уверены, что хотите удалить свою учетную запись?",
+      "messageLine2": "Это действие является постоянным и необратимым.",
+      "title": "Удалить учетную запись"
     },
     "emailAddressPage": {
       "emailCode": {
-        "formHint": "На цю електронну адресу буде надіслано лист з кодом перевірки.",
-        "formSubtitle": "Введіть код перевірки, надісланий на {{identifier}}",
-        "formTitle": "Код перевірки",
-        "resendButton": "Не отримали код? Надіслати повторно",
-        "successMessage": "Електронну адресу {{identifier}} було додано до вашого облікового запису."
+        "formHint": "На этот адрес электронной почты будет отправлено письмо с кодом подтверждения.",
+        "formSubtitle": "Введите код подтверждения, отправленный на {{identifier}}",
+        "formTitle": "Код подтверждения",
+        "resendButton": "Не получили код? Отправить еще раз",
+        "successMessage": "Электронная почта {{identifier}} была добавлена в вашу учетную запись."
       },
       "emailLink": {
-        "formHint": "На цю електронну адресу буде надіслано лист з посиланням для перевірки.",
-        "formSubtitle": "Натисніть на посилання для перевірки в листі, надісланому на {{identifier}}",
-        "formTitle": "Посилання для перевірки",
-        "resendButton": "Не отримали посилання? Надіслати повторно",
-        "successMessage": "Електронну адресу {{identifier}} було додано до вашого облікового запису."
+        "formHint": "На этот адрес электронной почты будет отправлена ссылка для подтверждения.",
+        "formSubtitle": "Щелкните по ссылке подтверждения в письме, отправленном на {{identifier}}",
+        "formTitle": "Ссылка для подтверждения",
+        "resendButton": "Не получили ссылку? Отправить еще раз",
+        "successMessage": "Электронная почта {{identifier}} была добавлена в вашу учетную запись."
       },
       "removeResource": {
-        "messageLine1": "{{identifier}} буде видалено з цього облікового запису.",
-        "messageLine2": "Ви більше не зможете входити за допомогою цієї електронної адреси.",
-        "successMessage": "{{emailAddress}} було видалено з вашого облікового запису.",
-        "title": "Видалити електронну адресу"
+        "messageLine1": "{{identifier}} будет удален из этой учетной записи.",
+        "messageLine2": "Вы больше не сможете входить, используя этот адрес электронной почты.",
+        "successMessage": "{{emailAddress}} был удален из вашей учетной записи.",
+        "title": "Удалить адрес электронной почты"
       },
-      "title": "Додати електронну адресу",
-      "verifyTitle": "Перевірити електронну адресу"
+      "title": "Добавить адрес электронной почты",
+      "verifyTitle": "Подтвердить адрес электронной почты"
     },
-    "formButtonPrimary__add": "Додати",
-    "formButtonPrimary__continue": "Продовжити",
-    "formButtonPrimary__finish": "Завершити",
-    "formButtonPrimary__remove": "Видалити",
-    "formButtonPrimary__save": "Зберегти",
-    "formButtonReset": "Скасувати",
+    "formButtonPrimary__add": "Добавить",
+    "formButtonPrimary__continue": "Продолжить",
+    "formButtonPrimary__finish": "Завершить",
+    "formButtonPrimary__remove": "Удалить",
+    "formButtonPrimary__save": "Сохранить",
+    "formButtonReset": "Отмена",
     "mfaPage": {
-      "formHint": "Виберіть метод для додавання.",
-      "title": "Додати двоетапну перевірку"
+      "formHint": "Выберите метод для добавления.",
+      "title": "Добавить двухэтапную проверку"
     },
     "mfaPhoneCodePage": {
-      "backButton": "Використати існуючий номер",
-      "primaryButton__addPhoneNumber": "Додати номер телефону",
+      "backButton": "Использовать существующий номер",
+      "primaryButton__addPhoneNumber": "Добавить номер телефона",
       "removeResource": {
-        "messageLine1": "{{identifier}} більше не отримуватиме коди перевірки при вході.",
-        "messageLine2": "Ваш обліковий запис може бути менш захищеним. Ви впевнені, що хочете продовжити?",
-        "successMessage": "SMS-код двоетапної перевірки було видалено для {{mfaPhoneCode}}",
-        "title": "Видалити двоетапну перевірку"
+        "messageLine1": "{{identifier}} больше не будет получать коды подтверждения при входе.",
+        "messageLine2": "Ваша учетная запись может быть менее защищенной. Вы уверены, что хотите продолжить?",
+        "successMessage": "Двухэтапная проверка по SMS-коду была удалена для {{mfaPhoneCode}}",
+        "title": "Удалить двухэтапную проверку"
       },
-      "subtitle__availablePhoneNumbers": "Виберіть існуючий номер телефону для реєстрації SMS-коду двоетапної перевірки або додайте новий.",
-      "subtitle__unavailablePhoneNumbers": "Немає доступних номерів телефону для реєстрації SMS-коду двоетапної перевірки, будь ласка, додайте новий.",
-      "successMessage1": "При вході вам потрібно буде ввести код перевірки, надісланий на цей номер телефону, як додатковий крок.",
-      "successMessage2": "Збережіть ці резервні коди та зберігайте їх у безпечному місці. Якщо ви втратите доступ до пристрою аутентифікації, ви можете використати резервні коди для входу.",
-      "successTitle": "SMS-код перевірки увімкнено",
-      "title": "Додати перевірку SMS-кодом"
+      "subtitle__availablePhoneNumbers": "Выберите существующий номер телефона для регистрации двухэтапной проверки по SMS-коду или добавьте новый.",
+      "subtitle__unavailablePhoneNumbers": "Нет доступных номеров телефонов для регистрации двухэтапной проверки по SMS-коду, добавьте новый.",
+      "successMessage1": "При входе в систему вам потребуется ввести код подтверждения, отправленный на этот номер телефона, как дополнительный шаг.",
+      "successMessage2": "Сохраните эти резервные коды и храните их в надежном месте. Если вы потеряете доступ к своему аутентификационному устройству, вы сможете использовать резервные коды для входа.",
+      "successTitle": "Включена проверка по SMS-коду",
+      "title": "Добавить проверку по SMS-коду"
     },
     "mfaTOTPPage": {
       "authenticatorApp": {
-        "buttonAbleToScan__nonPrimary": "Сканувати QR-код натомість",
-        "buttonUnableToScan__nonPrimary": "Не можете сканувати QR-код?",
-        "infoText__ableToScan": "Налаштуйте новий метод входу у вашому додатку аутентифікатора та відскануйте наступний QR-код, щоб прив'язати його до вашого облікового запису.",
-        "infoText__unableToScan": "Налаштуйте новий метод входу у вашому аутентифікаторі та введіть наданий нижче Ключ.",
-        "inputLabel__unableToScan1": "Переконайтеся, що увімкнено Часові або Одноразові паролі, потім завершіть прив'язку вашого облікового запису.",
-        "inputLabel__unableToScan2": "Крім того, якщо ваш аутентифікатор підтримує TOTP URI, ви також можете скопіювати повний URI."
+        "buttonAbleToScan__nonPrimary": "Вместо этого отсканируйте QR-код",
+        "buttonUnableToScan__nonPrimary": "Не удается отсканировать QR-код?",
+        "infoText__ableToScan": "Настройте новый метод входа в свое приложение аутентификации и отсканируйте следующий QR-код, чтобы связать его с вашей учетной записью.",
+        "infoText__unableToScan": "Настройте новый метод входа в свое приложение аутентификации и введите предоставленный ключ ниже.",
+        "inputLabel__unableToScan1": "Убедитесь, что включены одноразовые пароли на основе времени, затем завершите привязку вашей учетной записи.",
+        "inputLabel__unableToScan2": "Кроме того, если ваш аутентификатор поддерживает URI TOTP, вы также можете скопировать полный URI."
       },
       "removeResource": {
-        "messageLine1": "Коди перевірки з цього аутентифікатора більше не будуть потрібні при вході.",
-        "messageLine2": "Ваш обліковий запис може бути менш захищеним. Ви впевнені, що хочете продовжити?",
-        "successMessage": "Двоетапну перевірку через додаток аутентифікатора було видалено.",
-        "title": "Видалити двоетапну перевірку"
+        "messageLine1": "При входе в систему больше не потребуются коды подтверждения от этого аутентификатора.",
+        "messageLine2": "Ваша учетная запись может быть менее защищенной. Вы уверены, что хотите продолжить?",
+        "successMessage": "Двухэтапная проверка через приложение аутентификации была удалена.",
+        "title": "Удалить двухэтапную проверку"
       },
-      "successMessage": "Двоетапну перевірку тепер увімкнено. При вході вам потрібно буде ввести код перевірки з цього аутентифікатора як додатковий крок.",
-      "title": "Додати додаток аутентифікатора",
-      "verifySubtitle": "Введіть код перевірки, згенерований вашим аутентифікатором",
-      "verifyTitle": "Код перевірки"
+      "successMessage": "Двухэтапная проверка теперь включена. При входе в систему вам потребуется ввести код подтверждения от этого аутентификатора как дополнительный шаг.",
+      "title": "Добавить приложение аутентификации",
+      "verifySubtitle": "Введите код подтверждения, сгенерированный вашим аутентификатором",
+      "verifyTitle": "Код подтверждения"
     },
     "mobileButton__menu": "Меню",
     "navbar": {
-      "account": "Профіль",
-      "description": "Керуйте інформацією вашого облікового запису.",
-      "security": "Безпека",
-      "title": "Обліковий запис"
+      "account": "Профиль",
+      "description": "Управление информацией вашей учетной записи.",
+      "security": "Безопасность",
+      "title": "Учетная запись"
     },
     "passkeyScreen": {
       "removeResource": {
-        "messageLine1": "{{name}} буде видалено з цього облікового запису.",
-        "title": "Видалити ключ доступу"
+        "messageLine1": "{{name}} будет удален из этой учетной записи.",
+        "title": "Удалить код доступа"
       },
-      "subtitle__rename": "Ви можете змінити назву ключа доступу, щоб його було легше знайти.",
-      "title__rename": "Перейменувати ключ доступу"
+      "subtitle__rename": "Вы можете изменить имя кода доступа, чтобы его было легче найти.",
+      "title__rename": "Переименовать код доступа"
     },
     "passwordPage": {
-      "checkboxInfoText__signOutOfOtherSessions": "Рекомендується вийти з усіх інших пристроїв, які могли використовувати ваш старий пароль.",
-      "readonly": "Ваш пароль наразі не можна редагувати, оскільки ви можете входити тільки через корпоративне підключення.",
-      "successMessage__set": "Ваш пароль було встановлено.",
-      "successMessage__signOutOfOtherSessions": "Всі інші пристрої було відключено.",
-      "successMessage__update": "Ваш пароль було оновлено.",
-      "title__set": "Встановити пароль",
-      "title__update": "Оновити пароль"
+      "checkboxInfoText__signOutOfOtherSessions": "Рекомендуется выйти из всех других устройств, которые могли использовать ваш старый пароль.",
+      "readonly": "Ваш пароль в настоящее время нельзя изменить, потому что вы можете войти только через корпоративное подключение.",
+      "successMessage__set": "Ваш пароль установлен.",
+      "successMessage__signOutOfOtherSessions": "Все другие устройства были отключены.",
+      "successMessage__update": "Ваш пароль обновлен.",
+      "title__set": "Установить пароль",
+      "title__update": "Обновить пароль"
     },
     "phoneNumberPage": {
-      "infoText": "На цей номер телефону буде надіслано текстове повідомлення з кодом перевірки. Можуть застосовуватися тарифи оператора за повідомлення та передачу даних.",
+      "infoText": "На этот номер телефона будет отправлено текстовое сообщение с кодом подтверждения. Могут применяться тарифы за сообщения и данные.",
       "removeResource": {
-        "messageLine1": "{{identifier}} буде видалено з цього облікового запису.",
-        "messageLine2": "Ви більше не зможете входити за допомогою цього номера телефону.",
-        "successMessage": "{{phoneNumber}} було видалено з вашого облікового запису.",
-        "title": "Видалити номер телефону"
+        "messageLine1": "{{identifier}} будет удален из этой учетной записи.",
+        "messageLine2": "Вы больше не сможете войти, используя этот номер телефона.",
+        "successMessage": "{{phoneNumber}} был удален из вашей учетной записи.",
+        "title": "Удалить номер телефона"
       },
-      "successMessage": "{{identifier}} було додано до вашого облікового запису.",
-      "title": "Додати номер телефону",
-      "verifySubtitle": "Введіть код перевірки, надісланий на {{identifier}}",
-      "verifyTitle": "Перевірити номер телефону"
+      "successMessage": "{{identifier}} был добавлен в вашу учетную запись.",
+      "title": "Добавить номер телефона",
+      "verifySubtitle": "Введите код подтверждения, отправленный на {{identifier}}",
+      "verifyTitle": "Подтвердить номер телефона"
     },
     "profilePage": {
-      "fileDropAreaHint": "Рекомендований розмір 1:1, до 10МБ.",
-      "imageFormDestructiveActionSubtitle": "Видалити",
-      "imageFormSubtitle": "Завантажити",
-      "imageFormTitle": "Зображення профілю",
-      "readonly": "Інформацію вашого профілю надано корпоративним підключенням і її не можна редагувати.",
-      "successMessage": "Ваш профіль було оновлено.",
-      "title": "Оновити профіль"
+      "fileDropAreaHint": "Рекомендуемый размер 1:1, до 10 МБ.",
+      "imageFormDestructiveActionSubtitle": "Удалить",
+      "imageFormSubtitle": "Загрузить",
+      "imageFormTitle": "Изображение профиля",
+      "readonly": "Информация о вашем профиле была предоставлена через корпоративное подключение и не может быть изменена.",
+      "successMessage": "Ваш профиль обновлен.",
+      "title": "Обновить профиль"
     },
     "start": {
       "activeDevicesSection": {
-        "destructiveAction": "Вийти з пристрою",
-        "title": "Активні пристрої"
+        "destructiveAction": "Выйти из устройства",
+        "title": "Активные устройства"
       },
       "connectedAccountsSection": {
-        "actionLabel__connectionFailed": "Спробувати знову",
-        "actionLabel__reauthorize": "Авторизувати зараз",
-        "destructiveActionTitle": "Видалити",
-        "primaryButton": "Підключити обліковий запис",
-        "subtitle__reauthorize": "Необхідні дозволи було оновлено, і ви можете відчувати обмежену функціональність. Будь ласка, повторно авторизуйте цей додаток, щоб уникнути будь-яких проблем",
-        "title": "Підключені облікові записи"
+        "actionLabel__connectionFailed": "Попробуйте снова",
+        "actionLabel__reauthorize": "Авторизовать сейчас",
+        "destructiveActionTitle": "Удалить",
+        "primaryButton": "Подключить аккаунт",
+        "subtitle__reauthorize": "Требуемые разрешения были обновлены, и вы можете испытывать ограниченную функциональность. Пожалуйста, повторно авторизуйте это приложение, чтобы избежать проблем",
+        "title": "Подключенные аккаунты"
       },
       "dangerSection": {
-        "deleteAccountButton": "Видалити обліковий запис",
-        "title": "Видалити обліковий запис"
+        "deleteAccountButton": "Удалить аккаунт",
+        "title": "Удалить аккаунт"
       },
       "emailAddressesSection": {
-        "destructiveAction": "Видалити email",
-        "detailsAction__nonPrimary": "Зробити основним",
-        "detailsAction__primary": "Завершити перевірку",
-        "detailsAction__unverified": "Перевірити",
-        "primaryButton": "Додати електронну адресу",
-        "title": "Електронні адреси"
+        "destructiveAction": "Удалить электронную почту",
+        "detailsAction__nonPrimary": "Установить как основную",
+        "detailsAction__primary": "Завершить верификацию",
+        "detailsAction__unverified": "Проверить",
+        "primaryButton": "Добавить адрес электронной почты",
+        "title": "Адреса электронной почты"
       },
       "enterpriseAccountsSection": {
-        "title": "Корпоративні облікові записи"
+        "title": "Корпоративные аккаунты"
       },
-      "headerTitle__account": "Деталі профілю",
-      "headerTitle__security": "Безпека",
+      "headerTitle__account": "Детали профиля",
+      "headerTitle__security": "Безопасность",
       "mfaSection": {
         "backupCodes": {
-          "actionLabel__regenerate": "Згенерувати нові",
-          "headerTitle": "Резервні коди",
-          "subtitle__regenerate": "Отримайте новий набір безпечних резервних кодів. Попередні резервні коди будуть видалені і не зможуть бути використані.",
-          "title__regenerate": "Згенерувати нові резервні коди"
+          "actionLabel__regenerate": "Сгенерировать заново",
+          "headerTitle": "Резервные коды",
+          "subtitle__regenerate": "Получите новый набор безопасных резервных кодов. Предыдущие резервные коды будут удалены и не могут быть использованы.",
+          "title__regenerate": "Сгенерировать резервные коды"
         },
         "phoneCode": {
-          "actionLabel__setDefault": "Зробити основним",
-          "destructiveActionLabel": "Видалити"
+          "actionLabel__setDefault": "Установить по умолчанию",
+          "destructiveActionLabel": "Удалить"
         },
-        "primaryButton": "Додати двоетапну перевірку",
-        "title": "Двоетапна перевірка",
+        "primaryButton": "Добавить двухэтапную верификацию",
+        "title": "Двухэтапная верификация",
         "totp": {
-          "destructiveActionTitle": "Видалити",
-          "headerTitle": "Додаток аутентифікатора"
+          "destructiveActionTitle": "Удалить",
+          "headerTitle": "Приложение аутентификатора"
         }
       },
       "passkeysSection": {
-        "menuAction__destructive": "Видалити",
-        "menuAction__rename": "Перейменувати",
-        "title": "Ключі доступу"
+        "menuAction__destructive": "Удалить",
+        "menuAction__rename": "Переименовать",
+        "title": "Парольные ключи"
       },
       "passwordSection": {
-        "primaryButton__setPassword": "Встановити пароль",
-        "primaryButton__updatePassword": "Оновити пароль",
+        "primaryButton__setPassword": "Установить пароль",
+        "primaryButton__updatePassword": "Обновить пароль",
         "title": "Пароль"
       },
       "phoneNumbersSection": {
-        "destructiveAction": "Видалити номер телефону",
-        "detailsAction__nonPrimary": "Зробити основним",
-        "detailsAction__primary": "Завершити перевірку",
-        "detailsAction__unverified": "Перевірити номер телефону",
-        "primaryButton": "Додати номер телефону",
-        "title": "Номери телефонів"
+        "destructiveAction": "Удалить номер телефона",
+        "detailsAction__nonPrimary": "Установить как основной",
+        "detailsAction__primary": "Завершить верификацию",
+        "detailsAction__unverified": "Проверить номер телефона",
+        "primaryButton": "Добавить номер телефона",
+        "title": "Номера телефонов"
       },
       "profileSection": {
-        "primaryButton": "Оновити профіль",
-        "title": "Профіль"
+        "primaryButton": "Обновить профиль",
+        "title": "Профиль"
       },
       "usernameSection": {
-        "primaryButton__setUsername": "Встановити ім'я користувача",
-        "primaryButton__updateUsername": "Оновити ім'я користувача",
-        "title": "Ім'я користувача"
+        "primaryButton__setUsername": "Установить имя пользователя",
+        "primaryButton__updateUsername": "Обновить имя пользователя",
+        "title": "Имя пользователя"
       },
       "web3WalletsSection": {
-        "destructiveAction": "Видалити гаманець",
-        "primaryButton": "Web3 гаманці",
-        "title": "Web3 гаманці"
+        "destructiveAction": "Удалить кошелек",
+        "primaryButton": "Кошельки Web3",
+        "title": "Кошельки Web3"
       }
     },
     "usernamePage": {
-      "successMessage": "Ваше ім'я користувача було оновлено.",
-      "title__set": "Встановити ім'я користувача",
-      "title__update": "Оновити ім'я користувача"
+      "successMessage": "Ваше имя пользователя обновлено.",
+      "title__set": "Установить имя пользователя",
+      "title__update": "Обновить имя пользователя"
     },
     "web3WalletPage": {
       "removeResource": {
-        "messageLine1": "{{identifier}} буде видалено з цього облікового запису.",
-        "messageLine2": "Ви більше не зможете входити за допомогою цього web3 гаманця.",
-        "successMessage": "{{web3Wallet}} було видалено з вашого облікового запису.",
-        "title": "Видалити web3 гаманець"
+        "messageLine1": "{{identifier}} будет удален из этой учетной записи.",
+        "messageLine2": "Вы больше не сможете войти, используя этот кошелек web3.",
+        "successMessage": "{{web3Wallet}} был удален из вашей учетной записи.",
+        "title": "Удалить кошелек web3"
       },
-      "subtitle__availableWallets": "Виберіть web3 гаманець для підключення до вашого облікового запису.",
-      "subtitle__unavailableWallets": "Немає доступних web3 гаманців.",
-      "successMessage": "Гаманець було додано до вашого облікового запису.",
-      "title": "Додати web3 гаманець"
+      "subtitle__availableWallets": "Выберите кошелек web3 для подключения к вашей учетной записи.",
+      "subtitle__unavailableWallets": "Нет доступных кошельков web3.",
+      "successMessage": "Кошелек был добавлен в вашу учетную запись.",
+      "title": "Добавить кошелек web3"
     }
   }
 }
