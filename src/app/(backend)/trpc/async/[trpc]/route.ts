@@ -7,7 +7,7 @@ import { asyncRouter } from '@/server/routers/async';
 
 
 
-export const maxDuration = 800;
+export const maxDuration = 300;
 
 
 const handler = (req: NextRequest) =>
