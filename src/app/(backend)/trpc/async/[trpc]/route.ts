@@ -10,7 +10,7 @@ export const maxDuration = 300;
 =======
 
 
-export const maxDuration = 800;
+export const maxDuration = 300;
 
 >>>>>>> 6f4444120 (fix(be): reduce maxDuration for improved performance)
 
