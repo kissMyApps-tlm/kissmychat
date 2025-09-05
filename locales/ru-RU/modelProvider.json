@@ -152,6 +152,28 @@
     "searchProviders": "Пошук провайдерів...",
     "sort": "Користувацьке сортування"
   },
+  "newapi": {
+    "apiKey": {
+      "desc": "API-ключ, предоставляемый платформой New API",
+      "placeholder": "API-ключ New API",
+      "required": "API-ключ обязателен",
+      "title": "API-ключ"
+    },
+    "apiUrl": {
+      "desc": "API-адрес сервиса New API, чаще всего требуется с /v1",
+      "title": "API-адрес"
+    },
+    "enabled": {
+      "title": "Включить New API"
+    },
+    "models": {
+      "batchSelect": "Выбрать модели пакетно ({{count}} шт.)",
+      "fetch": "Получить список моделей",
+      "selected": "Выбранные модели",
+      "title": "Доступные модели"
+    },
+    "title": "New API"
+  },
   "ollama": {
     "checker": {
       "desc": "Перевірте, чи правильно заповнена адреса проксі",
@@ -184,6 +206,10 @@
     }
   },
   "providerModels": {
+    "batchSelect": {
+      "selected": "Выбрано {{count}} моделей",
+      "title": "Пакетный выбор"
+    },
     "config": {
       "aesGcm": "Ваш ключ та URL проксі будуть зашифровані за допомогою алгоритму шифрування <1>AES-GCM</1>",
       "apiKey": {
