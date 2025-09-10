@@ -5,6 +5,15 @@ import { pino } from '@/libs/logger';
 import { createAsyncRouteContext } from '@/libs/trpc/async/context';
 import { asyncRouter } from '@/server/routers/async';
 
+<<<<<<< HEAD
+export const maxDuration = 300;
+=======
+
+
+export const maxDuration = 300;
+
+>>>>>>> 6f4444120 (fix(be): reduce maxDuration for improved performance)
+
 const handler = (req: NextRequest) =>
   fetchRequestHandler({
     // 避免请求之间互相影响
