@@ -341,7 +341,7 @@
       }
     },
     "qa": {
-      "q01": "¿Qué es LobeHub?",
+      "q01": "¿Qué es KissMyChat?",
       "q02": "¿Qué es {{appName}}?",
       "q03": "¿{{appName}} tiene soporte comunitario?",
       "q04": "¿Qué funciones soporta {{appName}}?",
