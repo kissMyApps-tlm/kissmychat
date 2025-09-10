@@ -184,6 +184,7 @@ export const openaiChatModels: AIChatModelCard[] = [
     description:
       'o4-mini-deep-research 是我们更快速、更实惠的深度研究模型——非常适合处理复杂的多步骤研究任务。它可以从互联网上搜索和综合信息，也可以通过 MCP 连接器访问并利用你的自有数据。',
     displayName: 'o4-mini Deep Research',
+    enabled: true,
     id: 'o4-mini-deep-research',
     maxOutput: 100_000,
     pricing: {
@@ -211,6 +212,7 @@ export const openaiChatModels: AIChatModelCard[] = [
     description:
       'o3-pro 模型使用更多的计算来更深入地思考并始终提供更好的答案，仅支持 Responses API 下使用。',
     displayName: 'o3-pro',
+    enabled: true,
     id: 'o3-pro',
     maxOutput: 100_000,
     pricing: {
@@ -264,6 +266,7 @@ export const openaiChatModels: AIChatModelCard[] = [
     description:
       'o3-deep-research 是我们最先进的深度研究模型，专为处理复杂的多步骤研究任务而设计。它可以从互联网上搜索和综合信息，也可以通过 MCP 连接器访问并利用你的自有数据。',
     displayName: 'o3 Deep Research',
+    enabled: true,
     id: 'o3-deep-research',
     maxOutput: 100_000,
     pricing: {
