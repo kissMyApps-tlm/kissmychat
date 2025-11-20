@@ -597,7 +597,7 @@
       "latencyTooltip": "Thời gian phản hồi trung bình để nhà cung cấp gửi Token đầu tiên",
       "maxOutput": "Độ dài đầu ra tối đa",
       "maxOutputTooltip": "Số Token tối đa mà điểm cuối này có thể tạo ra",
-      "officialTooltip": "Dịch vụ chính thức của LobeHub",
+      "officialTooltip": "Dịch vụ chính thức của KissMyChat",
       "output": "Giá đầu ra",
       "outputTooltip": "Chi phí cho mỗi triệu Token",
       "streamCancellationTooltip": "Nhà cung cấp này hỗ trợ chức năng hủy luồng.",
