@@ -597,7 +597,7 @@
       "latencyTooltip": "Gemiddelde responstijd voor de eerste token van de provider",
       "maxOutput": "Maximale uitvoerlengte",
       "maxOutputTooltip": "Maximaal aantal tokens dat deze endpoint kan genereren",
-      "officialTooltip": "Officiële LobeHub service",
+      "officialTooltip": "Officiële KissMyChat service",
       "output": "Uitvoerkosten",
       "outputTooltip": "Kosten per miljoen tokens",
       "streamCancellationTooltip": "Deze provider ondersteunt stream annulering.",

@@ -597,7 +597,7 @@
       "latencyTooltip": "Durchschnittliche Antwortzeit des Anbieters für das erste Token",
       "maxOutput": "Maximale Ausgabelänge",
       "maxOutputTooltip": "Maximale Anzahl von Tokens, die dieser Endpunkt generieren kann",
-      "officialTooltip": "Offizieller LobeHub-Dienst",
+      "officialTooltip": "Offizieller KissMyChat-Dienst",
       "output": "Ausgabepreis",
       "outputTooltip": "Kosten pro Million Token",
       "streamCancellationTooltip": "Dieser Anbieter unterstützt die Stream-Abbruchfunktion.",
