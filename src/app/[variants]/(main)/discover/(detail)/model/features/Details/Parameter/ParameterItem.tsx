@@ -1,13 +1,12 @@
 import { Divider } from 'antd';
 import { useTheme } from 'antd-style';
-import Link from 'next/link';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 import Statistic from '../../../../../components/Statistic';
 
-const DEFAULT_DOC_URL = 'https://lobehub.com/docs/usage/agents/model';
+// const DEFAULT_DOC_URL = '';
 
 export interface ParameterItemProps {
   defaultValue: string | number;
@@ -22,7 +21,13 @@ const formatNum = (num: string | number) => {
 };
 
 const ParameterItem = memo<ParameterItemProps>(
-  ({ docUrl = DEFAULT_DOC_URL, desc, type, defaultValue, range }) => {
+  ({
+    //  docUrl = DEFAULT_DOC_URL,
+    desc,
+    type,
+    defaultValue,
+    range,
+  }) => {
     const { t } = useTranslation('discover');
     const theme = useTheme();
 
@@ -30,9 +35,9 @@ const ParameterItem = memo<ParameterItemProps>(
       <Flexbox align={'flex-start'} gap={16}>
         <p style={{ color: theme.colorTextSecondary, margin: 0 }}>
           {desc}{' '}
-          <Link href={docUrl} target={'_blank'}>
+          {/* <Link href={docUrl} target={'_blank'}>
             {t('models.parameterList.docs')}
-          </Link>
+          </Link> */}
         </p>
         <Divider dashed style={{ margin: 0 }} />
         <Flexbox align={'center'} gap={16} horizontal style={{ paddingBottom: 8 }} wrap={'wrap'}>
