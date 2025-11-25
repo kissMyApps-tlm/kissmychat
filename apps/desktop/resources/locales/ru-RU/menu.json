@@ -1,71 +1,71 @@
 {
   "common": {
-    "checkUpdates": "Проверка обновлений..."
+    "checkUpdates": "Перевірка оновлень..."
   },
   "dev": {
-    "devPanel": "Панель разработчика",
-    "devTools": "Инструменты разработчика",
-    "forceReload": "Принудительная перезагрузка",
-    "openStore": "Открыть файл хранилища",
-    "refreshMenu": "Обновить меню",
-    "reload": "Перезагрузить",
-    "title": "Разработка"
+    "devPanel": "Панель розробника",
+    "devTools": "Інструменти розробника",
+    "forceReload": "Примусове перезавантаження",
+    "openStore": "Відкрити файл сховища",
+    "refreshMenu": "Оновити меню",
+    "reload": "Перезавантажити",
+    "title": "Розробка"
   },
   "edit": {
-    "copy": "Копировать",
-    "cut": "Вырезать",
-    "delete": "Удалить",
-    "paste": "Вставить",
-    "redo": "Повторить",
-    "selectAll": "Выбрать все",
-    "speech": "Речь",
-    "startSpeaking": "Начать чтение",
-    "stopSpeaking": "Остановить чтение",
-    "title": "Редактирование",
-    "undo": "Отменить"
+    "copy": "Копіювати",
+    "cut": "Вирізати",
+    "delete": "Видалити",
+    "paste": "Вставити",
+    "redo": "Повторити",
+    "selectAll": "Вибрати все",
+    "speech": "Мовлення",
+    "startSpeaking": "Почати читання",
+    "stopSpeaking": "Зупинити читання",
+    "title": "Редагування",
+    "undo": "Скасувати"
   },
   "file": {
-    "preferences": "Настройки",
-    "quit": "Выйти",
+    "preferences": "Налаштування",
+    "quit": "Вийти",
     "title": "Файл"
   },
   "help": {
-    "about": "О программе",
-    "githubRepo": "Репозиторий GitHub",
-    "reportIssue": "Сообщить о проблеме",
-    "title": "Помощь",
-    "visitWebsite": "Посетить сайт"
+    "about": "Про програму",
+    "githubRepo": "Репозиторій GitHub",
+    "reportIssue": "Повідомити про проблему",
+    "title": "Допомога",
+    "visitWebsite": "Відвідати сайт"
   },
   "macOS": {
-    "about": "О {{appName}}",
-    "devTools": "Инструменты разработчика LobeHub",
-    "hide": "Скрыть {{appName}}",
-    "hideOthers": "Скрыть другие",
-    "preferences": "Настройки...",
-    "services": "Сервисы",
-    "unhide": "Показать все"
+    "about": "Про {{appName}}",
+    "devTools": "Інструменти розробника LobeHub",
+    "hide": "Приховати {{appName}}",
+    "hideOthers": "Приховати інші",
+    "preferences": "Налаштування...",
+    "services": "Сервіси",
+    "unhide": "Показати всі"
   },
   "tray": {
-    "open": "Открыть {{appName}}",
-    "quit": "Выйти",
-    "show": "Показать {{appName}}"
+    "open": "Відкрити {{appName}}",
+    "quit": "Вийти",
+    "show": "Показати {{appName}}"
   },
   "view": {
-    "forceReload": "Принудительная перезагрузка",
-    "reload": "Перезагрузить",
-    "resetZoom": "Сбросить масштаб",
-    "title": "Вид",
-    "toggleFullscreen": "Переключить полноэкранный режим",
-    "zoomIn": "Увеличить",
-    "zoomOut": "Уменьшить"
+    "forceReload": "Примусове перезавантаження",
+    "reload": "Перезавантажити",
+    "resetZoom": "Скинути масштаб",
+    "title": "Вигляд",
+    "toggleFullscreen": "Перемкнути повноекранний режим",
+    "zoomIn": "Збільшити",
+    "zoomOut": "Зменшити"
   },
   "window": {
-    "bringAllToFront": "Вывести все окна на передний план",
-    "close": "Закрыть",
-    "front": "Вывести все окна на передний план",
-    "minimize": "Свернуть",
-    "title": "Окно",
-    "toggleFullscreen": "Переключить полноэкранный режим",
+    "bringAllToFront": "Вивести всі вікна на передній план",
+    "close": "Закрити",
+    "front": "Вивести всі вікна на передній план",
+    "minimize": "Згорнути",
+    "title": "Вікно",
+    "toggleFullscreen": "Перемкнути повноекранний режим",
     "zoom": "Масштаб"
   }
 }
