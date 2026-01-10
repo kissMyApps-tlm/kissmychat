@@ -24,14 +24,20 @@ config.rules['unicorn/no-array-callback-reference'] = 0;
 config.rules['@typescript-eslint/no-useless-constructor'] = 0;
 config.rules['@next/next/no-img-element'] = 0;
 
+config.rules['@typescript-eslint/no-unused-vars'] = 0;
+config.rules['@typescript-eslint/no-unused-expressions'] = 0;
+config.rules['unused-imports/no-unused-imports'] = 0;
+config.rules['react/no-unescaped-entities'] = 0;
+
 config.overrides = [
   {
     extends: ['plugin:mdx/recommended'],
     files: ['*.mdx'],
     rules: {
-      '@typescript-eslint/no-unused-vars': 1,
-      'no-undef': 0,
-      'react/jsx-no-undef': 0,
+      '@typescript-eslint/no-unused-vars': "off",
+      'no-undef': "off",
+      'react/jsx-no-undef': "off",
+      'unused-imports/no-unused-imports': "off",
       'react/no-unescaped-entities': 0,
     },
     settings: {

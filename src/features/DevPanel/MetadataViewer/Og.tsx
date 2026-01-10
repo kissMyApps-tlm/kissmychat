@@ -45,7 +45,7 @@ const MetaData = memo(() => {
                   zIndex: 10,
                 }}
               >
-                lobehub.com
+                KissMyApps.tech
               </div>
               <Image
                 alt={'og'}

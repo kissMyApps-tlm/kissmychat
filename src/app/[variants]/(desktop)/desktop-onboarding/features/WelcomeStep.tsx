@@ -23,7 +23,7 @@ const WelcomeStep = memo<WelcomeStepProps>(({ onNext }) => {
 
   const handleNext = () => {
     // 默认启用 telemetry
-    updateGeneralConfig({ telemetry: true });
+    // updateGeneralConfig({ telemetry: true });
     onNext();
   };
 
@@ -57,7 +57,7 @@ const WelcomeStep = memo<WelcomeStepProps>(({ onNext }) => {
             key={locale}
             pauseDuration={16_000}
             sentences={[
-              t('telemetry.title', { name: 'Lobe AI' }),
+              t('telemetry.title', { name: 'KissMyChat AI' }),
               t('telemetry.title2'),
               t('telemetry.title3'),
             ]}

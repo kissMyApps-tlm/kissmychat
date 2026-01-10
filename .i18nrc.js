@@ -7,6 +7,7 @@ module.exports = defineConfig({
   entryLocale: 'en-US',
   output: 'locales',
   outputLocales: [
+    'uk-UA',
     'ar',
     'bg-BG',
     'zh-CN',

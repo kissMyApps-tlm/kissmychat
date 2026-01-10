@@ -1,62 +1,118 @@
 {
-  "config.aspectRatio.label": "Соотношение сторон",
-  "config.aspectRatio.lock": "Зафиксировать соотношение сторон",
-  "config.aspectRatio.unlock": "Разблокировать соотношение сторон",
-  "config.cfg.label": "Интенсивность направляющих",
-  "config.header.desc": "Краткое описание, создайте мгновенно",
-  "config.header.title": "Картина",
-  "config.height.label": "Высота",
-  "config.imageNum.label": "Количество изображений",
-  "config.imageUrl.label": "Референсное изображение",
-  "config.imageUrls.label": "Референсные изображения",
-  "config.model.label": "Модель",
-  "config.prompt.placeholder": "Опишите, что вы хотите сгенерировать",
-  "config.quality.label": "Качество изображения",
-  "config.quality.options.hd": "Высокое качество",
-  "config.quality.options.standard": "Стандартное",
-  "config.resolution.label": "Разрешение",
-  "config.resolution.options.1K": "1K",
-  "config.resolution.options.2K": "2K",
-  "config.resolution.options.4K": "4K",
-  "config.seed.label": "Сид",
-  "config.seed.random": "Случайный сид",
-  "config.size.label": "Размер",
-  "config.steps.label": "Шаги",
-  "config.title": "AI Изображение",
-  "config.width.label": "Ширина",
-  "generation.actions.applySeed": "Применить сид",
-  "generation.actions.copyError": "Скопировать сообщение об ошибке",
-  "generation.actions.copyPrompt": "Скопировать запрос",
-  "generation.actions.copySeed": "Скопировать сид",
-  "generation.actions.delete": "Удалить",
-  "generation.actions.deleteBatch": "Удалить партию",
-  "generation.actions.download": "Скачать",
-  "generation.actions.downloadFailed": "Не удалось скачать изображение. Пожалуйста, проверьте подключение к сети или конфигурацию CORS хранилища S3.",
-  "generation.actions.errorCopied": "Сообщение об ошибке скопировано в буфер обмена",
-  "generation.actions.errorCopyFailed": "Не удалось скопировать сообщение об ошибке",
-  "generation.actions.generate": "Сгенерировать",
-  "generation.actions.promptCopied": "Запрос скопирован в буфер обмена",
-  "generation.actions.promptCopyFailed": "Не удалось скопировать запрос",
-  "generation.actions.reuseSettings": "Повторно использовать настройки",
-  "generation.actions.seedApplied": "Сид применён к конфигурации",
-  "generation.actions.seedApplyFailed": "Не удалось применить сид",
-  "generation.actions.seedCopied": "Сид скопирован в буфер обмена",
-  "generation.actions.seedCopyFailed": "Не удалось скопировать сид",
-  "generation.metadata.count": "{{count}} изображений",
-  "generation.status.failed": "Ошибка генерации",
-  "generation.status.generating": "Генерация...",
-  "notSupportGuide.desc": "Текущий режим развертывания не поддерживает генерацию AI-изображений. Переключитесь на <1>режим развертывания с серверной базой данных</1> или используйте <3>LobeHub Cloud</3>.",
-  "notSupportGuide.features.fileIntegration.desc": "Глубокая интеграция с системой управления файлами; сгенерированные изображения автоматически сохраняются в файловую систему для централизованного управления и организации.",
-  "notSupportGuide.features.fileIntegration.title": "Интеграция с файловой системой",
-  "notSupportGuide.features.llmAssisted.desc": "Объединяет возможности больших языковых моделей для интеллектуальной оптимизации и расширения запросов, улучшая качество генерации изображений (Скоро будет доступно).",
-  "notSupportGuide.features.llmAssisted.title": "Генерация изображений с поддержкой LLM",
-  "notSupportGuide.features.multiProviders.desc": "Поддержка нескольких провайдеров генерации AI-изображений, включая OpenAI gpt-image-1, Google Imagen, FAL.ai и других, предлагая широкий выбор моделей.",
-  "notSupportGuide.features.multiProviders.title": "Поддержка нескольких провайдеров",
-  "notSupportGuide.title": "Текущий режим развертывания не поддерживает генерацию AI-изображений",
-  "topic.createNew": "Новая тема",
-  "topic.deleteConfirm": "Удалить тему генерации",
-  "topic.deleteConfirmDesc": "Вы собираетесь удалить эту тему генерации. Это действие необратимо, пожалуйста, будьте осторожны.",
-  "topic.empty": "Нет тем генерации",
-  "topic.title": "Тема картины",
-  "topic.untitled": "Тема по умолчанию"
+  "config": {
+    "aspectRatio": {
+      "label": "Співвідношення сторін",
+      "lock": "Заблокувати співвідношення сторін",
+      "unlock": "Розблокувати співвідношення сторін"
+    },
+    "cfg": {
+      "label": "Інтенсивність керівництва"
+    },
+    "header": {
+      "desc": "Короткий опис, створюйте миттєво",
+      "title": "Малювання"
+    },
+    "height": {
+      "label": "Висота"
+    },
+    "imageNum": {
+      "label": "Кількість зображень"
+    },
+    "imageUrl": {
+      "label": "Референсне зображення"
+    },
+    "imageUrls": {
+      "label": "Референсні зображення"
+    },
+    "model": {
+      "label": "Модель"
+    },
+    "prompt": {
+      "placeholder": "Опишіть, що ви хочете згенерувати"
+    },
+    "quality": {
+      "label": "Якість зображення",
+      "options": {
+        "hd": "Висока роздільна здатність",
+        "standard": "Стандартна"
+      }
+    },
+    "resolution": {
+      "label": "Разрешение",
+      "options": {
+        "1K": "1K",
+        "2K": "2K",
+        "4K": "4K"
+      }
+    },
+    "seed": {
+      "label": "Сід",
+      "random": "Випадкове початкове значення"
+    },
+    "size": {
+      "label": "Розмір"
+    },
+    "steps": {
+      "label": "Кроки"
+    },
+    "title": "AI Малювання",
+    "width": {
+      "label": "Ширина"
+    }
+  },
+  "generation": {
+    "actions": {
+      "applySeed": "Застосувати сід",
+      "copyError": "Копіювати помилку",
+      "copyPrompt": "Копіювати підказку",
+      "copySeed": "Копіювати сід",
+      "delete": "Видалити",
+      "deleteBatch": "Видалити пакет",
+      "download": "Завантажити",
+      "downloadFailed": "Не вдалося завантажити зображення",
+      "errorCopied": "Інформація про помилку скопійована в буфер обміну",
+      "errorCopyFailed": "Не вдалося скопіювати інформацію про помилку",
+      "generate": "Створити",
+      "promptCopied": "Підказка скопійована в буфер обміну",
+      "promptCopyFailed": "Не вдалося скопіювати підказку",
+      "reuseSettings": "Використовувати налаштування повторно",
+      "seedApplied": "Сід застосовано до конфігурації",
+      "seedApplyFailed": "Не вдалося застосувати сід",
+      "seedCopied": "Сід скопійовано в буфер обміну",
+      "seedCopyFailed": "Не вдалося скопіювати сід"
+    },
+    "metadata": {
+      "count": "{{count}} зображень"
+    },
+    "status": {
+      "failed": "Генерація не вдалася",
+      "generating": "Генерація..."
+    }
+  },
+  "notSupportGuide": {
+    "desc": "Поточна розгорнута версія використовує клієнтську базу даних і не підтримує функцію генерації AI-зображень. Будь ласка, переключіться на <1>серверний режим бази даних</1> або використовуйте <3>LobeChat Cloud</3> напряму.",
+    "features": {
+      "fileIntegration": {
+        "desc": "Глибока інтеграція з файловою системою: згенеровані зображення автоматично зберігаються в файловій системі для зручного управління та організації",
+        "title": "Інтеграція з файловою системою"
+      },
+      "llmAssisted": {
+        "desc": "Використання можливостей великих мовних моделей для інтелектуальної оптимізації та розширення підказок, покращуючи якість генерації зображень (скоро)",
+        "title": "Підтримка LLM для генерації"
+      },
+      "multiProviders": {
+        "desc": "Підтримка множини AI-сервісів для малювання, включаючи OpenAI gpt-image-1, Google Imagen, FAL.ai та інші, пропонуючи широкий вибір моделей",
+        "title": "Підтримка кількох провайдерів"
+      }
+    },
+    "title": "Поточний режим розгортання не підтримує AI Малювання"
+  },
+  "topic": {
+    "createNew": "Створити нову тему",
+    "deleteConfirm": "Видалити тему генерації",
+    "deleteConfirmDesc": "Ви збираєтесь видалити цю тему генерації. Після видалення відновити її буде неможливо, будь ласка, дійте обережно.",
+    "empty": "Теми для генерації відсутні",
+    "title": "Тема малюнка",
+    "untitled": "Тема за замовчуванням"
+  }
 }

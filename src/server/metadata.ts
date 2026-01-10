@@ -11,7 +11,7 @@ import { formatDescLength, formatTitleLength } from '@/utils/genOG';
 
 export class Meta {
   public generate({
-    description = 'LobeChat offers you the best ChatGPT, OLLaMA, Gemini, Claude WebUI user experience',
+    description = 'KissMyChat offers you the best ChatGPT, OLLaMA, Gemini, Claude WebUI user experience',
     title,
     image = OG_URL,
     url,
@@ -60,7 +60,6 @@ export class Meta {
       twitter: this.genTwitter({ description, image, title: siteTitle, url }),
     };
   }
-
   private genAlternateLocales = (locale: Locales, path: string = '/') => {
     let links: any = {};
     const defaultLink = getCanonicalUrl(path);

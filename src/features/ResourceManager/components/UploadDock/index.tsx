@@ -178,7 +178,7 @@ const UploadDock = memo(() => {
               exit={{ opacity: 0, scaleY: 0 }}
               initial={{ opacity: 0, scaleY: 0 }}
               key="collapsed"
-              style={{ originY: 0 }}
+              style={{ transformOrigin: 'top' }}
               transition={{ duration: 0.2, ease: 'easeOut' }}
             >
               <div

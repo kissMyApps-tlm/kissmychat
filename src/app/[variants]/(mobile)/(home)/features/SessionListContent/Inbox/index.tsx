@@ -21,7 +21,7 @@ const Inbox = memo(() => {
 
   return (
     <Link
-      aria-label={'Lobe AI'}
+      aria-label={'KissMyChat AI'}
       onClick={async (e) => {
         e.preventDefault();
         if (activeId === INBOX_SESSION_ID && !mobile) {
@@ -50,7 +50,7 @@ const Inbox = memo(() => {
             maskImage: `linear-gradient(90deg, #000 90%, transparent)`,
           },
         }}
-        title={'Lobe AI'}
+        title={'KissMyChat AI'}
       />
     </Link>
   );
