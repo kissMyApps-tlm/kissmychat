@@ -2,15 +2,15 @@ import urlJoin from 'url-join';
 
 const isDev = process.env.NODE_ENV === 'development';
 
-export const OFFICIAL_URL = 'https://app.lobehub.com';
-export const OFFICIAL_SITE = 'https://lobehub.com';
-export const OFFICIAL_DOMAIN = 'lobehub.com';
+export const OFFICIAL_URL = 'https://chat.kissmyapps.site';
+export const OFFICIAL_SITE = 'kissmyapps.site';
+export const OFFICIAL_DOMAIN = 'kissmyapps.site';
 
 export const OG_URL = '/og/cover.png?v=4';
 
-export const GITHUB = 'https://github.com/lobehub/lobe-chat';
+export const GITHUB = '';
 export const GITHUB_ISSUES = urlJoin(GITHUB, 'issues/new/choose');
-export const CHANGELOG = 'https://lobehub.com/changelog';
+export const CHANGELOG = '';
 
 export const DOCUMENTS = urlJoin(OFFICIAL_SITE, '/docs');
 export const USAGE_DOCUMENTS = urlJoin(DOCUMENTS, '/usage');

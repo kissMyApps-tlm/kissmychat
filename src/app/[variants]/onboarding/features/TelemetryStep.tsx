@@ -65,7 +65,7 @@ const TelemetryStep = memo<TelemetryStepProps>(({ onNext }) => {
             hideCursorWhileTyping={'afterTyping'}
             pauseDuration={16_000}
             sentences={[
-              t('telemetry.title', { name: 'Lobe AI' }),
+              t('telemetry.title', { name: 'KissMyChat AI' }),
               t('telemetry.title2'),
               t('telemetry.title3'),
             ]}

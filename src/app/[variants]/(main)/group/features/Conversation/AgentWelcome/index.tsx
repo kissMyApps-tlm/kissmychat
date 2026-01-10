@@ -79,7 +79,7 @@ const InboxWelcome = memo(() => {
                     }}
                     i18nKey="guide.defaultMessage"
                     ns="welcome"
-                    values={{ appName: 'Lobe AI' }}
+                    values={{ appName: 'KissMyChat AI' }}
                   />
                 );
               }
@@ -88,7 +88,7 @@ const InboxWelcome = memo(() => {
             fontSize={fontSize}
             variant={'chat'}
           >
-            {isInbox ? t('guide.defaultMessage', { appName: 'Lobe AI' }) : message}
+            {isInbox ? t('guide.defaultMessage', { appName: 'KissMyChat AI' }) : message}
           </Markdown>
         </Flexbox>
         {openingQuestions.length > 0 && (

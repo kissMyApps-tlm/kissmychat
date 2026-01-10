@@ -29,7 +29,7 @@ const InboxItem = memo<InboxItemProps>(({ className, style }) => {
       [isActive],
     ),
   );
-  const inboxAgentTitle = 'Lobe AI';
+  const inboxAgentTitle = 'KissMyChat AI';
 
   const handleClick = useCallback(() => {
     if (inboxAgentId) {

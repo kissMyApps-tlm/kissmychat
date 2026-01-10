@@ -23,10 +23,11 @@ const isFinished = (s: UserStore) => !!s.onboarding?.finishedAt;
  * Check if user needs to go through onboarding.
  */
 const needsOnboarding = (s: Pick<UserStore, 'onboarding'>) => {
-  return (
-    !s.onboarding?.finishedAt ||
-    (s.onboarding?.version && s.onboarding.version < CURRENT_ONBOARDING_VERSION)
-  );
+  return false;
+  // return (
+  //   !s.onboarding?.finishedAt ||
+  //   (s.onboarding?.version && s.onboarding.version < CURRENT_ONBOARDING_VERSION)
+  // );
 };
 
 export const onboardingSelectors = {

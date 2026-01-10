@@ -32,7 +32,7 @@ const Preview = memo<FieldType & { title?: string }>(
 
     const { t } = useTranslation('chat');
 
-    const displayTitle = isInbox ? 'Lobe AI' : title;
+    const displayTitle = isInbox ? 'KissMyChat AI' : title;
     const displayDesc = isInbox ? t('inbox.desc') : description;
 
     return (

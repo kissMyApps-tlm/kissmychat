@@ -1,7 +1,7 @@
 'use client';
 
 import { Button, Flexbox, Input, Text } from '@lobehub/ui';
-import { AnimatePresence, m as motion } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 import type { ChangeEvent } from 'react';
 import { useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';

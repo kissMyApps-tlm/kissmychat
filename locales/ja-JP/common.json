@@ -99,7 +99,7 @@
   "cmdk.askAI": "アシスタントに質問",
   "cmdk.askAIHeading": "{{query}} を処理するために以下の機能を使用",
   "cmdk.askAIHeadingEmpty": "AI 機能を選択してください",
-  "cmdk.askLobeAI": "Lobe AI に質問する",
+  "cmdk.askLobeAI": "KissMyChat AI に質問する",
   "cmdk.community": "コミュニティ",
   "cmdk.communitySupport": "コミュニティサポート",
   "cmdk.contactViaEmail": "お問い合わせ",

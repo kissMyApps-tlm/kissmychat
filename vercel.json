@@ -1,4 +1,9 @@
 {
-  "buildCommand": "bun run build:vercel",
+  "buildCommand": "bun run build",
+  "functions": {
+    "app/**/*": {
+      "maxDuration": 300
+    }
+  },
   "installCommand": "npx bun@1.2.23 install"
 }

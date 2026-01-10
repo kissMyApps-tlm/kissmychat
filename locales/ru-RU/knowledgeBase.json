@@ -1,21 +1,32 @@
 {
-  "addToKnowledgeBase.addSuccess": "Файл успешно добавлен, <1>просмотреть сейчас</1>",
-  "addToKnowledgeBase.confirm": "Добавить",
-  "addToKnowledgeBase.error": "Не удалось добавить файл в библиотеку",
-  "addToKnowledgeBase.id.placeholder": "Пожалуйста, выберите библиотеку для добавления",
-  "addToKnowledgeBase.id.required": "Пожалуйста, выберите библиотеку",
-  "addToKnowledgeBase.id.title": "Целевая библиотека",
-  "addToKnowledgeBase.title": "Добавить в библиотеку",
-  "addToKnowledgeBase.totalFiles": "Выбрано файлов: {{count}}",
-  "createNew.confirm": "Создать",
-  "createNew.description.placeholder": "Описание библиотеки (необязательно)",
-  "createNew.formTitle": "Основная информация",
-  "createNew.name.placeholder": "Название библиотеки",
-  "createNew.name.required": "Пожалуйста, введите название библиотеки",
-  "createNew.title": "Создать новую библиотеку",
-  "tab.evals": "Оценки",
-  "tab.files": "Файлы",
-  "tab.settings": "Настройки",
-  "tab.testing": "Проверка запоминания",
-  "title": "Библиотека"
+  "addToKnowledgeBase": {
+    "addSuccess": "Файл успішно додано, <1>подивитися зараз</1>",
+    "confirm": "Додати",
+    "id": {
+      "placeholder": "Будь ласка, виберіть базу знань для додавання",
+      "required": "Будь ласка, виберіть базу знань",
+      "title": "Цільова база знань"
+    },
+    "title": "Додати в базу знань",
+    "totalFiles": "Вибрано {{count}} файлів"
+  },
+  "createNew": {
+    "confirm": "Створити",
+    "description": {
+      "placeholder": "Опис бази знань (необов'язково)"
+    },
+    "formTitle": "Основна інформація",
+    "name": {
+      "placeholder": "Назва бази знань",
+      "required": "Будь ласка, введіть назву бази знань"
+    },
+    "title": "Створити нову базу знань"
+  },
+  "tab": {
+    "evals": "Оцінка",
+    "files": "Документи",
+    "settings": "Налаштування",
+    "testing": "Тестування повернення"
+  },
+  "title": "База знань"
 }

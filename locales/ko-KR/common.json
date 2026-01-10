@@ -99,7 +99,7 @@
   "cmdk.askAI": "도우미에게 질문",
   "cmdk.askAIHeading": "{{query}} 처리에 다음 기능 사용",
   "cmdk.askAIHeadingEmpty": "AI 기능을 선택하세요",
-  "cmdk.askLobeAI": "Lobe AI에게 질문하기",
+  "cmdk.askLobeAI": "KissMyChat AI에게 질문하기",
   "cmdk.community": "커뮤니티",
   "cmdk.communitySupport": "커뮤니티 지원",
   "cmdk.contactViaEmail": "문의하기",
