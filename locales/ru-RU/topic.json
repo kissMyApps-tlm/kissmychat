@@ -1,37 +1,38 @@
 {
-  "actions.addNewTopic": "Начать новую тему",
-  "actions.autoRename": "Умное переименование",
-  "actions.confirmRemoveAll": "Вы собираетесь удалить все темы. Это действие необратимо.",
-  "actions.confirmRemoveTopic": "Вы собираетесь удалить эту тему. Это действие необратимо.",
-  "actions.confirmRemoveUnstarred": "Вы собираетесь удалить все неотмеченные темы. Это действие необратимо.",
-  "actions.duplicate": "Дублировать",
-  "actions.export": "Экспорт тем",
-  "actions.import": "Импорт беседы",
-  "actions.openInNewWindow": "Открыть в новом окне",
-  "actions.removeAll": "Удалить все темы",
-  "actions.removeUnstarred": "Удалить неотмеченные темы",
-  "defaultTitle": "Тема по умолчанию",
-  "displayItems": "Отображаемые элементы",
-  "duplicateLoading": "Копирование темы...",
-  "duplicateSuccess": "Тема успешно скопирована",
-  "favorite": "Избранное",
-  "groupMode.ascMessages": "Сортировать по возрастанию количества сообщений",
-  "groupMode.byTime": "Группировать по времени",
-  "groupMode.descMessages": "Сортировать по убыванию количества сообщений",
-  "groupMode.flat": "Без группировки",
-  "groupTitle.byTime.month": "В этом месяце",
-  "groupTitle.byTime.today": "Сегодня",
-  "groupTitle.byTime.week": "На этой неделе",
-  "groupTitle.byTime.yesterday": "Вчера",
-  "guide.desc": "Нажмите кнопку слева, чтобы сохранить текущую беседу как историческую тему и начать новую.",
-  "guide.title": "Список тем",
-  "importError": "Ошибка импорта",
-  "importInvalidFormat": "Недопустимый формат файла. Убедитесь, что это корректный JSON-файл.",
-  "importLoading": "Импорт беседы...",
-  "importSuccess": "Успешно импортировано сообщений: {{count}}",
-  "loadMore": "Загрузить ещё",
-  "searchPlaceholder": "Поиск тем...",
-  "searchResultEmpty": "Результаты не найдены.",
-  "temp": "Временный",
+  "actions": {
+    "autoRename": "Розумне перейменування",
+    "confirmRemoveAll": "Ви збираєтесь видалити всі теми. Після видалення їх неможливо буде відновити, будь ласка, будьте обережні.",
+    "confirmRemoveTopic": "Ви збираєтесь видалити цю тему. Після видалення її неможливо буде відновити, будь ласка, будьте обережні.",
+    "confirmRemoveUnstarred": "Ви збираєтесь видалити невідмічені теми. Після видалення їх неможливо буде відновити, будь ласка, будьте обережні.",
+    "duplicate": "Створити копію",
+    "export": "Експортувати тему",
+    "removeAll": "Видалити всі теми",
+    "removeUnstarred": "Видалити невідмічені теми"
+  },
+  "defaultTitle": "Тема за замовчуванням",
+  "duplicateLoading": "Копіювання теми...",
+  "duplicateSuccess": "Тема успішно скопійована",
+  "favorite": "Обране",
+  "groupMode": {
+    "ascMessages": "За зростанням загальної кількості повідомлень",
+    "byTime": "Групування за часом",
+    "descMessages": "За спаданням загальної кількості повідомлень",
+    "flat": "Без групування"
+  },
+  "groupTitle": {
+    "byTime": {
+      "month": "Цей місяць",
+      "today": "Сьогодні",
+      "week": "Цей тиждень",
+      "yesterday": "Вчора"
+    }
+  },
+  "guide": {
+    "desc": "Натисніть кнопку зліва від відправки, щоб зберегти поточну розмову як історичну тему та почати нову розмову.",
+    "title": "Список тем"
+  },
+  "searchPlaceholder": "Пошук тем...",
+  "searchResultEmpty": "Немає результатів пошуку",
+  "temp": "Тимчасовий",
   "title": "Тема"
 }

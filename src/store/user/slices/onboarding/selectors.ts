@@ -22,11 +22,13 @@ const isFinished = (s: UserStore) => !!s.onboarding?.finishedAt;
 /**
  * Check if user needs to go through onboarding.
  */
-const needsOnboarding = (s: Pick<UserStore, 'onboarding'>) => {
-  return (
-    !s.onboarding?.finishedAt ||
-    (s.onboarding?.version && s.onboarding.version < CURRENT_ONBOARDING_VERSION)
-  );
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const needsOnboarding = (_s: Pick<UserStore, 'onboarding'>) => {
+  return false;
+  // return (
+  //   !_s.onboarding?.finishedAt ||
+  //   (_s.onboarding?.version && _s.onboarding.version < CURRENT_ONBOARDING_VERSION)
+  // );
 };
 
 export const onboardingSelectors = {
