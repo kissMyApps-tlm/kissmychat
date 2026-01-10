@@ -54,20 +54,20 @@ const AskAgentCommands = memo(() => {
   // Only show when user types "@"
   if (!isAtMention) return null;
 
-  // Check if Lobe AI matches the query
-  const showLobeAI = !mentionQuery || 'lobe ai'.includes(mentionQuery);
+  // Check if KissMyChat matches the query
+  const showLobeAI = !mentionQuery || 'KissMyChat'.includes(mentionQuery);
 
   return (
     <Command.Group heading={t('cmdk.mentionAgent')}>
-      {/* @Lobe AI option */}
+      {/* @KissMyChat option */}
       {showLobeAI && (
         <Command.Item
-          onSelect={() => handleAgentSelect(inboxAgentId, 'Lobe AI', DEFAULT_INBOX_AVATAR)}
+          onSelect={() => handleAgentSelect(inboxAgentId, 'KissMyChat', DEFAULT_INBOX_AVATAR)}
           value="@lobe-ai"
         >
           <Avatar avatar={DEFAULT_INBOX_AVATAR} emojiScaleWithBackground shape="square" size={18} />
           <div className={styles.itemContent}>
-            <div className={styles.itemLabel}>@Lobe AI</div>
+            <div className={styles.itemLabel}>@KissMyChat</div>
           </div>
         </Command.Item>
       )}

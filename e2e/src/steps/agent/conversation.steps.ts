@@ -20,7 +20,7 @@ Given('用户已登录系统', async function (this: CustomWorld) {
   expect(cookies.length).toBeGreaterThan(0);
 });
 
-Given('用户进入 Lobe AI 对话页面', async function (this: CustomWorld) {
+Given('用户进入 KissMyChat AI 对话页面', async function (this: CustomWorld) {
   console.log('   📍 Step: 设置 LLM mock...');
   // Setup LLM mock before navigation
   llmMockManager.setResponse('hello', presetResponses.greeting);
@@ -36,7 +36,7 @@ Given('用户进入 Lobe AI 对话页面', async function (this: CustomWorld) {
   const lobeAIAgent = this.page.locator('text=Lobe AI').first();
   await expect(lobeAIAgent).toBeVisible({ timeout: WAIT_TIMEOUT });
 
-  console.log('   📍 Step: 点击 Lobe AI...');
+  console.log('   📍 Step: 点击 KissMyChat AI...');
   await lobeAIAgent.click();
 
   console.log('   📍 Step: 等待聊天界面加载...');
@@ -74,7 +74,7 @@ Given('用户进入 Lobe AI 对话页面', async function (this: CustomWorld) {
   // Wait for any animations to complete
   await this.page.waitForTimeout(300);
 
-  console.log('   ✅ 已进入 Lobe AI 对话页面');
+  console.log('   ✅ 已进入 KissMyChat AI 对话页面');
 });
 
 // ============================================
