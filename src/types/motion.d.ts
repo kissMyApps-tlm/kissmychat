@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable typescript-sort-keys/interface */
+/* eslint-disable unused-imports/no-unused-vars */
 import type * as React from 'react';
 
 interface MotionProps {
