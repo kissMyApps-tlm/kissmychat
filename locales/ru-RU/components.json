@@ -1,142 +1,197 @@
 {
-  "ArgsInput.addArgument": "Добавить аргумент",
-  "ArgsInput.argumentPlaceholder": "Аргумент {{index}}",
-  "ArgsInput.enterFirstArgument": "Введите первый аргумент...",
-  "DragUpload.dragDesc": "Перетащите файлы сюда, чтобы загрузить несколько изображений.",
-  "DragUpload.dragFileDesc": "Перетащите изображения и файлы сюда, чтобы загрузить несколько изображений и файлов.",
-  "DragUpload.dragFileTitle": "Загрузка файлов",
-  "DragUpload.dragTitle": "Загрузка изображений",
-  "FileManager.actions.addToKnowledgeBase": "Добавить в библиотеку",
-  "FileManager.actions.addToOtherKnowledgeBase": "Добавить в другую библиотеку",
-  "FileManager.actions.batchChunking": "Пакетная сегментация",
-  "FileManager.actions.chunking": "Сегментация",
-  "FileManager.actions.chunkingTooltip": "Разделить файл на несколько текстовых фрагментов и встроить их для семантического поиска и диалога с файлом.",
-  "FileManager.actions.chunkingUnsupported": "Этот файл не поддерживает сегментацию.",
-  "FileManager.actions.confirmDelete": "Вы собираетесь удалить этот файл. После удаления восстановление будет невозможно. Подтвердите действие.",
-  "FileManager.actions.confirmDeleteFolder": "Вы собираетесь удалить эту папку и всё её содержимое. Это действие необратимо. Подтвердите решение.",
-  "FileManager.actions.confirmDeleteMultiFiles": "Вы собираетесь удалить выбранные {{count}} файлов. После удаления восстановление будет невозможно. Подтвердите действие.",
-  "FileManager.actions.confirmRemoveFromKnowledgeBase": "Вы собираетесь удалить {{count}} выбранных файл(ов) из библиотеки. Они останутся доступны во вкладке 'Все файлы'. Подтвердите, чтобы продолжить.",
-  "FileManager.actions.copyUrl": "Скопировать ссылку",
-  "FileManager.actions.copyUrlSuccess": "Ссылка на файл успешно скопирована.",
-  "FileManager.actions.createChunkingTask": "Подготовка...",
-  "FileManager.actions.deleteSuccess": "Файл успешно удалён.",
-  "FileManager.actions.downloading": "Загрузка файла...",
-  "FileManager.actions.goBack": "Назад",
-  "FileManager.actions.goForward": "Вперёд",
-  "FileManager.actions.goToParent": "Перейти к родительской папке",
-  "FileManager.actions.moveError": "Не удалось переместить файл",
-  "FileManager.actions.moveHere": "Переместить сюда",
-  "FileManager.actions.moveSuccess": "Файл успешно перемещён",
-  "FileManager.actions.moveToFolder": "Переместить в...",
-  "FileManager.actions.moveToRoot": "Переместить в корневую директорию",
-  "FileManager.actions.moving": "Перемещение...",
-  "FileManager.actions.removeFromKnowledgeBase": "Удалить из библиотеки",
-  "FileManager.actions.removeFromKnowledgeBaseSuccess": "Файл успешно удалён.",
-  "FileManager.actions.rename": "Переименовать",
-  "FileManager.actions.renameError": "Ошибка при переименовании",
-  "FileManager.actions.renameSuccess": "Переименование прошло успешно",
-  "FileManager.bottom": "Вы достигли конца.",
-  "FileManager.config.showFilesInKnowledgeBase": "Показать содержимое в библиотеке",
-  "FileManager.emptyStatus.actions.file": "Загрузить файл",
-  "FileManager.emptyStatus.actions.folder": "Загрузить папку",
-  "FileManager.emptyStatus.actions.knowledgeBase": "Создать библиотеку",
-  "FileManager.emptyStatus.or": "или",
-  "FileManager.emptyStatus.title": "Перетащите файлы или папки сюда",
-  "FileManager.noFolders": "Нет доступных папок",
-  "FileManager.sort.dateAdded": "Дата добавления",
-  "FileManager.sort.name": "Имя",
-  "FileManager.sort.size": "Размер",
-  "FileManager.title.createdAt": "Дата создания",
-  "FileManager.title.size": "Размер",
-  "FileManager.title.title": "Файл",
-  "FileManager.total.fileCount": "Всего {{count}} элементов",
-  "FileManager.total.selectedCount": "Выбрано {{count}} элементов",
-  "FileManager.view.list": "Список",
-  "FileManager.view.masonry": "Сетка",
-  "FileParsingStatus.chunks.embeddingStatus.empty": "Текстовые фрагменты ещё не встроены, что делает функцию семантического поиска недоступной. Для улучшения качества поиска выполните встраивание фрагментов.",
-  "FileParsingStatus.chunks.embeddingStatus.error": "Ошибка встраивания",
-  "FileParsingStatus.chunks.embeddingStatus.errorResult": "Ошибка векторизации, пожалуйста, проверьте и повторите попытку. Подробности ошибки:",
-  "FileParsingStatus.chunks.embeddingStatus.processing": "Встраивание текстовых фрагментов, пожалуйста, подождите.",
-  "FileParsingStatus.chunks.embeddingStatus.success": "Все текущие текстовые фрагменты успешно встроены",
-  "FileParsingStatus.chunks.embeddings": "Встраивание",
-  "FileParsingStatus.chunks.status.error": "Ошибка сегментации",
-  "FileParsingStatus.chunks.status.errorResult": "Сегментация не удалась, пожалуйста, проверьте и повторите попытку. Подробности ошибки:",
-  "FileParsingStatus.chunks.status.processing": "Сегментация",
-  "FileParsingStatus.chunks.status.processingTip": "Сервер разделяет текст на фрагменты; закрытие страницы не повлияет на процесс.",
-  "GoBack.back": "Назад",
-  "HtmlPreview.actions.download": "Скачать",
-  "HtmlPreview.actions.preview": "Предпросмотр",
-  "HtmlPreview.iframeTitle": "Предпросмотр HTML",
-  "HtmlPreview.mode.code": "Код",
-  "HtmlPreview.mode.preview": "Предпросмотр",
-  "HtmlPreview.title": "Предпросмотр HTML",
-  "ImageUpload.actions.changeImage": "Нажмите, чтобы изменить изображение",
-  "ImageUpload.actions.dropMultipleFiles": "Загрузка нескольких файлов одновременно не поддерживается; будет использован только первый файл",
-  "ImageUpload.placeholder.primary": "Добавить изображение",
-  "ImageUpload.placeholder.secondary": "Нажмите или перетащите для загрузки",
-  "KeyValueEditor.addButton": "Добавить строку",
-  "KeyValueEditor.deleteTooltip": "Удалить",
-  "KeyValueEditor.duplicateKeyError": "Ключ должен быть уникальным",
-  "KeyValueEditor.keyPlaceholder": "Ключ",
-  "KeyValueEditor.valuePlaceholder": "Значение",
-  "LocalFile.action.open": "Открыть",
-  "LocalFile.action.showInFolder": "Показать в папке",
-  "MaxTokenSlider.unlimited": "Без ограничений",
-  "ModelSelect.featureTag.custom": "Пользовательская модель по умолчанию поддерживает вызовы функций и визуальное распознавание. Пожалуйста, проверьте доступность этих возможностей в вашей ситуации.",
-  "ModelSelect.featureTag.file": "Эта модель поддерживает загрузку файлов для чтения и распознавания.",
-  "ModelSelect.featureTag.functionCall": "Эта модель поддерживает вызовы функций.",
-  "ModelSelect.featureTag.imageOutput": "Эта модель поддерживает генерацию изображений.",
-  "ModelSelect.featureTag.reasoning": "Эта модель поддерживает глубокое мышление.",
-  "ModelSelect.featureTag.search": "Эта модель поддерживает онлайн-поиск.",
-  "ModelSelect.featureTag.tokens": "Эта модель поддерживает до {{tokens}} токенов за одну сессию.",
-  "ModelSelect.featureTag.video": "Эта модель поддерживает распознавание видео",
-  "ModelSelect.featureTag.vision": "Эта модель поддерживает визуальное распознавание.",
-  "ModelSelect.removed": "Модель отсутствует в списке. Она будет автоматически удалена при снятии выбора.",
-  "ModelSwitchPanel.byModel": "По модели",
-  "ModelSwitchPanel.byProvider": "По провайдеру",
-  "ModelSwitchPanel.emptyModel": "Нет включённых моделей. Перейдите в настройки, чтобы включить.",
-  "ModelSwitchPanel.emptyProvider": "Нет включённых провайдеров. Перейдите в настройки, чтобы включить одного из них.",
-  "ModelSwitchPanel.goToSettings": "Перейти в настройки",
-  "ModelSwitchPanel.manageProvider": "Управление провайдером",
-  "ModelSwitchPanel.provider": "Провайдер",
-  "ModelSwitchPanel.searchPlaceholder": "Поиск моделей...",
-  "ModelSwitchPanel.title": "Модель",
-  "ModelSwitchPanel.useModelFrom": "Использовать эту модель от:",
-  "MultiImagesUpload.actions.uploadMore": "Нажмите или перетащите для загрузки дополнительных изображений",
-  "MultiImagesUpload.modal.complete": "Готово",
-  "MultiImagesUpload.modal.newFileIndicator": "Новый",
-  "MultiImagesUpload.modal.selectImageToPreview": "Выберите изображение для предпросмотра",
-  "MultiImagesUpload.modal.title": "Управление изображениями ({{count}})",
-  "MultiImagesUpload.modal.upload": "Загрузить изображения",
-  "MultiImagesUpload.placeholder.primary": "Нажмите или перетащите для загрузки изображений",
-  "MultiImagesUpload.placeholder.secondary": "Поддерживается выбор нескольких изображений",
-  "MultiImagesUpload.progress.uploadingWithCount": "Загружено {{completed}} из {{total}}",
-  "MultiImagesUpload.validation.fileSizeExceeded": "Размер файла превышает допустимый максимум",
-  "MultiImagesUpload.validation.fileSizeExceededDetail": "{{fileName}} ({{actualSize}}) превышает максимальный размер {{maxSize}}",
-  "MultiImagesUpload.validation.fileSizeExceededMultiple": "{{count}} файлов превышают максимальный размер {{maxSize}}: {{fileList}}",
-  "MultiImagesUpload.validation.imageCountExceeded": "Превышено максимальное количество изображений",
-  "OllamaSetupGuide.action.close": "Закрыть подсказку",
-  "OllamaSetupGuide.action.start": "Установлено",
-  "OllamaSetupGuide.cors.description": "Из-за ограничений безопасности браузера необходимо настроить кросс-доменные разрешения, чтобы Ollama работал корректно.",
-  "OllamaSetupGuide.cors.linux.env": "Добавьте `Environment` в раздел [Service] и установите переменную окружения OLLAMA_ORIGINS:",
-  "OllamaSetupGuide.cors.linux.reboot": "Перезагрузите systemd и перезапустите Ollama",
-  "OllamaSetupGuide.cors.linux.systemd": "Отредактируйте службу ollama с помощью systemd:",
-  "OllamaSetupGuide.cors.macos": "Откройте приложение 'Терминал', вставьте следующую команду и нажмите Enter для выполнения.",
-  "OllamaSetupGuide.cors.reboot": "Пожалуйста, перезапустите службу Ollama после выполнения.",
-  "OllamaSetupGuide.cors.title": "Настройка Ollama для кросс-доменного доступа",
-  "OllamaSetupGuide.cors.windows": "В Windows откройте 'Панель управления' и перейдите к редактированию системных переменных среды. Создайте новую переменную среды с именем 'OLLAMA_ORIGINS' для вашей учётной записи пользователя, установите значение * и нажмите 'ОК/Применить' для сохранения.",
-  "OllamaSetupGuide.install.description": "Убедитесь, что Ollama запущен. Если вы ещё не скачали Ollama, посетите официальный сайт, чтобы <1>скачать</1> его.",
-  "OllamaSetupGuide.install.docker": "Если вы предпочитаете использовать Docker, Ollama также предоставляет официальный образ Docker, который можно загрузить с помощью следующей команды:",
-  "OllamaSetupGuide.install.linux.command": "Установите с помощью следующей команды:",
-  "OllamaSetupGuide.install.linux.manual": "Вы также можете ознакомиться с <1>руководством по ручной установке для Linux</1>.",
-  "OllamaSetupGuide.install.title": "Установите и запустите приложение Ollama локально",
-  "OllamaSetupGuide.install.windowsTab": "Windows (предварительная версия)",
-  "Thinking.thinking": "Глубокое мышление...",
-  "Thinking.thought": "Обдумано (за {{duration}} секунд)",
-  "Thinking.thoughtWithDuration": "Обдумано",
-  "devTools.cache.empty": "Кэш пуст",
-  "devTools.metadata.empty": "Метаданные отсутствуют",
-  "knowledgeBase.empty.description": "Создайте библиотеку для организации и управления вашими ресурсами",
-  "knowledgeBase.empty.search": "Соответствующая библиотека не найдена",
-  "knowledgeBase.empty.title": "Библиотека отсутствует"
+  "ArgsInput": {
+    "addArgument": "Додати параметр",
+    "argumentPlaceholder": "Параметр {{index}}",
+    "enterFirstArgument": "Введіть перший параметр..."
+  },
+  "DragUpload": {
+    "dragDesc": "Перетягніть файли сюди, підтримується завантаження кількох зображень.",
+    "dragFileDesc": "Перетягніть зображення та файли сюди, підтримується завантаження кількох зображень та файлів.",
+    "dragFileTitle": "Завантажити файл",
+    "dragTitle": "Завантажити зображення"
+  },
+  "FileManager": {
+    "actions": {
+      "addToKnowledgeBase": "Додати в базу знань",
+      "addToOtherKnowledgeBase": "Додати в іншу базу знань",
+      "batchChunking": "Пакетне розбиття",
+      "chunking": "Розбиття",
+      "chunkingTooltip": "Розділіть файл на кілька текстових блоків та векторизуйте їх для семантичного пошуку та діалогу з файлом",
+      "chunkingUnsupported": "Цей файл не підтримує розбиття на частини",
+      "confirmDelete": "Ви збираєтесь видалити цей файл. Після видалення його неможливо буде відновити. Будь ласка, підтвердіть вашу дію.",
+      "confirmDeleteMultiFiles": "Ви збираєтесь видалити вибрані {{count}} файлів. Після видалення їх неможливо буде відновити. Будь ласка, підтвердіть вашу дію.",
+      "confirmRemoveFromKnowledgeBase": "Ви збираєтесь видалити вибрані {{count}} файлів з бази знань. Після видалення файли все ще будуть доступні у всіх файлах. Будь ласка, підтвердіть вашу дію.",
+      "copyUrl": "Копіювати посилання",
+      "copyUrlSuccess": "Адреса файлу успішно скопійована",
+      "createChunkingTask": "Підготовка...",
+      "deleteSuccess": "Файл успішно видалено",
+      "downloading": "Завантаження файлу...",
+      "removeFromKnowledgeBase": "Видалити з бази знань",
+      "removeFromKnowledgeBaseSuccess": "Файл успішно видалено"
+    },
+    "bottom": "Ви досягли кінця",
+    "config": {
+      "showFilesInKnowledgeBase": "Показати вміст в базі знань"
+    },
+    "emptyStatus": {
+      "actions": {
+        "file": "Завантажити файл",
+        "folder": "Завантажити папку",
+        "knowledgeBase": "Створити нову базу знань"
+      },
+      "or": "або",
+      "title": "Перетягніть файл або папку сюди"
+    },
+    "title": {
+      "createdAt": "Дата створення",
+      "size": "Розмір",
+      "title": "Файл"
+    },
+    "total": {
+      "fileCount": "Всего {{count}} элементов",
+      "selectedCount": "Выбрано {{count}} элементов"
+    },
+    "view": {
+      "list": "Список",
+      "masonry": "Сетка"
+    }
+  },
+  "FileParsingStatus": {
+    "chunks": {
+      "embeddingStatus": {
+        "empty": "Текстові блоки ще не повністю векторизовані, що призведе до недоступності функції семантичного пошуку. Для підвищення якості пошуку, будь ласка, векторизуйте текстові блоки.",
+        "error": "Помилка векторизації",
+        "errorResult": "Помилка векторизації, будь ласка, перевірте та повторіть спробу. Причина збою:",
+        "processing": "Текстові блоки векторизуються, будь ласка, зачекайте.",
+        "success": "Всі поточні текстові блоки успішно векторизовані."
+      },
+      "embeddings": "Векторизація",
+      "status": {
+        "error": "Помилка розбиття",
+        "errorResult": "Помилка розбиття, будь ласка, перевірте та повторіть спробу. Причина помилки:",
+        "processing": "В процесі розбиття",
+        "processingTip": "Сервер розбиває текстові блоки, закриття сторінки не вплине на процес розбиття."
+      }
+    }
+  },
+  "GoBack": {
+    "back": "Назад"
+  },
+  "HtmlPreview": {
+    "actions": {
+      "download": "Завантажити",
+      "preview": "Попередній перегляд"
+    },
+    "iframeTitle": "Попередній перегляд HTML",
+    "mode": {
+      "code": "Код",
+      "preview": "Попередній перегляд"
+    },
+    "title": "Попередній перегляд HTML"
+  },
+  "ImageUpload": {
+    "actions": {
+      "changeImage": "Натисніть, щоб змінити зображення",
+      "dropMultipleFiles": "Не підтримується завантаження кількох файлів одночасно, буде використаний тільки перший файл"
+    },
+    "placeholder": {
+      "primary": "Додати зображення",
+      "secondary": "Натисніть або перетягніть для завантаження"
+    }
+  },
+  "KeyValueEditor": {
+    "addButton": "Додати рядок",
+    "deleteTooltip": "Видалити",
+    "duplicateKeyError": "Ім'я ключа повинно бути унікальним",
+    "keyPlaceholder": "Ключ",
+    "valuePlaceholder": "Значення"
+  },
+  "LocalFile": {
+    "action": {
+      "open": "Открыть",
+      "showInFolder": "Показать в папке"
+    }
+  },
+  "MaxTokenSlider": {
+    "unlimited": "Без обмежень"
+  },
+  "ModelSelect": {
+    "featureTag": {
+      "custom": "Користувацька модель за замовчуванням підтримує як виклик функцій, так і розпізнавання зображень. Будь ласка, перевірте доступність зазначених можливостей у вашому випадку",
+      "file": "Ця модель підтримує завантаження та розпізнавання файлів",
+      "functionCall": "Ця модель підтримує виклик функцій",
+      "imageOutput": "Ця модель підтримує генерацію зображень",
+      "reasoning": "Ця модель підтримує глибоке мислення",
+      "search": "Ця модель підтримує пошук в інтернеті",
+      "tokens": "Ця модель підтримує до {{tokens}} токенів в одній сесії",
+      "video": "Ця модель підтримує розпізнавання відео",
+      "vision": "Ця модель підтримує розпізнавання зображень"
+    },
+    "removed": "Ця модель не знаходиться в списку. Якщо ви її скасуєте, вона буде автоматично видалена"
+  },
+  "ModelSwitchPanel": {
+    "emptyModel": "Немає активованих моделей. Будь ласка, перейдіть в налаштування та увімкніть модель",
+    "emptyProvider": "Немає активних провайдерів, будь ласка, перейдіть в налаштування для їх увімкнення",
+    "goToSettings": "Перейти в налаштування",
+    "provider": "Постачальник",
+    "title": "Модель"
+  },
+  "MultiImagesUpload": {
+    "actions": {
+      "uploadMore": "Натисніть або перетягніть для завантаження додаткових файлів"
+    },
+    "modal": {
+      "complete": "Готово",
+      "newFileIndicator": "Нове",
+      "selectImageToPreview": "Виберіть зображення для перегляду",
+      "title": "Управління зображеннями ({{count}})",
+      "upload": "Завантажити зображення"
+    },
+    "placeholder": {
+      "primary": "Натисніть або перетягніть зображення для завантаження",
+      "secondary": "Підтримується вибір кількох зображень"
+    },
+    "progress": {
+      "uploadingWithCount": "{{completed}}/{{total}} завантажено"
+    },
+    "validation": {
+      "fileSizeExceeded": "Перевищено допустимий розмір файлу",
+      "fileSizeExceededDetail": "{{fileName}} ({{actualSize}}) перевищує максимально допустимий розмір {{maxSize}}",
+      "fileSizeExceededMultiple": "{{count}} файлів перевищують максимально допустимий розмір {{maxSize}}: {{fileList}}",
+      "imageCountExceeded": "Перевищено допустиму кількість зображень"
+    }
+  },
+  "OllamaSetupGuide": {
+    "action": {
+      "close": "Закрити повідомлення",
+      "start": "Встановлено та запущено, почати розмову"
+    },
+    "cors": {
+      "description": "Через обмеження безпеки браузера вам необхідно налаштувати крос-доменні запити для коректного використання Ollama.",
+      "linux": {
+        "env": "Додайте `Environment` в розділ [Service] та додайте змінну оточення OLLAMA_ORIGINS:",
+        "reboot": "Перезавантажте systemd та перезапустіть Ollama",
+        "systemd": "Викличте systemd для редагування служби ollama:"
+      },
+      "macos": "Відкрийте додаток «Термінал», вставте наступну команду та натисніть Enter для виконання",
+      "reboot": "Будь ласка, перезапустіть службу Ollama після завершення виконання",
+      "title": "Налаштування Ollama для дозволу крос-доменних запитів",
+      "windows": "На Windows натисніть «Панель керування», перейдіть до редагування системних змінних оточення. Створіть нову змінну оточення з іменем «OLLAMA_ORIGINS» для вашого облікового запису користувача, значення - * , натисніть «OK/Застосувати» для збереження"
+    },
+    "install": {
+      "description": "Будь ласка, переконайтеся, що ви запустили Ollama. Якщо ви ще не завантажили Ollama, перейдіть на офіційний сайт <1>для завантаження</1>",
+      "docker": "Якщо ви віддаєте перевагу використанню Docker, Ollama також надає офіційний образ Docker, який ви можете завантажити за допомогою наступної команди:",
+      "linux": {
+        "command": "Встановіть за допомогою наступної команди:",
+        "manual": "Або ви можете звернутися до <1>керівництва по ручному встановленню для Linux</1> для самостійного встановлення"
+      },
+      "title": "Встановіть та запустіть додаток Ollama локально",
+      "windowsTab": "Windows (попередня версія)"
+    }
+  },
+  "Thinking": {
+    "thinking": "Глибоке роздумування...",
+    "thought": "Глибоко обдумано (час: {{duration}} секунд)",
+    "thoughtWithDuration": "Глибоко обдумано"
+  }
 }
