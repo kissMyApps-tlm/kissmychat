@@ -389,6 +389,7 @@ export const openaiChatModels: AIChatModelCard[] = [
     description:
       'o4-mini-deep-research is a faster, more affordable deep research model for complex multi-step research. It can search the web and also access your data via MCP connectors.',
     displayName: 'o4-mini Deep Research',
+    enabled: true,
     id: 'o4-mini-deep-research',
     maxOutput: 100_000,
     pricing: {
@@ -416,6 +417,7 @@ export const openaiChatModels: AIChatModelCard[] = [
     description:
       'o3-pro uses more compute to think deeper and consistently deliver better answers; available only via the Responses API.',
     displayName: 'o3-pro',
+    enabled: true,
     id: 'o3-pro',
     maxOutput: 100_000,
     pricing: {
@@ -469,6 +471,7 @@ export const openaiChatModels: AIChatModelCard[] = [
     description:
       'o3-deep-research is our most advanced deep research model for complex multi-step tasks. It can search the web and access your data via MCP connectors.',
     displayName: 'o3 Deep Research',
+    enabled: true,
     id: 'o3-deep-research',
     maxOutput: 100_000,
     pricing: {

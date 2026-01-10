@@ -3,7 +3,7 @@
 import { Block, Button, Flexbox, Icon, Input, Tag, Text } from '@lobehub/ui';
 import { cssVar } from 'antd-style';
 import { BriefcaseIcon } from 'lucide-react';
-import { AnimatePresence, m as motion } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 import { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

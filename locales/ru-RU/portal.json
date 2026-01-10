@@ -1,25 +1,30 @@
 {
-  "Artifacts": "Артефакты",
-  "FilePreview.tabs.chunk": "Фрагмент",
-  "FilePreview.tabs.file": "Файл",
-  "Plugins": "Навыки",
-  "artifacts.display.code": "Код",
-  "artifacts.display.preview": "Предпросмотр",
-  "artifacts.svg.copyAsImage": "Копировать как изображение",
-  "artifacts.svg.copyFail": "Не удалось скопировать: {{error}}. Попробуйте снова.",
-  "artifacts.svg.copySuccess": "Изображение успешно скопировано",
-  "artifacts.svg.download.png": "Скачать как PNG",
-  "artifacts.svg.download.svg": "Скачать как SVG",
-  "document.todos.allCompleted": "Все задачи выполнены",
-  "document.todos.title": "Задачи",
-  "emptyArtifactList": "Артефактов пока нет. Используйте навыки в беседе, затем вернитесь сюда.",
-  "emptyKnowledgeList": "Этот список пуст.",
-  "files": "Файлы",
-  "messageDetail": "Детали сообщения",
-  "notebook.confirmDelete": "Удалить эту страницу?",
-  "notebook.delete": "Удалить",
-  "notebook.empty": "Пока нет страниц. Страницы, связанные с этой темой, появятся здесь.",
-  "notebook.title": "Блокнот",
-  "openInPageEditor": "Редактировать на странице",
-  "title": "Рабочее пространство"
+  "Artifacts": "Артефакти",
+  "FilePreview": {
+    "tabs": {
+      "chunk": "Частина",
+      "file": "Файл"
+    }
+  },
+  "Plugins": "Плагіни",
+  "artifacts": {
+    "display": {
+      "code": "Код",
+      "preview": "Попередній перегляд"
+    },
+    "svg": {
+      "copyAsImage": "Копіювати як зображення",
+      "copyFail": "Не вдалося скопіювати, причина помилки: {{error}}",
+      "copySuccess": "Зображення успішно скопійовано",
+      "download": {
+        "png": "Завантажити як PNG",
+        "svg": "Завантажити як SVG"
+      }
+    }
+  },
+  "emptyArtifactList": "Список поточних артефактів порожній. Будь ласка, використовуйте плагіни під час сеансу та потім перегляньте.",
+  "emptyKnowledgeList": "Поточний список знань порожній. Будь ласка, відкрийте базу знань за необхідності в розмові, перш ніж переглядати.",
+  "files": "файли",
+  "messageDetail": "Деталі повідомлення",
+  "title": "Розширене вікно"
 }
