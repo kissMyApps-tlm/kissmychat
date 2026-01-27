@@ -15,6 +15,7 @@ import {
   GroupManagementManifest,
 } from '@lobechat/builtin-tool-group-management/client';
 import { GTDInspectors, GTDManifest } from '@lobechat/builtin-tool-gtd/client';
+import { KmaNotionInspectors, KmaNotionManifest } from '@lobechat/builtin-tool-kma-notion/client';
 import {
   KnowledgeBaseInspectors,
   KnowledgeBaseManifest,
@@ -51,6 +52,7 @@ const BuiltinToolInspectors: Record<string, Record<string, BuiltinInspector>> = 
     BuiltinInspector
   >,
   [GTDManifest.identifier]: GTDInspectors as Record<string, BuiltinInspector>,
+  [KmaNotionManifest.identifier]: KmaNotionInspectors as Record<string, BuiltinInspector>,
   [KnowledgeBaseManifest.identifier]: KnowledgeBaseInspectors as Record<string, BuiltinInspector>,
   [LocalSystemManifest.identifier]: LocalSystemInspectors as Record<string, BuiltinInspector>,
   [MemoryManifest.identifier]: MemoryInspectors as Record<string, BuiltinInspector>,

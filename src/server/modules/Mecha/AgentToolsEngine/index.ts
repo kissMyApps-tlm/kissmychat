@@ -9,12 +9,14 @@
  * - Gets model capabilities from provided function
  * - No dependency on frontend stores (useToolStore, useAgentStore, etc.)
  */
+import { KmaNotionManifest } from '@lobechat/builtin-tool-kma-notion';
 import { KnowledgeBaseManifest } from '@lobechat/builtin-tool-knowledge-base';
 import { LocalSystemManifest } from '@lobechat/builtin-tool-local-system';
 import { WebBrowsingManifest } from '@lobechat/builtin-tool-web-browsing';
 import { type LobeToolManifest, ToolsEngine } from '@lobechat/context-engine';
 import debug from 'debug';
 
+import { getKmaNotionConfig } from '@/server/services/kmaNotion/config';
 import { builtinTools } from '@/tools';
 
 import type {
@@ -108,7 +110,11 @@ export const createServerAgentToolsEngine = (
     // Pass additional manifests (e.g., LobeHub Skills)
     additionalManifests,
     // Add default tools based on configuration
-    defaultToolIds: [WebBrowsingManifest.identifier, KnowledgeBaseManifest.identifier],
+    defaultToolIds: [
+      WebBrowsingManifest.identifier,
+      KnowledgeBaseManifest.identifier,
+      KmaNotionManifest.identifier,
+    ],
     // Create search-aware enableChecker for this request
     enableChecker: ({ pluginId }) => {
       // Filter LocalSystem tool on server (it's desktop-only)
@@ -125,6 +131,12 @@ export const createServerAgentToolsEngine = (
       // For KnowledgeBaseManifest, only enable if knowledge is enabled
       if (pluginId === KnowledgeBaseManifest.identifier) {
         return hasEnabledKnowledgeBases;
+      }
+
+      // For KMA Notion, enable only if configured
+      if (pluginId === KmaNotionManifest.identifier) {
+        const config = getKmaNotionConfig();
+        return config.enabled;
       }
 
       // For all other plugins, enable by default

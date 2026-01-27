@@ -3,6 +3,7 @@ import { CloudSandboxManifest } from '@lobechat/builtin-tool-cloud-sandbox';
 import { GroupAgentBuilderManifest } from '@lobechat/builtin-tool-group-agent-builder';
 import { GroupManagementManifest } from '@lobechat/builtin-tool-group-management';
 import { GTDManifest } from '@lobechat/builtin-tool-gtd';
+import { KmaNotionManifest } from '@lobechat/builtin-tool-kma-notion';
 import { KnowledgeBaseManifest } from '@lobechat/builtin-tool-knowledge-base';
 import { LocalSystemManifest } from '@lobechat/builtin-tool-local-system';
 import { MemoryManifest } from '@lobechat/builtin-tool-memory';
@@ -75,6 +76,11 @@ export const builtinTools: LobeBuiltinTool[] = [
   {
     identifier: GTDManifest.identifier,
     manifest: GTDManifest,
+    type: 'builtin',
+  },
+  {
+    identifier: KmaNotionManifest.identifier,
+    manifest: KmaNotionManifest,
     type: 'builtin',
   },
   {

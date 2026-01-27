@@ -1,6 +1,7 @@
 /**
  * Tools Engineering - Unified tools processing using ToolsEngine
  */
+import { KmaNotionManifest } from '@lobechat/builtin-tool-kma-notion';
 import { KnowledgeBaseManifest } from '@lobechat/builtin-tool-knowledge-base';
 import { WebBrowsingManifest } from '@lobechat/builtin-tool-web-browsing';
 import { ToolsEngine } from '@lobechat/context-engine';
@@ -8,6 +9,7 @@ import type { PluginEnableChecker } from '@lobechat/context-engine';
 import { type ChatCompletionTool, type WorkingModel } from '@lobechat/types';
 import type { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
 
+import { getKmaNotionConfig } from '@/server/services/kmaNotion/config';
 import { getAgentStoreState } from '@/store/agent';
 import { agentSelectors } from '@/store/agent/selectors';
 import { getToolStoreState } from '@/store/tool';
@@ -81,7 +83,11 @@ export const createToolsEngine = (config: ToolsEngineConfig = {}): ToolsEngine =
 export const createAgentToolsEngine = (workingModel: WorkingModel) =>
   createToolsEngine({
     // Add default tools based on configuration
-    defaultToolIds: [WebBrowsingManifest.identifier, KnowledgeBaseManifest.identifier],
+    defaultToolIds: [
+      WebBrowsingManifest.identifier,
+      KnowledgeBaseManifest.identifier,
+      KmaNotionManifest.identifier,
+    ],
     // Create search-aware enableChecker for this request
     enableChecker: ({ pluginId }) => {
       // Check platform-specific constraints (e.g., LocalSystem desktop-only)
@@ -99,6 +105,12 @@ export const createAgentToolsEngine = (workingModel: WorkingModel) =>
         const agentState = getAgentStoreState();
 
         return agentSelectors.hasEnabledKnowledgeBases(agentState);
+      }
+
+      // For KMA Notion, enable only if configured
+      if (pluginId === KmaNotionManifest.identifier) {
+        const config = getKmaNotionConfig();
+        return config.enabled;
       }
 
       // For all other plugins, enable by default
