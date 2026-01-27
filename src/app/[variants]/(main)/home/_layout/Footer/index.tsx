@@ -68,7 +68,7 @@ const Footer = memo(() => {
 
   useEffect(() => {
     if (isWithinTimeWindow && !isNotificationRead) {
-      setIsProductHuntCardOpen(true);
+      setIsProductHuntCardOpen(false);
       trackProductHuntEvent('product_hunt_card_viewed', {
         spm: 'homepage.product_hunt.viewed',
         trigger: 'auto',
@@ -100,7 +100,7 @@ const Footer = memo(() => {
   };
 
   const handleOpenProductHuntCard = () => {
-    setIsProductHuntCardOpen(true);
+    setIsProductHuntCardOpen(false);
     trackProductHuntEvent('product_hunt_card_viewed', {
       spm: 'homepage.product_hunt.viewed',
       trigger: 'menu_click',
