@@ -1,6 +1,6 @@
 'use client';
 
-import type { EmojiReaction } from '@lobechat/types';
+import  { type EmojiReaction } from '@lobechat/types';
 import { Tag } from '@lobehub/ui';
 import isEqual from 'fast-deep-equal';
 import { type MouseEventHandler } from 'react';
@@ -156,8 +156,8 @@ const GroupMessage = memo<GroupMessageProps>(({ id, index, disableEditing, isLat
         <ReactionDisplay
           isActive={isReactionActive}
           messageId={id}
-          onReactionClick={handleReactionClick}
           reactions={reactions}
+          onReactionClick={handleReactionClick}
         />
       )}
     </ChatItem>

@@ -491,8 +491,8 @@ const FileListItem = memo<FileListItemProps>(
               align={'center'}
               gap={8}
               paddingInline={8}
-              onPointerDown={stopPropagation}
               onClick={stopPropagation}
+              onPointerDown={stopPropagation}
             >
               {!isFolder &&
                 !isPage &&
