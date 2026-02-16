@@ -1,6 +1,6 @@
 'use client';
 
-import type { EmojiReaction } from '@lobechat/types';
+import  { type EmojiReaction } from '@lobechat/types';
 import { Flexbox } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { memo } from 'react';

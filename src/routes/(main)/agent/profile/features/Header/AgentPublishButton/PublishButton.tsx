@@ -13,7 +13,7 @@ import { agentSelectors } from '@/store/agent/selectors';
 
 import { useVersionReviewStatus } from '../AgentVersionReviewTag';
 import ForkConfirmModal from './ForkConfirmModal';
-import type { MarketPublishAction } from './types';
+import  { type MarketPublishAction } from './types';
 import { type OriginalAgentInfo, useMarketPublish } from './useMarketPublish';
 
 interface MarketPublishButtonProps {
