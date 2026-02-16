@@ -1,6 +1,6 @@
-import type { StateCreator } from 'zustand';
+import  { type StateCreator } from 'zustand';
 
-import type { Store as ConversationStore } from '../../../action';
+import  { type Store as ConversationStore } from '../../../action';
 import { type MessageCRUDAction, messageCRUDSlice } from './crud';
 import { type MessageReactionAction, messageReactionSlice } from './reaction';
 import { sendMessage } from './sendMessage';

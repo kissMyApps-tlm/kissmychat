@@ -6,7 +6,7 @@ import PluginTag from '@/components/Plugins/PluginTag';
 import { useToolStore } from '@/store/tool';
 import { customPluginSelectors } from '@/store/tool/selectors';
 
-import type { CheckboxItemProps } from '../components/CheckboxWithLoading';
+import  { type CheckboxItemProps } from '../components/CheckboxWithLoading';
 import CheckboxItem from '../components/CheckboxWithLoading';
 
 const ToolItem = memo<CheckboxItemProps>(({ id, onUpdate, label, checked }) => {
