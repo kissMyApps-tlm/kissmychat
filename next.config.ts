@@ -11,6 +11,8 @@ const nextConfig = defineConfig({
     ? {
         '*': [
           'node_modules/.pnpm/@napi-rs+canvas-*-musl*',
+          'node_modules/.pnpm/@napi-rs+canvas-*-gnu*',
+          'node_modules/.pnpm/@napi-rs+canvas-*-darwin*',
           'node_modules/.pnpm/@img+sharp-libvips-*musl*',
           'node_modules/ffmpeg-static/**',
           'node_modules/.pnpm/ffmpeg-static*/**',
