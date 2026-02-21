@@ -7,6 +7,8 @@
     }
   ],
   "installCommand": "npx pnpm@10.26.2 install",
+  "regions": ["waw1"],
+
   "rewrites": [
     {
       "source": "/_dangerous_local_dev_proxy",
