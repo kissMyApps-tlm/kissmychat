@@ -89,9 +89,18 @@ Important rules:
 - If the tool returns relevant Notion pages, include the source links
 - If the tool returns no results, let the user know and offer to help with what you do know`;
 
+/** LLM params tuned for factual knowledge retrieval */
+const KMA_PARAMS = {
+  frequency_penalty: 0.1,
+  presence_penalty: 0.1,
+  temperature: 0.3,
+  top_p: 0.8,
+};
+
 /** Agent enrichment config — fields to set on the agent DB record if not already present */
 interface AgentEnrichment {
   openingMessage?: string;
+  params?: Record<string, number>;
   pinned?: boolean;
   plugins?: string[];
   systemRole?: string;
@@ -115,6 +124,7 @@ const REQUIRED_PLUGINS: Record<
 const AGENT_ENRICHMENTS: Record<string, AgentEnrichment> = {
   'kiss-my-molfar': {
     openingMessage: KMA_OPENING_MESSAGE,
+    params: KMA_PARAMS,
     pinned: true,
     plugins: [KMA_NOTION_IDENTIFIER],
     systemRole: KMA_SYSTEM_ROLE,
@@ -172,6 +182,9 @@ export async function provisionRequiredPlugins(
     }
     if (enrichment.pinned && !agent.pinned) {
       updates.pinned = enrichment.pinned;
+    }
+    if (enrichment.params && (!agent.params || Object.keys(agent.params).length === 0)) {
+      updates.params = enrichment.params;
     }
 
     if (Object.keys(updates).length > 0) {
