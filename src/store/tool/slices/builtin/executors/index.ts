@@ -15,6 +15,7 @@ import { memoryExecutor } from '@lobechat/builtin-tool-memory/executor';
 
 import  { type BuiltinToolContext, type BuiltinToolResult, type IBuiltinToolExecutor } from '../types';
 import { notebookExecutor } from './lobe-notebook';
+import { notionExecutor } from './lobe-notion';
 import { pageAgentExecutor } from './lobe-page-agent';
 import { skillsExecutor } from './lobe-skills';
 import { webBrowsing } from './lobe-web-browsing';
@@ -130,6 +131,7 @@ registerExecutors([
   localSystemExecutor,
   memoryExecutor,
   notebookExecutor,
+  notionExecutor,
   pageAgentExecutor,
   skillsExecutor,
   webBrowsing,

@@ -6,6 +6,7 @@ import { GTDManifest } from '@lobechat/builtin-tool-gtd';
 import { KnowledgeBaseManifest } from '@lobechat/builtin-tool-knowledge-base';
 import { LocalSystemManifest } from '@lobechat/builtin-tool-local-system';
 import { MemoryManifest } from '@lobechat/builtin-tool-memory';
+import { NotionManifest } from '@lobechat/builtin-tool-notion';
 import { NotebookManifest } from '@lobechat/builtin-tool-notebook';
 import { PageAgentManifest } from '@lobechat/builtin-tool-page-agent';
 import { SkillsManifest } from '@lobechat/builtin-tool-skills';
@@ -90,6 +91,11 @@ export const builtinTools: LobeBuiltinTool[] = [
   {
     identifier: NotebookManifest.identifier,
     manifest: NotebookManifest,
+    type: 'builtin',
+  },
+  {
+    identifier: NotionManifest.identifier,
+    manifest: NotionManifest,
     type: 'builtin',
   },
 ];

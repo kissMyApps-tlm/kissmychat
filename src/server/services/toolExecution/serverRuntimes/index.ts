@@ -8,6 +8,7 @@
  */
 import { type ToolExecutionContext } from '../types';
 import { cloudSandboxRuntime } from './cloudSandbox';
+import { notionRuntime } from './notion';
 import { notebookRuntime } from './notebook';
 import { skillsRuntime } from './skills';
 import { type ServerRuntimeFactory, type ServerRuntimeRegistration } from './types';
@@ -28,7 +29,7 @@ const registerRuntimes = (runtimes: ServerRuntimeRegistration[]) => {
 };
 
 // Register all server runtimes
-registerRuntimes([webBrowsingRuntime, cloudSandboxRuntime, notebookRuntime, skillsRuntime]);
+registerRuntimes([webBrowsingRuntime, cloudSandboxRuntime, notebookRuntime, skillsRuntime, notionRuntime]);
 
 // ==================== Registry API ====================
 
