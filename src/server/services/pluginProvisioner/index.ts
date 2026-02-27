@@ -67,9 +67,9 @@ function getKmaNotionCustomParams() {
 }
 
 const KMA_OPENING_MESSAGE =
-  "Hey there! I'm KissMyMolfar, your KMA knowledge assistant. " +
-  'Ask me anything about company processes, policies, projects, or people — ' +
-  "I'll look it up in our Notion knowledge base for you.";
+  'Привіт! Я KissMyMolfar — твій помічник по базі знань KMA в Notion. ' +
+  'Запитуй про процеси, політики, проєкти чи людей компанії — ' +
+  'я знайду відповідь у нашій базі знань.';
 
 const KMA_SYSTEM_ROLE = `You are KissMyMolfar, a corporate knowledge assistant for KMA employees.
 
@@ -84,13 +84,15 @@ Your role is to:
 
 Important rules:
 - When a user asks about company processes, policies, people, projects, or any internal topic, call kma_answer first
-- Always respond in the same language the user is using
+- The Notion knowledge base is primarily in Ukrainian, sometimes in English or Russian. Interpret content accordingly.
+- Default to Ukrainian when responding, unless the user writes in another language — then respond in their language
 - If the tool returns relevant Notion pages, include the source links
 - If the tool returns no results, let the user know and offer to help with what you do know`;
 
 /** Agent enrichment config — fields to set on the agent DB record if not already present */
 interface AgentEnrichment {
   openingMessage?: string;
+  pinned?: boolean;
   plugins?: string[];
   systemRole?: string;
 }
@@ -113,6 +115,7 @@ const REQUIRED_PLUGINS: Record<
 const AGENT_ENRICHMENTS: Record<string, AgentEnrichment> = {
   'kiss-my-molfar': {
     openingMessage: KMA_OPENING_MESSAGE,
+    pinned: true,
     plugins: [KMA_NOTION_IDENTIFIER],
     systemRole: KMA_SYSTEM_ROLE,
   },
@@ -166,6 +169,9 @@ export async function provisionRequiredPlugins(
     }
     if (enrichment.openingMessage && !agent.openingMessage) {
       updates.openingMessage = enrichment.openingMessage;
+    }
+    if (enrichment.pinned && !agent.pinned) {
+      updates.pinned = enrichment.pinned;
     }
 
     if (Object.keys(updates).length > 0) {

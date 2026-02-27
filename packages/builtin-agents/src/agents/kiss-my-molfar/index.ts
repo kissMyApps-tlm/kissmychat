@@ -13,7 +13,7 @@ export const KISS_MY_MOLFAR: BuiltinAgentDefinition = {
   persist: {
     model: 'claude-sonnet-4-6',
     provider: 'anthropic',
-    title: 'KissMyMolfar',
+    title: 'KissMyMolfar(Notion)',
     virtual: false,
   },
   runtime: (ctx) => ({
