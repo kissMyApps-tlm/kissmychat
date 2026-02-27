@@ -18,6 +18,7 @@ import {
   RedisKeys,
 } from '@/libs/redis';
 import { getServerDefaultAgentConfig } from '@/server/globalConfig';
+import { provisionRequiredPlugins } from '@/server/services/pluginProvisioner';
 
 import { type UpdateAgentResult } from './type';
 
@@ -77,6 +78,9 @@ export class AgentService {
       this.agentModel.getBuiltinAgent(slug),
       this.userModel.getUserSettingsDefaultAgentConfig(),
     ]);
+
+    // Auto-provision required plugins for this builtin agent
+    if (agent) await provisionRequiredPlugins(slug, this.db, this.userId);
 
     const mergedConfig = this.mergeDefaultConfig(agent, defaultAgentConfig);
     if (!mergedConfig) return null;

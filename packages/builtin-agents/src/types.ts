@@ -10,6 +10,7 @@ export const BUILTIN_AGENT_SLUGS = {
   groupAgentBuilder: 'group-agent-builder',
   groupSupervisor: 'group-supervisor',
   inbox: 'inbox',
+  kissMyMolfar: 'kiss-my-molfar',
   pageAgent: 'page-agent',
 } as const;
 
@@ -25,6 +26,10 @@ export interface BuiltinAgentPersistConfig {
   model?: string;
   /** Default provider */
   provider?: string;
+  /** Display title for sidebar. If omitted, the agent shows as untitled. */
+  title?: string;
+  /** Whether the agent is virtual (hidden from sidebar). Defaults to true in getBuiltinAgent. */
+  virtual?: boolean;
 }
 
 /**
