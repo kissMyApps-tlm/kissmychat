@@ -1,5 +1,6 @@
 import type { LobeChatDatabase } from '@lobechat/database';
 
+import { AgentModel } from '@/database/models/agent';
 import { PluginModel } from '@/database/models/plugin';
 
 const KMA_NOTION_IDENTIFIER = 'kma-notion';
@@ -65,6 +66,35 @@ function getKmaNotionCustomParams() {
   };
 }
 
+const KMA_OPENING_MESSAGE =
+  "Hey there! I'm KissMyMolfar, your KMA knowledge assistant. " +
+  'Ask me anything about company processes, policies, projects, or people — ' +
+  "I'll look it up in our Notion knowledge base for you.";
+
+const KMA_SYSTEM_ROLE = `You are KissMyMolfar, a corporate knowledge assistant for KMA employees.
+
+Current model: {{model}}
+Today's date: {{date}}
+
+Your role is to:
+- Help employees find information from the company's Notion knowledge base
+- Always use the **kma_answer** tool for any company-related question before answering from your own knowledge
+- Include Notion source links in your responses when available
+- Be brief, friendly, and professional
+
+Important rules:
+- When a user asks about company processes, policies, people, projects, or any internal topic, call kma_answer first
+- Always respond in the same language the user is using
+- If the tool returns relevant Notion pages, include the source links
+- If the tool returns no results, let the user know and offer to help with what you do know`;
+
+/** Agent enrichment config — fields to set on the agent DB record if not already present */
+interface AgentEnrichment {
+  openingMessage?: string;
+  plugins?: string[];
+  systemRole?: string;
+}
+
 /** Map of agent slugs to their required plugins */
 const REQUIRED_PLUGINS: Record<
   string,
@@ -79,29 +109,67 @@ const REQUIRED_PLUGINS: Record<
   ],
 };
 
+/** Map of agent slugs to agent enrichment (fields set on agent record if missing) */
+const AGENT_ENRICHMENTS: Record<string, AgentEnrichment> = {
+  'kiss-my-molfar': {
+    openingMessage: KMA_OPENING_MESSAGE,
+    plugins: [KMA_NOTION_IDENTIFIER],
+    systemRole: KMA_SYSTEM_ROLE,
+  },
+};
+
 /**
- * Auto-provision required plugins for a builtin agent.
- * Checks before creating to avoid overwriting user-modified settings.
+ * Auto-provision required plugins and enrich agent defaults for builtin agents.
+ *
+ * - Creates plugin entries (manifest + customParams) if not already present
+ * - Sets plugins, systemRole, openingMessage on the agent record if missing
+ *
+ * Fully self-contained — no changes to upstream DB models needed.
  */
 export async function provisionRequiredPlugins(
   slug: string,
   db: LobeChatDatabase,
   userId: string,
 ) {
+  // --- 1. Provision plugins ---
   const plugins = REQUIRED_PLUGINS[slug];
-  if (!plugins) return;
+  if (plugins) {
+    const pluginModel = new PluginModel(db, userId);
 
-  const pluginModel = new PluginModel(db, userId);
+    for (const plugin of plugins) {
+      const existing = await pluginModel.findById(plugin.identifier);
+      if (existing) continue;
 
-  for (const plugin of plugins) {
-    const existing = await pluginModel.findById(plugin.identifier);
-    if (existing) continue;
+      await pluginModel.create({
+        customParams: plugin.getCustomParams(),
+        identifier: plugin.identifier,
+        manifest: plugin.getManifest(),
+        type: 'plugin',
+      });
+    }
+  }
 
-    await pluginModel.create({
-      customParams: plugin.getCustomParams(),
-      identifier: plugin.identifier,
-      manifest: plugin.getManifest(),
-      type: 'plugin',
-    });
+  // --- 2. Enrich agent record (plugins, systemRole, openingMessage) ---
+  const enrichment = AGENT_ENRICHMENTS[slug];
+  if (enrichment) {
+    const agentModel = new AgentModel(db, userId);
+    const agent = await agentModel.getBuiltinAgent(slug);
+    if (!agent) return;
+
+    // Only set fields that are currently empty — don't overwrite user edits
+    const updates: Record<string, any> = {};
+    if (enrichment.plugins && (!agent.plugins || agent.plugins.length === 0)) {
+      updates.plugins = enrichment.plugins;
+    }
+    if (enrichment.systemRole && !agent.systemRole) {
+      updates.systemRole = enrichment.systemRole;
+    }
+    if (enrichment.openingMessage && !agent.openingMessage) {
+      updates.openingMessage = enrichment.openingMessage;
+    }
+
+    if (Object.keys(updates).length > 0) {
+      await agentModel.update(agent.id, updates);
+    }
   }
 }
