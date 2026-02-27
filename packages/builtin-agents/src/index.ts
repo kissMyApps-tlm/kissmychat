@@ -2,6 +2,7 @@ import { AGENT_BUILDER } from './agents/agent-builder';
 import { GROUP_AGENT_BUILDER } from './agents/group-agent-builder';
 import { GROUP_SUPERVISOR } from './agents/group-supervisor';
 import { INBOX } from './agents/inbox';
+import { KISS_MY_MOLFAR } from './agents/kiss-my-molfar';
 import { PAGE_AGENT } from './agents/page-agent';
 import type { BuiltinAgentDefinition, BuiltinAgentSlug, RuntimeContext } from './types';
 import { BUILTIN_AGENT_SLUGS } from './types';
@@ -13,6 +14,7 @@ export { AGENT_BUILDER } from './agents/agent-builder';
 export { GROUP_AGENT_BUILDER } from './agents/group-agent-builder';
 export { GROUP_SUPERVISOR } from './agents/group-supervisor';
 export { INBOX } from './agents/inbox';
+export { KISS_MY_MOLFAR } from './agents/kiss-my-molfar';
 export { PAGE_AGENT } from './agents/page-agent';
 
 /**
@@ -23,6 +25,7 @@ export const BUILTIN_AGENTS: Record<BuiltinAgentSlug, BuiltinAgentDefinition> = 
   [BUILTIN_AGENT_SLUGS.groupAgentBuilder]: GROUP_AGENT_BUILDER,
   [BUILTIN_AGENT_SLUGS.groupSupervisor]: GROUP_SUPERVISOR,
   [BUILTIN_AGENT_SLUGS.inbox]: INBOX,
+  [BUILTIN_AGENT_SLUGS.kissMyMolfar]: KISS_MY_MOLFAR,
   [BUILTIN_AGENT_SLUGS.pageAgent]: PAGE_AGENT,
 };
 
@@ -35,7 +38,7 @@ export const getAgentPersistConfig = (slug: string) => {
   const agent = BUILTIN_AGENTS[slug as BuiltinAgentSlug];
   if (!agent) return undefined;
 
-  return { ...agent.persist, slug: agent.slug };
+  return { ...agent.persist, avatar: agent.avatar, slug: agent.slug };
 };
 
 /**
