@@ -143,13 +143,13 @@ export async function provisionRequiredPlugins(
   slug: string,
   db: LobeChatDatabase,
   userId: string,
-) {
+): Promise<Record<string, any> | undefined> {
   // --- 1. Provision plugins ---
-  const plugins = REQUIRED_PLUGINS[slug];
-  if (plugins) {
+  const requiredPlugins = REQUIRED_PLUGINS[slug];
+  if (requiredPlugins) {
     const pluginModel = new PluginModel(db, userId);
 
-    for (const plugin of plugins) {
+    for (const plugin of requiredPlugins) {
       const existing = await pluginModel.findById(plugin.identifier);
       if (existing) continue;
 
@@ -162,33 +162,38 @@ export async function provisionRequiredPlugins(
     }
   }
 
-  // --- 2. Enrich agent record (plugins, systemRole, openingMessage) ---
+  // --- 2. Enrich agent record (plugins, systemRole, openingMessage, etc.) ---
   const enrichment = AGENT_ENRICHMENTS[slug];
-  if (enrichment) {
-    const agentModel = new AgentModel(db, userId);
-    const agent = await agentModel.getBuiltinAgent(slug);
-    if (!agent) return;
+  if (!enrichment) return;
 
-    // Only set fields that are currently empty — don't overwrite user edits
-    const updates: Record<string, any> = {};
-    if (enrichment.plugins && (!agent.plugins || agent.plugins.length === 0)) {
-      updates.plugins = enrichment.plugins;
-    }
-    if (enrichment.systemRole && !agent.systemRole) {
-      updates.systemRole = enrichment.systemRole;
-    }
-    if (enrichment.openingMessage && !agent.openingMessage) {
-      updates.openingMessage = enrichment.openingMessage;
-    }
-    if (enrichment.pinned && !agent.pinned) {
-      updates.pinned = enrichment.pinned;
-    }
-    if (enrichment.params && (!agent.params || Object.keys(agent.params).length === 0)) {
-      updates.params = enrichment.params;
-    }
+  const agentModel = new AgentModel(db, userId);
+  const agent = await agentModel.getBuiltinAgent(slug);
+  if (!agent) return;
 
-    if (Object.keys(updates).length > 0) {
-      await agentModel.update(agent.id, updates);
-    }
+  // Only set fields that are currently empty — don't overwrite user edits
+  const updates: Record<string, any> = {};
+  if (enrichment.plugins && (!agent.plugins || agent.plugins.length === 0)) {
+    updates.plugins = enrichment.plugins;
   }
+  if (enrichment.systemRole && !agent.systemRole) {
+    updates.systemRole = enrichment.systemRole;
+  }
+  if (enrichment.openingMessage && !agent.openingMessage) {
+    updates.openingMessage = enrichment.openingMessage;
+  }
+  if (enrichment.pinned && !agent.pinned) {
+    updates.pinned = enrichment.pinned;
+  }
+  if (enrichment.params && (!agent.params || Object.keys(agent.params).length === 0)) {
+    updates.params = enrichment.params;
+  }
+
+  if (Object.keys(updates).length > 0) {
+    await agentModel.update(agent.id, updates);
+  }
+
+  // Return updates so caller can merge them into the current response
+  // (the DB is updated for future requests, but the current request
+  //  already fetched the old data before provisioning ran)
+  return Object.keys(updates).length > 0 ? updates : undefined;
 }

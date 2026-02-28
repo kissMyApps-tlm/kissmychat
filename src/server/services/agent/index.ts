@@ -79,8 +79,11 @@ export class AgentService {
       this.userModel.getUserSettingsDefaultAgentConfig(),
     ]);
 
-    // Auto-provision required plugins for this builtin agent
-    if (agent) await provisionRequiredPlugins(slug, this.db, this.userId);
+    // Auto-provision required plugins and enrich agent defaults
+    if (agent) {
+      const enrichment = await provisionRequiredPlugins(slug, this.db, this.userId);
+      if (enrichment) Object.assign(agent, enrichment);
+    }
 
     const mergedConfig = this.mergeDefaultConfig(agent, defaultAgentConfig);
     if (!mergedConfig) return null;
