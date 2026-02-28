@@ -97,8 +97,9 @@ const KMA_PARAMS = {
   top_p: 0.8,
 };
 
-/** Agent enrichment config — fields to set on the agent DB record if not already present */
+/** Agent enrichment config — fields managed by the provisioner */
 interface AgentEnrichment {
+  avatar?: string;
   openingMessage?: string;
   params?: Record<string, number>;
   pinned?: boolean;
@@ -123,6 +124,7 @@ const REQUIRED_PLUGINS: Record<
 /** Map of agent slugs to agent enrichment (fields set on agent record if missing) */
 const AGENT_ENRICHMENTS: Record<string, AgentEnrichment> = {
   'kiss-my-molfar': {
+    avatar: '/avatars/kiss-my-molfar.png',
     openingMessage: KMA_OPENING_MESSAGE,
     params: KMA_PARAMS,
     pinned: true,
@@ -170,16 +172,22 @@ export async function provisionRequiredPlugins(
   const agent = await agentModel.getBuiltinAgent(slug);
   if (!agent) return;
 
-  // Only set fields that are currently empty — don't overwrite user edits
+  // Always force-set managed fields to match the current definition.
+  // This ensures updates to defaults (e.g. new system prompt, translated greeting)
+  // take effect on next deploy without requiring users to delete their agent.
   const updates: Record<string, any> = {};
-  if (enrichment.plugins && (!agent.plugins || agent.plugins.length === 0)) {
-    updates.plugins = enrichment.plugins;
-  }
-  if (enrichment.systemRole && !agent.systemRole) {
+  if (enrichment.systemRole && agent.systemRole !== enrichment.systemRole) {
     updates.systemRole = enrichment.systemRole;
   }
-  if (enrichment.openingMessage && !agent.openingMessage) {
+  if (enrichment.openingMessage && agent.openingMessage !== enrichment.openingMessage) {
     updates.openingMessage = enrichment.openingMessage;
+  }
+  if (enrichment.avatar && agent.avatar !== enrichment.avatar) {
+    updates.avatar = enrichment.avatar;
+  }
+  // These fields only set if empty — user may have customized them
+  if (enrichment.plugins && (!agent.plugins || agent.plugins.length === 0)) {
+    updates.plugins = enrichment.plugins;
   }
   if (enrichment.pinned && !agent.pinned) {
     updates.pinned = enrichment.pinned;
