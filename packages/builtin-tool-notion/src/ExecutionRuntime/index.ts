@@ -21,7 +21,7 @@ export class NotionExecutionRuntime {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${this.token}`,
+        'Authorization': `Bearer ${this.token}`,
       },
       body: JSON.stringify({ question: args.question }),
       signal: options?.signal,
@@ -38,10 +38,12 @@ export class NotionExecutionRuntime {
       (s) => `- [${s.title}](${s.url})${s.description ? `: ${s.description}` : ''}`,
     );
 
+    const confidenceLine = `**Confidence:** ${data.confidence}`;
+
     const content =
       data.sources.length > 0
-        ? `${data.answer}\n\n**Sources:**\n${sourceLines.join('\n')}`
-        : data.answer;
+        ? `${data.answer}\n\n${confidenceLine}\n\n**Sources:**\n${sourceLines.join('\n')}`
+        : `${data.answer}\n\n${confidenceLine}`;
 
     return { content, state: data, success: true };
   }

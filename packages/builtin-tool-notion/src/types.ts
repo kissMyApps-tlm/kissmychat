@@ -9,13 +9,14 @@ export interface NotionAskParams {
 }
 
 export interface NotionSource {
-  pageId: string;
-  title: string;
   description?: string;
+  documentId: string;
+  title: string;
   url: string;
 }
 
 export interface NotionAskResponse {
   answer: string;
+  confidence: 'high' | 'medium' | 'low' | 'none';
   sources: NotionSource[];
 }
