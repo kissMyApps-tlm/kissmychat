@@ -13,7 +13,7 @@ const log = debug('lobe-server:bot:gateway:cron:discord');
 const GATEWAY_DURATION_MS = 600_000; // 10 minutes
 const POLL_INTERVAL_MS = 30_000; // 30 seconds
 
-export const maxDuration = 800;
+export const maxDuration = 300;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
