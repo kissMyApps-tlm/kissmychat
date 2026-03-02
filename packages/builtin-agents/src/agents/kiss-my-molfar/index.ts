@@ -29,7 +29,7 @@ export const KISS_MY_MOLFAR: BuiltinAgentDefinition = {
     pinned: true,
     plugins: [NotionManifest.identifier],
     provider: 'anthropic',
-    title: 'KissMyMolfar',
+    title: 'KissMyMolfar [Notion]',
     virtual: false,
   },
   runtime: (ctx) => ({
