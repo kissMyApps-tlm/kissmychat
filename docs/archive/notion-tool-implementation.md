@@ -9,11 +9,11 @@ corporate Notion workspace via the indexing-proxy service at `https://mcp-my-not
 
 The proxy exposes three endpoints (see `notion-rest-api.md`):
 
-| Endpoint | Purpose | When to call |
-|---|---|---|
-| `POST /search/answer` | Hybrid search + AI-generated answer + sources | Primary tool call |
-| `POST /search/vector` | Raw semantic chunks, no AI answer | Optional: deeper analysis |
-| `GET /pages/:pageId` | Full Markdown content of one page | Optional: source preview |
+| Endpoint              | Purpose                                       | When to call              |
+| --------------------- | --------------------------------------------- | ------------------------- |
+| `POST /search/answer` | Hybrid search + AI-generated answer + sources | Primary tool call         |
+| `POST /search/vector` | Raw semantic chunks, no AI answer             | Optional: deeper analysis |
+| `GET /pages/:pageId`  | Full Markdown content of one page             | Optional: source preview  |
 
 For chat integration only `POST /search/answer` is needed. The response already contains
 a short factual answer and Notion source links — the AI just formats them for the user.
@@ -28,6 +28,7 @@ Auth: every request needs `Authorization: Bearer <QUERY_AUTH_TOKEN>`. The token 
 There are two execution paths depending on context:
 
 **Regular browser-based chat** (the common case):
+
 ```
 AI tool call
   → browser: pluginTypes.invokeBuiltinTool()
@@ -37,6 +38,7 @@ AI tool call
 ```
 
 **Server-side agent** (AgentRuntimeService, background jobs, webhooks):
+
 ```
 AI tool call
   → BuiltinToolsExecutor.execute()
@@ -90,17 +92,17 @@ src/tools/
 
 ```json
 {
-  "name": "@lobechat/builtin-tool-notion",
-  "version": "1.0.0",
-  "private": true,
+  "devDependencies": {
+    "@lobechat/types": "workspace:*"
+  },
   "exports": {
     ".": "./src/index.ts",
     "./executionRuntime": "./src/ExecutionRuntime/index.ts"
   },
   "main": "./src/index.ts",
-  "devDependencies": {
-    "@lobechat/types": "workspace:*"
-  }
+  "name": "@lobechat/builtin-tool-notion",
+  "private": true,
+  "version": "1.0.0"
 }
 ```
 
@@ -211,7 +213,7 @@ export class NotionExecutionRuntime {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${this.token}`,
+        'Authorization': `Bearer ${this.token}`,
       },
       body: JSON.stringify({ question: args.question }),
       signal: options?.signal,
@@ -260,13 +262,13 @@ export const getToolsConfig = () => {
   return createEnv({
     runtimeEnv: {
       CRAWLER_IMPLS: process.env.CRAWLER_IMPLS,
-      NOTION_QUERY_TOKEN: process.env.NOTION_QUERY_TOKEN,   // ← add
+      NOTION_QUERY_TOKEN: process.env.NOTION_QUERY_TOKEN, // ← add
       SEARCH_PROVIDERS: process.env.SEARCH_PROVIDERS,
       SEARXNG_URL: process.env.SEARXNG_URL,
     },
     server: {
       CRAWLER_IMPLS: z.string().optional(),
-      NOTION_QUERY_TOKEN: z.string().optional(),             // ← add
+      NOTION_QUERY_TOKEN: z.string().optional(), // ← add
       SEARCH_PROVIDERS: z.string().optional(),
       SEARXNG_URL: z.string().url().optional(),
     },
@@ -314,7 +316,7 @@ export const toolsRouter = router({
   klavis: klavisRouter,
   market: marketRouter,
   mcp: mcpRouter,
-  notion: notionRouter,   // ← add
+  notion: notionRouter, // ← add
   search: searchRouter,
 });
 ```
@@ -368,7 +370,13 @@ export const notionRuntime: ServerRuntimeRegistration = {
 ```typescript
 import { notionRuntime } from './notion';
 
-registerRuntimes([webBrowsingRuntime, cloudSandboxRuntime, notebookRuntime, skillsRuntime, notionRuntime]);
+registerRuntimes([
+  webBrowsingRuntime,
+  cloudSandboxRuntime,
+  notebookRuntime,
+  skillsRuntime,
+  notionRuntime,
+]);
 ```
 
 ---
@@ -470,7 +478,7 @@ export const defaultToolIds = [
   WebBrowsingManifest.identifier,
   KnowledgeBaseManifest.identifier,
   SkillsManifest.identifier,
-  NotionManifest.identifier,  // ← makes it default-on for all conversations
+  NotionManifest.identifier, // ← makes it default-on for all conversations
 ];
 ```
 
@@ -483,6 +491,7 @@ export const defaultToolIds = [
 `NOTION_QUERY_TOKEN` is declared in the `server:` block of `createEnv` — Next.js /
 `@t3-oss/env-nextjs` guarantees it is never bundled into client JS. The only code that
 reads it is:
+
 - The TRPC router (`src/server/routers/tools/notion.ts`) — called by browser chat
 - The server runtime (`serverRuntimes/notion.ts`) — called by server-side agents
 
@@ -538,6 +547,7 @@ name on the executor class must exactly match a value in `NotionApiName`.
 ### 8. Optional endpoints (`/search/vector`, `GET /pages/:pageId`)
 
 These can be added as additional API entries in the manifest later:
+
 - `/search/vector` — useful if the AI needs to do its own re-ranking or multi-step analysis
 - `GET /pages/:pageId` — useful for a "show me the full page" follow-up action
 
