@@ -562,11 +562,13 @@ export class AgentModel {
     const result = await this.db
       .insert(agents)
       .values({
+        avatar: persistConfig.avatar,
         model: persistConfig.model,
         provider: persistConfig.provider,
         slug: persistConfig.slug,
+        title: persistConfig.title,
         userId: this.userId,
-        virtual: true,
+        virtual: persistConfig.virtual ?? true,
       })
       .returning();
 

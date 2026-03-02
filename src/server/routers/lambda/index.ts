@@ -9,6 +9,7 @@ import { topUpRouter } from '@/business/server/lambda-routers/topUp';
 import { publicProcedure, router } from '@/libs/trpc/lambda';
 
 import { agentRouter } from './agent';
+import { agentBotProviderRouter } from './agentBotProvider';
 import { agentCronJobRouter } from './agentCronJob';
 import { agentEvalRouter } from './agentEval';
 import { agentGroupRouter } from './agentGroup';
@@ -53,6 +54,7 @@ import { videoRouter } from './video';
 
 export const lambdaRouter = router({
   agent: agentRouter,
+  agentBotProvider: agentBotProviderRouter,
   agentCronJob: agentCronJobRouter,
   agentEval: agentEvalRouter,
   agentSkills: agentSkillsRouter,
@@ -95,13 +97,11 @@ export const lambdaRouter = router({
   userMemories: userMemoriesRouter,
   userMemory: userMemoryRouter,
   video: videoRouter,
-  /* eslint-disable sort-keys-fix/sort-keys-fix */
   accountDeletion: accountDeletionRouter,
   referral: referralRouter,
   spend: spendRouter,
   subscription: subscriptionRouter,
   topUp: topUpRouter,
-  /* eslint-enable sort-keys-fix/sort-keys-fix */
 });
 
 export type LambdaRouter = typeof lambdaRouter;

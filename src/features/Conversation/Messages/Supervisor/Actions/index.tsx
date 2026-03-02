@@ -1,7 +1,8 @@
-import  {type AssistantContentBlock, type UIChatMessage} from '@lobechat/types';
+import  { type AssistantContentBlock, type UIChatMessage } from '@lobechat/types';
 import  { type ActionIconGroupEvent, type ActionIconGroupItemType } from '@lobehub/ui';
-import { ActionIconGroup, createRawModal , Flexbox} from '@lobehub/ui';
+import { ActionIconGroup, createRawModal, Flexbox } from '@lobehub/ui';
 import { memo, useCallback, useMemo } from 'react';
+
 
 import { ReactionPicker } from '../../../components/Reaction';
 import ShareMessageModal, { type ShareModalProps } from '../../../components/ShareMessageModal';
@@ -12,7 +13,7 @@ import {
   useConversationStore,
   useConversationStoreApi,
 } from '../../../store';
-import  {
+import {
   type MessageActionItem,
   type MessageActionItemOrDivider,
   type MessageActionsConfig,

@@ -5,6 +5,8 @@
  * Executors are registered as class instances by identifier.
  */
 import { agentBuilderExecutor } from '@lobechat/builtin-tool-agent-builder/executor';
+import { agentManagementExecutor } from '@lobechat/builtin-tool-agent-management/executor';
+import { calculatorExecutor } from '@lobechat/builtin-tool-calculator/executor';
 import { cloudSandboxExecutor } from '@lobechat/builtin-tool-cloud-sandbox/executor';
 import { groupAgentBuilderExecutor } from '@lobechat/builtin-tool-group-agent-builder/executor';
 import { groupManagementExecutor } from '@lobechat/builtin-tool-group-management/executor';
@@ -13,11 +15,13 @@ import { knowledgeBaseExecutor } from '@lobechat/builtin-tool-knowledge-base/exe
 import { localSystemExecutor } from '@lobechat/builtin-tool-local-system/executor';
 import { memoryExecutor } from '@lobechat/builtin-tool-memory/executor';
 
-import  { type BuiltinToolContext, type BuiltinToolResult, type IBuiltinToolExecutor } from '../types';
+import { type BuiltinToolContext, type BuiltinToolResult, type IBuiltinToolExecutor } from '../types';
 import { notebookExecutor } from './lobe-notebook';
 import { notionExecutor } from './lobe-notion';
 import { pageAgentExecutor } from './lobe-page-agent';
+import { skillStoreExecutor } from './lobe-skill-store';
 import { skillsExecutor } from './lobe-skills';
+import { toolsActivatorExecutor } from './lobe-tools';
 import { webBrowsing } from './lobe-web-browsing';
 
 // ==================== Import and register all executors ====================
@@ -123,6 +127,8 @@ const registerExecutors = (executors: IBuiltinToolExecutor[]): void => {
 // Register all executor instances
 registerExecutors([
   agentBuilderExecutor,
+  agentManagementExecutor,
+  calculatorExecutor,
   cloudSandboxExecutor,
   groupAgentBuilderExecutor,
   groupManagementExecutor,
@@ -133,6 +139,8 @@ registerExecutors([
   notebookExecutor,
   notionExecutor,
   pageAgentExecutor,
+  skillStoreExecutor,
   skillsExecutor,
+  toolsActivatorExecutor,
   webBrowsing,
 ]);
