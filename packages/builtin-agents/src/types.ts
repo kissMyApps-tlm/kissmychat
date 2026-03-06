@@ -24,6 +24,14 @@ export interface BuiltinAgentPersistConfig {
   chatConfig?: Partial<LobeAgentChatConfig>;
   /** Default model */
   model?: string;
+  /** Opening message shown when the agent chat starts */
+  openingMessage?: string;
+  /** LLM parameters (temperature, top_p, etc.) */
+  params?: Record<string, number>;
+  /** Whether the agent is pinned in the sidebar */
+  pinned?: boolean;
+  /** Plugins/tools enabled for the agent */
+  plugins?: string[];
   /** Default provider */
   provider?: string;
   /** Display title for sidebar. If omitted, the agent shows as untitled. */
