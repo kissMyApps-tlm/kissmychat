@@ -17,6 +17,7 @@ const Copilot = memo(() => {
     s.updateSystemStatus,
   ]);
 
+  console.log('defaultWidth:', width);
   return (
     <RightPanel
       defaultWidth={width}

@@ -91,7 +91,7 @@ export const localeOptions: LocaleOptions = [
     value: 'pt-BR',
   },
   {
-    label: 'Русский',
+    label: 'Українська',
     value: 'ru-RU',
   },
   {

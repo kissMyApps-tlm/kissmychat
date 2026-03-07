@@ -15,7 +15,7 @@ import { knowledgeBaseExecutor } from '@lobechat/builtin-tool-knowledge-base/exe
 import { localSystemExecutor } from '@lobechat/builtin-tool-local-system/executor';
 import { memoryExecutor } from '@lobechat/builtin-tool-memory/executor';
 
-import type { BuiltinToolContext, BuiltinToolResult, IBuiltinToolExecutor } from '../types';
+import  { type BuiltinToolContext, type BuiltinToolResult, type IBuiltinToolExecutor } from '../types';
 import { notebookExecutor } from './lobe-notebook';
 import { pageAgentExecutor } from './lobe-page-agent';
 import { skillStoreExecutor } from './lobe-skill-store';
