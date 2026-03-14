@@ -4,7 +4,7 @@ import type { CrawlUniformResult, CrawlUrlRule } from './type';
 import { crawUrlRules } from './urlRules';
 import { applyUrlRules } from './utils/appUrlRules';
 
-const defaultImpls = ['jina', 'naive', 'search1api', 'browserless'] as CrawlImplType[];
+const defaultImpls = ['exa', 'jina', 'naive', 'search1api', 'browserless'] as CrawlImplType[];
 
 interface CrawlOptions {
   impls?: string[];

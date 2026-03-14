@@ -1,7 +1,6 @@
 import type { MainBroadcastEventKey, MainBroadcastParams } from '@lobechat/electron-client-ipc';
 import type { WebContents } from 'electron';
 
-import RemoteServerConfigCtr from '@/controllers/RemoteServerConfigCtr';
 import { createLogger } from '@/utils/logger';
 
 import type {
@@ -186,9 +185,8 @@ export class BrowserManager {
   async initializeBrowsers() {
     logger.info('Initializing all browsers');
 
-    // Check if onboarding is completed (remote server configured)
-    const remoteServerConfigCtr = this.app.getController(RemoteServerConfigCtr);
-    const isOnboardingCompleted = await remoteServerConfigCtr.isRemoteServerConfigured();
+    // KissMyApps: skip desktop onboarding, always go straight to app
+    const isOnboardingCompleted = true;
 
     Object.values(appBrowsers).forEach((browser: BrowserWindowOpts) => {
       logger.debug(`Initializing browser: ${browser.identifier}`);

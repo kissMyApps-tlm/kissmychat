@@ -31,7 +31,20 @@ export class ExaImpl implements SearchServiceImpl {
     const endpoint = urlJoin(this.baseUrl, '/search');
 
     const defaultQueryParams: ExaSearchParameters = {
-      numResults: 15,
+      contents: {
+        highlights: {
+          maxCharacters: 6500,
+          query,
+        },
+        livecrawlTimeout: 15_000,
+        maxAgeHours: 24,
+        summary: { query },
+        text: {
+          maxCharacters: 10_000,
+          verbosity: 'standard',
+        },
+      },
+      numResults: 6,
       query,
       type: 'auto',
     };
@@ -51,8 +64,11 @@ export class ExaImpl implements SearchServiceImpl {
             };
           })()
         : {}),
-      // Exa only supports news type
-      category: params?.searchCategories?.find((cat) => ['news'].includes(cat)),
+      category: params?.searchCategories?.find((cat) =>
+        ['news', 'company', 'research paper', 'tweet', 'personal site', 'financial report'].includes(
+          cat,
+        ),
+      ),
     };
 
     log('Constructed request body: %o', body);
@@ -99,17 +115,23 @@ export class ExaImpl implements SearchServiceImpl {
 
       log('Parsed Exa response: %o', exaResponse);
 
-      const mappedResults = (exaResponse.results || []).map(
-        (result): UniformSearchResult => ({
-          category: body.category || 'general', // Default category
-          content: result.text || '', // Prioritize content, fallback to snippet
-          engines: ['exa'], // Use 'exa' as the engine name
-          parsedUrl: result.url ? new URL(result.url).hostname : '', // Basic URL parsing
-          score: result.score || 0, // Default score to 0 if undefined
+      const mappedResults = (exaResponse.results || []).map((result): UniformSearchResult => {
+        // Combine all content sources for maximum context
+        const parts: string[] = [];
+        if (result.summary) parts.push(result.summary);
+        if (result.highlights?.length) parts.push(result.highlights.join(' … '));
+        if (result.text && parts.length === 0) parts.push(result.text);
+
+        return {
+          category: body.category || 'general',
+          content: parts.join('\n\n') || '',
+          engines: ['exa'],
+          parsedUrl: result.url ? new URL(result.url).hostname : '',
+          score: result.score || 0,
           title: result.title || '',
           url: result.url,
-        }),
-      );
+        };
+      });
 
       log('Mapped %d results to SearchResult format', mappedResults.length);
 

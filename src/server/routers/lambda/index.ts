@@ -14,6 +14,7 @@ import { agentCronJobRouter } from './agentCronJob';
 import { agentEvalRouter } from './agentEval';
 import { agentEvalExternalRouter } from './agentEvalExternal';
 import { agentGroupRouter } from './agentGroup';
+import { agentGroupExportRouter } from './agentGroupExport';
 import { agentSkillsRouter } from './agentSkills';
 import { aiAgentRouter } from './aiAgent';
 import { aiChatRouter } from './aiChat';
@@ -78,6 +79,7 @@ export const lambdaRouter = router({
   generationBatch: generationBatchRouter,
   generationTopic: generationTopicRouter,
   group: agentGroupRouter,
+  groupExport: agentGroupExportRouter,
   healthcheck: publicProcedure.query(() => "i'm live!"),
   home: homeRouter,
   image: imageRouter,

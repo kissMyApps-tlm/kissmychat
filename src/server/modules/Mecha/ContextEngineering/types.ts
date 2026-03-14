@@ -1,6 +1,7 @@
 /* eslint-disable perfectionist/sort-interfaces */
 import type {
   AgentBuilderContext,
+  AgentGroupConfig,
   AgentManagementContext,
   DiscordContext,
   EvalContext,
@@ -68,6 +69,8 @@ export interface ServerMessagesEngineParams {
   // ========== Extended contexts ==========
   /** Agent Builder context (optional, for editing agents) */
   agentBuilderContext?: AgentBuilderContext;
+  /** Agent group configuration for multi-agent DM filtering */
+  agentGroup?: AgentGroupConfig;
   /** Agent Management context (optional, available models and plugins) */
   agentManagementContext?: AgentManagementContext;
   // ========== Capability injection ==========
@@ -125,6 +128,7 @@ export interface ServerMessagesEngineParams {
 
 export {
   type AgentBuilderContext,
+  type AgentGroupConfig,
   type AgentManagementContext,
   type DiscordContext,
   type EvalContext,

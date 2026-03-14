@@ -9,6 +9,7 @@ import { KnowledgeBaseManifest } from '@lobechat/builtin-tool-knowledge-base';
 import { LocalSystemManifest } from '@lobechat/builtin-tool-local-system';
 import { MemoryManifest } from '@lobechat/builtin-tool-memory';
 import { NotebookManifest } from '@lobechat/builtin-tool-notebook';
+import { NotionManifest } from '@lobechat/builtin-tool-notion';
 import { PageAgentManifest } from '@lobechat/builtin-tool-page-agent';
 import { RemoteDeviceManifest } from '@lobechat/builtin-tool-remote-device';
 import { SkillStoreManifest } from '@lobechat/builtin-tool-skill-store';
@@ -154,6 +155,12 @@ export const builtinTools: LobeBuiltinTool[] = [
     hidden: true,
     identifier: TopicReferenceManifest.identifier,
     manifest: TopicReferenceManifest,
+    type: 'builtin',
+  },
+  {
+    discoverable: false,
+    identifier: NotionManifest.identifier,
+    manifest: NotionManifest,
     type: 'builtin',
   },
 ];

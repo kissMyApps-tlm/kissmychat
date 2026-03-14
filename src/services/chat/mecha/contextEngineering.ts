@@ -193,6 +193,7 @@ export const contextEngineering = async ({
         currentAgentRole,
         groupTitle: groupDetail.title || undefined,
         members,
+        revealDM: groupDetail.config?.revealDM ?? false,
         // Use group.content as the group description (shared prompt/content)
         systemPrompt: groupDetail.content || undefined,
       };

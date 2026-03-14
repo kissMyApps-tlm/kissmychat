@@ -2,7 +2,6 @@
 
 import { memo, useEffect } from 'react';
 
-import { getDesktopOnboardingCompleted } from '@/routes/(desktop)/desktop-onboarding/storage';
 import { useElectronStore } from '@/store/electron';
 import {
   getDesktopAutoOidcFirstOpenHandled,
@@ -28,10 +27,6 @@ const DesktopAutoOidcOnFirstOpen = memo(() => {
 
   useEffect(() => {
     if (!isInitRemoteServerConfig) return;
-
-    // Don't auto-trigger during onboarding flow
-    // Check localStorage flag which persists across sign-out
-    if (!getDesktopOnboardingCompleted()) return;
 
     // If already connected, don't auto-trigger
     if (dataSyncConfig.active) return;

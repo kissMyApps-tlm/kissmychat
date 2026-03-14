@@ -77,7 +77,6 @@ const InternalEditor = memo<InternalEditorProps>(
       const { data, mimeType, name } = result.file;
       return new File([data], name, { type: mimeType });
     }, []);
-
     const finalPlaceholder = placeholder || t('pageEditor.editorPlaceholder');
 
     // Build plugins array

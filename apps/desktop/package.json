@@ -1,14 +1,15 @@
 {
-  "name": "lobehub-desktop-dev",
+  "name": "kissmychat-desktop",
+  "productName": "KissMyChat",
   "version": "0.0.0",
   "private": true,
-  "description": "LobeHub Desktop Application",
-  "homepage": "https://lobehub.com",
+  "description": "KissMyChat Desktop Application",
+  "homepage": "https://kissmyapps.tech",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lobehub/lobe-chat.git"
+    "url": "https://github.com/kissMyApps-tlm/kissmychat.git"
   },
-  "author": "LobeHub",
+  "author": "KissMyApps",
   "main": "./dist/main/index.js",
   "scripts": {
     "build:main": "cross-env NODE_OPTIONS=--max-old-space-size=8192 electron-vite build",

@@ -8,7 +8,7 @@ import {
 } from '@lobechat/builtin-tool-remote-device';
 import { builtinTools } from '@lobechat/builtin-tools';
 import { LOADING_FLAT } from '@lobechat/const';
-import type { LobeToolManifest } from '@lobechat/context-engine';
+import type { AgentGroupConfig, LobeToolManifest } from '@lobechat/context-engine';
 import type { LobeChatDatabase } from '@lobechat/database';
 import type {
   ChatTopicBotContext,
@@ -26,6 +26,7 @@ import debug from 'debug';
 
 import { AgentModel } from '@/database/models/agent';
 import { AiModelModel } from '@/database/models/aiModel';
+import { ChatGroupModel } from '@/database/models/chatGroup';
 import { MessageModel } from '@/database/models/message';
 import { PluginModel } from '@/database/models/plugin';
 import { ThreadModel } from '@/database/models/thread';
@@ -77,6 +78,8 @@ function formatErrorForMetadata(error: unknown): Record<string, any> | undefined
  * This extends the public ExecAgentParams with server-side only options
  */
 interface InternalExecAgentParams extends ExecAgentParams {
+  /** Agent group configuration for multi-agent DM filtering */
+  agentGroup?: AgentGroupConfig;
   /** Bot context for topic metadata (platform, applicationId, platformThreadId) */
   botContext?: ChatTopicBotContext;
   /**
@@ -151,6 +154,7 @@ export class AiAgentService {
   private readonly db: LobeChatDatabase;
   private readonly agentModel: AgentModel;
   private readonly agentService: AgentService;
+  private readonly chatGroupModel: ChatGroupModel;
   private readonly messageModel: MessageModel;
   private readonly pluginModel: PluginModel;
   private readonly threadModel: ThreadModel;
@@ -164,6 +168,7 @@ export class AiAgentService {
     this.db = db;
     this.agentModel = new AgentModel(db, userId);
     this.agentService = new AgentService(db, userId);
+    this.chatGroupModel = new ChatGroupModel(db, userId);
     this.messageModel = new MessageModel(db, userId);
     this.pluginModel = new PluginModel(db, userId);
     this.threadModel = new ThreadModel(db, userId);
@@ -189,6 +194,7 @@ export class AiAgentService {
   async execAgent(params: InternalExecAgentParams): Promise<ExecAgentResult> {
     const {
       agentId,
+      agentGroup,
       slug,
       prompt,
       appContext,
@@ -738,6 +744,7 @@ export class AiAgentService {
       const result = await this.agentRuntimeService.createOperation({
         activeDeviceId,
         agentConfig,
+        agentGroup,
         deviceSystemInfo: Object.keys(deviceSystemInfo).length > 0 ? deviceSystemInfo : undefined,
         userTimezone,
         appContext: {
@@ -866,9 +873,36 @@ export class AiAgentService {
       log('execGroupAgent: created new topic %s with groupId %s', topicId, groupId);
     }
 
-    // 2. Delegate to execAgent with groupId in appContext
+    // 2. Build agentGroup config for DM filtering
+    let agentGroup: AgentGroupConfig | undefined;
+    const groupRecord = await this.chatGroupModel.findById(groupId);
+    if (groupRecord) {
+      const groupAgents = await this.chatGroupModel.getGroupAgents(groupId);
+      const agentMap: AgentGroupConfig['agentMap'] = {};
+      const members: AgentGroupConfig['members'] = [];
+
+      for (const ga of groupAgents) {
+        const role = ga.role === 'supervisor' ? 'supervisor' : 'participant';
+        agentMap[ga.agentId] = { name: ga.agentId, role: role as 'supervisor' | 'participant' };
+        members.push({ id: ga.agentId, name: ga.agentId, role: role as 'supervisor' | 'participant' });
+      }
+
+      agentGroup = {
+        agentMap,
+        currentAgentId: agentId,
+        currentAgentRole: agentMap[agentId]?.role,
+        groupTitle: groupRecord.title || undefined,
+        members,
+        revealDM: groupRecord.config?.revealDM ?? false,
+        systemPrompt: groupRecord.content || undefined,
+      };
+      log('execGroupAgent: built agentGroup config with revealDM=%s', agentGroup.revealDM);
+    }
+
+    // 3. Delegate to execAgent with groupId in appContext
     const result = await this.execAgent({
       agentId,
+      agentGroup,
       appContext: { groupId, topicId },
       autoStart: true,
       prompt: message,

@@ -188,7 +188,7 @@ const config = {
       console.info(`⏭️  Skipping Assets.car (not found or copy failed)`);
     }
   },
-  appId: 'com.lobehub.lobehub-desktop',
+  appId: 'com.kissmyapps.kissmychat',
   appImage: {
     artifactName: '${productName}-${version}.${ext}',
   },
@@ -245,7 +245,7 @@ const config = {
       CFBundleIconName: 'AppIcon',
       CFBundleURLTypes: [
         {
-          CFBundleURLName: 'LobeHub Protocol',
+          CFBundleURLName: 'KissMyChat Protocol',
           CFBundleURLSchemes: [protocolScheme],
         },
       ],
@@ -283,7 +283,7 @@ const config = {
   },
   protocols: [
     {
-      name: 'LobeHub Protocol',
+      name: 'KissMyChat Protocol',
       schemes: [protocolScheme],
     },
   ],
@@ -299,7 +299,7 @@ const config = {
   extraResources: [{ from: 'resources/bin', to: 'bin' }],
 
   win: {
-    executableName: 'LobeHub',
+    executableName: 'KissMyChat',
   },
 };
 

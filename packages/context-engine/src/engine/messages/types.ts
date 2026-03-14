@@ -180,6 +180,8 @@ export interface AgentGroupConfig {
   groupTitle?: string;
   /** List of group members for context injection */
   members?: GroupMemberInfo[];
+  /** Whether DMs between agents are visible to all group members */
+  revealDM?: boolean;
   /** Custom system prompt/role description for the group */
   systemPrompt?: string;
 }

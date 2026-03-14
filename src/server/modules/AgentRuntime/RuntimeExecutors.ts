@@ -24,7 +24,7 @@ import debug from 'debug';
 import { type MessageModel } from '@/database/models/message';
 import { type LobeChatDatabase } from '@/database/type';
 import { serverMessagesEngine } from '@/server/modules/Mecha/ContextEngineering';
-import { type EvalContext } from '@/server/modules/Mecha/ContextEngineering/types';
+import { type AgentGroupConfig, type EvalContext } from '@/server/modules/Mecha/ContextEngineering/types';
 import { initModelRuntimeFromDB } from '@/server/modules/ModelRuntime';
 import { type ToolExecutionService } from '@/server/services/toolExecution';
 
@@ -41,6 +41,7 @@ const TOOL_PRICING: Record<string, number> = {
 
 export interface RuntimeExecutorContext {
   agentConfig?: any;
+  agentGroup?: AgentGroupConfig;
   discordContext?: any;
   evalContext?: EvalContext;
   fileService?: any;
@@ -197,6 +198,7 @@ export const createRuntimeExecutors = (
               return info?.abilities?.vision ?? true;
             },
           },
+          agentGroup: ctx.agentGroup,
           discordContext: ctx.discordContext,
           enableHistoryCount: agentConfig.chatConfig?.enableHistoryCount ?? undefined,
           evalContext: ctx.evalContext,

@@ -63,6 +63,7 @@ export const serverMessagesEngine = async ({
   capabilities,
   userMemory,
   agentBuilderContext,
+  agentGroup,
   discordContext,
   evalContext,
   agentManagementContext,
@@ -138,6 +139,7 @@ export const serverMessagesEngine = async ({
 
     // Extended contexts
     ...(agentBuilderContext && { agentBuilderContext }),
+    ...(agentGroup && { agentGroup }),
     ...(discordContext && { discordContext }),
     ...(evalContext && { evalContext }),
     ...(agentManagementContext && { agentManagementContext }),

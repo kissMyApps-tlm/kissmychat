@@ -1,13 +1,15 @@
 import { type MenuProps } from '@lobehub/ui';
 import { Icon } from '@lobehub/ui';
 import { App } from 'antd';
-import { LucideCopy, Pen, PictureInPicture2Icon, Pin, PinOff, Trash } from 'lucide-react';
+import { Download, LucideCopy, Pen, PictureInPicture2Icon, Pin, PinOff, Trash, Upload } from 'lucide-react';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { openEditingPopover } from '@/features/EditingPopover/store';
 import { useGlobalStore } from '@/store/global';
 import { useHomeStore } from '@/store/home';
+
+import { useGroupExportImport } from './useGroupExportImport';
 
 interface UseGroupDropdownMenuParams {
   anchor: HTMLElement | null;
@@ -37,6 +39,7 @@ export const useGroupDropdownMenu = ({
     s.duplicateAgentGroup,
     s.removeAgentGroup,
   ]);
+  const { handleExport, handleImport } = useGroupExportImport(id);
 
   return useMemo(
     () => () =>
@@ -86,6 +89,25 @@ export const useGroupDropdownMenu = ({
         },
         { type: 'divider' },
         {
+          icon: <Icon icon={Download} />,
+          key: 'exportGroup',
+          label: t('groupExport.export'),
+          onClick: ({ domEvent }: any) => {
+            domEvent.stopPropagation();
+            handleExport();
+          },
+        },
+        {
+          icon: <Icon icon={Upload} />,
+          key: 'importGroup',
+          label: t('groupExport.import'),
+          onClick: ({ domEvent }: any) => {
+            domEvent.stopPropagation();
+            handleImport();
+          },
+        },
+        { type: 'divider' },
+        {
           danger: true,
           icon: <Icon icon={Trash} />,
           key: 'delete',
@@ -116,6 +138,8 @@ export const useGroupDropdownMenu = ({
       title,
       duplicateAgentGroup,
       openAgentInNewWindow,
+      handleExport,
+      handleImport,
       modal,
       removeAgentGroup,
       message,

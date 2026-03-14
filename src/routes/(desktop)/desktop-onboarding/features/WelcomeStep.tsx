@@ -11,7 +11,6 @@ import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { ProductLogo } from '@/components/Branding';
-import { useUserStore } from '@/store/user';
 
 interface WelcomeStepProps {
   onNext: () => void;
@@ -20,11 +19,11 @@ interface WelcomeStepProps {
 const WelcomeStep = memo<WelcomeStepProps>(({ onNext }) => {
   const { t, i18n } = useTranslation('onboarding');
   const locale = i18n.language;
-  const updateGeneralConfig = useUserStore((s) => s.updateGeneralConfig);
+  //const updateGeneralConfig = useUserStore((s) => s.updateGeneralConfig);
 
   const handleNext = () => {
     // 默认启用 telemetry
-    updateGeneralConfig({ telemetry: true });
+    // updateGeneralConfig({ telemetry: true });
     onNext();
   };
 
@@ -60,7 +59,7 @@ const WelcomeStep = memo<WelcomeStepProps>(({ onNext }) => {
             pauseDuration={16_000}
             typingSpeed={64}
             sentences={[
-              t('telemetry.title', { name: 'Lobe AI' }),
+              t('telemetry.title', { name: 'KissMyChat AI' }),
               t('telemetry.title2'),
               t('telemetry.title3'),
             ]}

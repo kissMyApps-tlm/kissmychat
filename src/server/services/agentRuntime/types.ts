@@ -1,5 +1,5 @@
 import { type AgentRuntimeContext, type AgentState } from '@lobechat/agent-runtime';
-import { type LobeToolManifest } from '@lobechat/context-engine';
+import { type AgentGroupConfig, type LobeToolManifest } from '@lobechat/context-engine';
 import { type UserInterventionConfig } from '@lobechat/types';
 
 import { type ServerUserMemoryConfig } from '@/server/modules/Mecha/ContextEngineering/types';
@@ -130,6 +130,8 @@ export interface AgentExecutionResult {
 export interface OperationCreationParams {
   activeDeviceId?: string;
   agentConfig?: any;
+  /** Agent group configuration for multi-agent DM filtering */
+  agentGroup?: AgentGroupConfig;
   appContext: {
     agentId?: string;
     groupId?: string | null;

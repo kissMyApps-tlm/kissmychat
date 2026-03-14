@@ -6,6 +6,7 @@ import { ContextEngine } from '../../pipeline';
 import {
   AgentCouncilFlattenProcessor,
   CompressedGroupRoleTransformProcessor,
+  GroupDMFilterProcessor,
   GroupMessageFlattenProcessor,
   GroupOrchestrationFilterProcessor,
   GroupRoleTransformProcessor,
@@ -346,7 +347,20 @@ export class MessagesEngine {
       // 24. Compressed group role transform (convert role=compressedGroup to role=user for model)
       new CompressedGroupRoleTransformProcessor(),
 
-      // 25. Group orchestration filter (remove supervisor's orchestration messages like broadcast/speak)
+      // 25. Group DM filter (hide DMs between agents from non-participants)
+      // Must be BEFORE GroupRoleTransformProcessor to access original agentId/targetId
+      ...(isAgentGroupEnabled && !agentGroup.revealDM && agentGroup.agentMap && agentGroup.currentAgentId
+        ? [
+            new GroupDMFilterProcessor({
+              agentMap: Object.fromEntries(
+                Object.entries(agentGroup.agentMap).map(([id, info]) => [id, { role: info.role }]),
+              ),
+              currentAgentId: agentGroup.currentAgentId,
+            }),
+          ]
+        : []),
+
+      // 26. Group orchestration filter (remove supervisor's orchestration messages like broadcast/speak)
       // This must be BEFORE GroupRoleTransformProcessor so we filter based on original agentId/tools
       ...(isAgentGroupEnabled && agentGroup.agentMap && agentGroup.currentAgentId
         ? [

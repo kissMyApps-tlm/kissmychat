@@ -3,7 +3,7 @@
 import { EditorProvider } from '@lobehub/editor/react';
 import { Flexbox } from '@lobehub/ui';
 import { cssVar } from 'antd-style';
-import type { FC } from 'react';
+import { type FC } from 'react';
 import { memo } from 'react';
 
 import DiffAllToolbar from '@/features/EditorCanvas/DiffAllToolbar';
